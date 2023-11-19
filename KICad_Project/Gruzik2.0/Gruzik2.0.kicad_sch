@@ -3474,7 +3474,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x11") (at 147.32 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0e681fb1-d35f-4877-bba8-ec1ad3d65406)
-    (property "Reference" "Line_Sensor1" (at 149.86 36.195 0)
+    (property "Reference" "Line_Sensor" (at 149.86 36.195 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x11" (at 149.86 38.735 0)
@@ -3500,7 +3500,7 @@
     (instances
       (project "Gruzik2.0"
         (path "/8a909c0c-17f2-41d1-a010-8c6165729605"
-          (reference "Line_Sensor1") (unit 1)
+          (reference "Line_Sensor") (unit 1)
         )
       )
     )
