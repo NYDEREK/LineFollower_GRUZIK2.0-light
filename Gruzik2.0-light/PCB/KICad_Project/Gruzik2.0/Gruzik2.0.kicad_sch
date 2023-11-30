@@ -3061,11 +3061,6 @@
     (effects (font (size 2.0066 2.0066) (thickness 0.4013) bold) (justify left bottom))
     (uuid a949ed1a-e0dd-4c4e-a3e5-dbd2f4f2faf6)
   )
-  (text "TODO: footprint of polarized capacitors / figure out how to mount cleaners for wheels"
-    (at 273.05 250.19 0)
-    (effects (font (size 2.0066 2.0066) (thickness 0.4013) bold) (justify left bottom))
-    (uuid c83cd63a-e7c3-4f3e-8d30-70ed3a101cb4)
-  )
   (text "Battery voltage goes straight into drivers" (at 142.24 185.42 0)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
     (uuid ce62b25d-f502-41fd-a892-0d3a098240f4)

@@ -65,7 +65,7 @@
       40
     ],
     "visible_layers": "fdfffff_ffffffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "Gruzik2.0.kicad_prl",
