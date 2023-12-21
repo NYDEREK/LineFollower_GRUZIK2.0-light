@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>D:\SN-USER\Projects\Gruzik2.0-light\PCB\KICad_Project\Sensor\Qtr-8-SN\Qtr-8-SN.kicad_sch</source>
+    <date>02.12.2023 20:12:04</date>
+    <tool>Eeschema 7.0.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Qtr-8-SN.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65a88182-267e-4365-aace-e4b7ffc4b6b8</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1.0u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>305c0581-7126-4005-bec0-e68e78bc404f</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9a354d4-51ff-4cdd-bed8-84616d15f9e2</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d90a2f9f-0784-43bf-b51b-f9bf7637134f</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffb4d931-f528-4804-83e3-aff536709578</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>efc4c784-ba11-41ee-92fb-f6c463c34591</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74719059-cf5a-43f4-b04f-daa1ca77ff58</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b224690d-3482-4575-bc28-2c7403370898</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c51db555-a58a-44ec-9af7-a112a95918f4</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a3f068da-ba5d-41a4-b643-b96710dcc322</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d48b135f-36ec-438c-842d-f2d79b6c41d3</tstamps>
+    </comp>
+    <comp ref="IC2">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13222cdf-f80c-4dd0-9682-dad15c2dc159</tstamps>
+    </comp>
+    <comp ref="IC3">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b4cf02e0-9956-4bee-9cf2-273144d36546</tstamps>
+    </comp>
+    <comp ref="IC4">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c7ba04b-7728-4ba9-a9e6-da4924a90253</tstamps>
+    </comp>
+    <comp ref="IC5">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fbe7d35e-3d33-4206-ad11-e13dbfc1fd95</tstamps>
+    </comp>
+    <comp ref="IC6">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ce1409d-dcdf-47de-8c99-2437d8b49eea</tstamps>
+    </comp>
+    <comp ref="IC7">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a0470337-bbd4-4d66-8871-27deb77955ab</tstamps>
+    </comp>
+    <comp ref="IC8">
+      <value>~</value>
+      <footprint>Sensor_Optical:KTIR0711S</footprint>
+      <libsource lib="Sensor_KTIR0711S" part="KTIR0711S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>943e3cef-1d69-4980-a8f1-71117f5d98d6</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>NMOS</value>
+      <footprint>NMOS_new:NMOS_SN</footprint>
+      <datasheet>https://ngspice.sourceforge.io/docs/ngspice-manual.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">NMOS</field>
+        <field name="Sim.Pins">1=G 2=S 3=D</field>
+        <field name="Sim.Type">VDMOS</field>
+      </fields>
+      <libsource lib="Simulation_SPICE" part="NMOS" description="N-MOSFET transistor, drain/source/gate"/>
+      <property name="Sim.Device" value="NMOS"/>
+      <property name="Sim.Type" value="VDMOS"/>
+      <property name="Sim.Pins" value="1=G 2=S 3=D"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="N-MOSFET transistor, drain/source/gate"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET simulation"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4b9f835-a881-4e4a-89c6-62c00a609162</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>39</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>743c4430-e1c7-495a-bc9f-112bfce27529</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9159ab3-d231-4d4f-be0d-7275a8385858</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c13d6b3-70d4-41de-a9b7-8762c74464d0</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>39</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41a7443d-4417-4923-89f2-c6a1730ce10c</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ca544d7-d78a-4ef2-b539-2860a4ed73b8</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1bb7f74-8f67-4138-a4a2-281c26e9a53b</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>39</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>61942377-0012-4fd5-8e96-b802e5bd94cf</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a3b2dea-804a-4c0f-81ce-0f68480016d2</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>789b9d1c-65f3-48fa-a78c-615c69a41d57</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>39</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5f46458-c60a-4636-972d-afacfb9ddace</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4e578e6-9554-45bb-9706-3f680dc4f462</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab028663-0590-4c56-ac10-730daafa42dd</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>47</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9cae62bc-d8b9-43b5-841b-6ce68381d2fa</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>47</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99dfa6f4-0bdb-414c-b7de-ff4230139c49</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>47K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>563568d5-f04d-43f2-88da-72ca05d1fe02</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30ce591a-4d65-4a6a-9fe5-fbbb0557190d</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b56340e0-e67b-4f26-b4e6-f4779ab67542</tstamps>
+    </comp>
+    <comp ref="Sensor1">
+      <value>Conn_01x16</value>
+      <footprint>Connector_FFC-FPC:Molex_200528-0160_1x16-1MP_P1.00mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x16" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Qtr-8-SN.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>086e781f-eddd-4053-9815-bf387ff7470a</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x16">
+      <description>Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x16</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_KTIR0711S" part="KTIR0711S">
+      <fields>
+        <field name="Reference">IC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Simulation_SPICE" part="NMOS">
+      <description>N-MOSFET transistor, drain/source/gate</description>
+      <docs>https://ngspice.sourceforge.io/docs/ngspice-manual.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">NMOS</field>
+        <field name="Datasheet">https://ngspice.sourceforge.io/docs/ngspice-manual.pdf</field>
+        <field name="Sim.Device">NMOS</field>
+        <field name="Sim.Type">VDMOS</field>
+        <field name="Sim.Pins">1=D 2=G 3=S</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_KTIR0711S">
+      <uri>D:\SN-USER\Projects\Gruzik2.0-light\PCB\KICad_Project\Sensor\Qtr-8-SN/Sensor_KTIR0711S.kicad_sym</uri>
+    </library>
+    <library logical="Simulation_SPICE">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Simulation_SPICE.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="1" pintype="input"/>
+      <node ref="IC3" pin="1" pintype="input"/>
+      <node ref="IC5" pin="1" pintype="input"/>
+      <node ref="IC7" pin="1" pintype="input"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="Sensor1" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="Sensor1" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="Sensor1" pin="15" pinfunction="Pin_15" pintype="passive"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="2" pintype="input"/>
+      <node ref="IC2" pin="2" pintype="input"/>
+      <node ref="IC3" pin="2" pintype="input"/>
+      <node ref="IC4" pin="2" pintype="input"/>
+      <node ref="IC5" pin="2" pintype="input"/>
+      <node ref="IC6" pin="2" pintype="input"/>
+      <node ref="IC7" pin="2" pintype="input"/>
+      <node ref="IC8" pin="2" pintype="input"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Sensor1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Sensor1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Sensor1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="3" pintype="input"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="IC2" pin="3" pintype="input"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="IC4" pin="3" pintype="input"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="IC3" pin="3" pintype="input"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="IC6" pin="3" pintype="input"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="IC5" pin="3" pintype="input"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(C9-Pad1)">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="IC8" pin="3" pintype="input"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="IC7" pin="3" pintype="input"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(IC1-Pad4)">
+      <node ref="IC1" pin="4" pintype="input"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(IC2-Pad1)">
+      <node ref="IC2" pin="1" pintype="input"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(IC2-Pad4)">
+      <node ref="IC2" pin="4" pintype="input"/>
+      <node ref="IC4" pin="4" pintype="input"/>
+      <node ref="IC6" pin="4" pintype="input"/>
+      <node ref="IC8" pin="4" pintype="input"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(IC3-Pad4)">
+      <node ref="IC3" pin="4" pintype="input"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(IC4-Pad1)">
+      <node ref="IC4" pin="1" pintype="input"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(IC5-Pad4)">
+      <node ref="IC5" pin="4" pintype="input"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(IC6-Pad1)">
+      <node ref="IC6" pin="1" pintype="input"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(IC7-Pad4)">
+      <node ref="IC7" pin="4" pintype="input"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(IC8-Pad1)">
+      <node ref="IC8" pin="1" pintype="input"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(Q1-D)">
+      <node ref="Q1" pin="1" pinfunction="D" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="21" name="PA0">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="12" pinfunction="Pin_12" pintype="passive"/>
+    </net>
+    <net code="22" name="PA1">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="11" pinfunction="Pin_11" pintype="passive"/>
+    </net>
+    <net code="23" name="PA2">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="10" pinfunction="Pin_10" pintype="passive"/>
+    </net>
+    <net code="24" name="PA3">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="25" name="PA4">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="26" name="PA5">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    </net>
+    <net code="27" name="PA6">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+    </net>
+    <net code="28" name="PA7">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="29" name="PB0">
+      <node ref="Q1" pin="2" pinfunction="G" pintype="input"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="Sensor1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="30" name="unconnected-(R16-Pad1)">
+      <node ref="R16" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(R16-Pad2)">
+      <node ref="R16" pin="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(R17-Pad1)">
+      <node ref="R17" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(R17-Pad2)">
+      <node ref="R17" pin="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(Sensor1-Pin_16-Pad16)">
+      <node ref="Sensor1" pin="16" pinfunction="Pin_16" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
