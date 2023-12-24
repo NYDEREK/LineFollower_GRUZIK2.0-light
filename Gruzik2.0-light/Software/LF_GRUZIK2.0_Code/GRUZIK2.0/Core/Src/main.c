@@ -46,12 +46,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+	/*PIDR regulator*/
 	int sensor_read = 0x00000000;
 	int position;
-
 	float Kp = 0.07;
 	float Ki = 0;
-	float Kd = 350 ;//350
+	float Kd = 350 ;
 	float Kr = 0;
 	int P, I, D, R;
 	int lastError = 0;
@@ -59,25 +59,27 @@
 	int error_sum = 0;
 	int last_end = 0;	// 0 -> Left, 1 -> Right
 	int last_idle = 0;
-	//PRĘDKOSCI DLA Sharp turn///
-	int pr11=-90;
-	int pr12=185;
-	int pr21=-50;
-	int pr22=100;
-	//PRĘDKOSCI DLA Sharp turn///
 	float speedlevel = 1;
 	int maxspeedr = 140;
 	int maxspeedl = 140;
 	int basespeedr = 92;
 	int basespeedl = 92;
 	int ARR = 4;
-    char buffer[9];
-    char rxData[5];
 	int actives = 0;
-	int liczba=0;
+
+	/*Sharp turn speed*/
+	int Sharp_bend_speed_right=-90;
+	int Sharp_bend_speed_left=185;
+	int Bend_speed_right=-50;
+	int Bend_speed_left=100;
+
+	/*Communication*/
+    char buffer[28];
+    char RxData[28];
+
 	/*Battery*/
 	uint16_t raw_battery;
-	uint16_t max_battery = 2840;
+	uint16_t max_battery = 3220;
 	int battery_level;
 	float battery_procentage;
 	float battery_procentage_raw;
@@ -106,11 +108,11 @@ void Battery_ADC_measurement(void)
 	/*Percentages from raw 12bit measurement*/
 	if(raw_battery != 0)
 	{
-		battery_procentage_raw = (raw_battery * 100) / max_battery;
 		if(raw_battery > max_battery)
 		{
 			raw_battery = max_battery;
 		}
+		battery_procentage_raw = (raw_battery * 100) / max_battery;
 	}
 	else
 	{
@@ -178,16 +180,16 @@ void sharp_turn () {
 	if (last_idle < 25)
 	{
 		if (last_end == 1)
-			motor_control(pr11, pr12);
+			motor_control(Sharp_bend_speed_right, Sharp_bend_speed_left);
 		else
-			motor_control(pr12, pr11);
+			motor_control(Sharp_bend_speed_left, Sharp_bend_speed_right);
 	}
 	else
 	{
 		if (last_end == 1)
-			motor_control(pr21, pr22);
+			motor_control(Bend_speed_right, Bend_speed_left);
 		else
-			motor_control(pr22, pr21);
+			motor_control(Bend_speed_left, Bend_speed_right);
 	}
 }
 int QTR8_read ()
@@ -377,7 +379,7 @@ int main(void)
   MX_USART3_UART_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-   HAL_UART_Receive_IT(&huart1,(uint8_t*)rxData,5); //Oczekiwanie na dane z HC-05 i włączenie timerów
+   HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28); //Oczekiwanie na dane z HC-05 i włączenie timerów
    HAL_TIM_Base_Start(&htim1);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
@@ -399,7 +401,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  PID_control();
-	  if(battery_procentage_raw < 85)
+	  if(battery_procentage_raw < 75)
 	  {
 		  /*If battery is low stop robot*/
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
@@ -459,180 +461,158 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart->Instance==USART1)
 	{
-		liczba = atoi(rxData);
-		if(rxData[0]==78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
+		if(RxData[0]==78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
 		{
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
 		}
-		if (rxData[0]==89) // Ascii value of 'Y' is 89 (Y for YES)
+		if (RxData[0]==89) // Ascii value of 'Y' is 89 (Y for YES)
 		{
 			Battery_ADC_measurement();
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 		}
-    ////////////////////////////////////////////////////////              MAPY DO ROBOTA
-    if(rxData[0]==83){ //S==83 SZYBKI//WARIATUŃCIO SKONCZONY
-    ARR=3;
-    basespeedr = 100;
-    basespeedl = 100;
-    maxspeedl=100;
-    maxspeedr=100;
-    pr11=-160;
-    pr12=160;
-    pr21=0;//-150
-    pr22=120;
-    Kd=350;
-    }
-    /////////////////////////////////////////////////////////
-    if(rxData[0]==68){ //D==68 DOKLADNY UKOŃCZONY
-    ARR=3;
-    basespeedr = 90;
-    basespeedl = 90;
-    maxspeedl=90;
-    maxspeedr=90;
-    pr11=-160;
-    pr12=160;
-    pr21=0;//-50
-    pr22=120;
-    Kd=350;
-    }
-    ////////////////////////////////////////////////////////
-    if(rxData[0]==67){ //c==67 DZIKUS
-    ARR=3;
-    basespeedr = 140;
-    basespeedl = 140;
-    maxspeedl=140;
-    maxspeedr=140;
-    pr11=-175;
-    pr12=175;
-    pr21=-80;//-150
-    pr22=130;
-    Kd=350;
-    }
-    ////////////////////////////////////////////////////////
-    if(rxData[0]==69){ //E==69 IDK EKSPERYMENTALNY
-    ARR=3;
-    basespeedr = 150;
-    basespeedl = 150;
-    maxspeedl=155;
-    maxspeedr=155;
-    pr11=-176;
-    pr12=176;
-    pr21=-80;
-    pr22=130;
-    Kd=350;
-    }
-    ////////////////////////////////////////////////////////
-    if(rxData[0]=='T'){ // 90 sredni / na asci trzeba T
-    ARR=3;
-    basespeedr = 134;
-    basespeedl = 134;
-    maxspeedl=134;
-    maxspeedr=134;
-    pr11=-169;
-    pr12=169;
-    pr21=-76;
-    pr22=125;
-    Kd=290;
-    }
-   ////////////////////////////////////////////////////////
-    if(rxData[0]=='H'){ // 90 FAST   /na asci trzeba H
-    ARR=3;
-    basespeedr = 150;
-    basespeedl = 150;
-    maxspeedl=155;
-    maxspeedr=155;
-    pr11=-176;
-    pr12=176;
-    pr21=-80;
-    pr22=130;
-    Kd=290;          ////-teraz edytujemy te wartosci tylko a jak to nie pomoze to lipton
-    }
-    ////////////////////////////////////////////////////////
-    if(rxData[0]=='L'){ // LAST
-    ARR=3;
-    basespeedr = 160;
-    basespeedl = 160;
-    maxspeedl=160;
-    maxspeedr=160;
-    pr11=-176;
-    pr12=176;
-    pr21=-80;
-    pr22=130;
-    Kd=290;          ////-teraz edytujemy te wartosci tylko a jak to nie pomoze to lipton
-    }
-    ////////////////////////////////////////////////////////
-     if(rxData[0]=='R'){ //DRAG_RACE
-     ARR=6;
-     basespeedr = 160;
-     basespeedl = 160;
-     maxspeedl=160;
-     maxspeedr=160;
-     pr11=-176;
-     pr12=176;
-     pr21=-80;
-     pr22=130;
-     Kd=200;          ////-teraz edytujemy te wartosci tylko a jak to nie pomoze to lipton
-     }
-    ///////////////////////////////////////////////////////
-     if(rxData[0]=='a'){ //koła nr1 "WH-slow"
-     ARR=3;
-     basespeedr = 169;
-     basespeedl = 169;
-     maxspeedl=174;
-     maxspeedr=174;
-     pr11=-169;
-     pr12=169;
-     pr21=-76;
-     pr22=125;
-     Kd=290;
-     }
-     ////////////////////////////////////////////////////////
-     if(rxData[0]=='b'){ //koła nr2 "WH-medium"
-     ARR=3;
-     basespeedr = 174;
-     basespeedl = 174;
-     maxspeedl=183;
-     maxspeedr=183;
-     pr11=-169;
-     pr12=169;
-     pr21=-76;
-     pr22=125;
-     Kd=290;
-     }
-     ////////////////////////////////////////////////////////
-     if(rxData[0]=='c'){ ////koła nr1 "WH-fast"
-     ARR=3;
-     basespeedr = 193;
-     basespeedl = 193;
-     maxspeedl=203;
-     maxspeedr=203;
-     pr11=-169;
-     pr12=169;
-     pr21=-76;
-     pr22=125;
-     Kd=290;
-     }
-     ////////////////////////////////////////////////////////
-     if(rxData[0]=='d'){ //koła nr1 "WH-turbo"
-     ARR=3;
-     basespeedr = 203;
-     basespeedl = 203;
-     maxspeedl=212;
-     maxspeedr=212;
-     pr11=-169;//-176
-     pr12=169;//176
-     pr21=-76;//-80
-     pr22=125;//130
-     Kd=290;
-     }
-     ////////////////////////////////////////////////////////
-    Battery_ADC_measurement();
-    SN_UART_Send(&huart3,"rxData: %d \r \n ",rxData);
-    SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",speedlevel,battery_procentage_raw,raw_battery);
-    HAL_UART_Receive_IT(&huart1,(uint8_t*)rxData,5);
-  }
+		/*Terminal communication*/
+		if(RxData[0] == 'T')
+		{
+			char char_value[10];
+			if(RxData[2] == 'p')
+			{
+				SN_Value_In_Message(RxData, SN_Find_first(RxData, "p:"), SN_Find_first(RxData, "end") , char_value);
+				Kp = atof(char_value);
+			}
+			if(RxData[2] == 'p')
+			{
+				SN_Value_In_Message(RxData, SN_Find_first(RxData, "d:"), SN_Find_first(RxData, "end") , char_value);
+				Kd= atof(char_value);
+			}
+		}
+		/*Time mode*/
+		if(RxData[0] == 'g')
+		{
+			char char_value[10];
+			/*RxData = "m1: ? m2: ? st: ? ct: ?*/
+			int m1, m2, st, ct;
+			/*mode 1*/
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m1:") + 3, SN_Find_first(RxData, "m2:") , char_value);
+			m1 = atoi(char_value);
+			/*mode 2*/
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m2:") + 3, SN_Find_first(RxData, "st:") , char_value);
+			m2 = atoi(char_value);
+			/*Start time*/
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "st:") + 3, SN_Find_first(RxData, "ct:") , char_value);
+			st = atoi(char_value);
+			/*mode 1*/
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "ct:") + 3, SN_Find_first(RxData, "end") , char_value);
+			ct = atoi(char_value);
+			/*rest in future*/
+			ct = (m1 * m2 * st) + ct; //<-- to don't get any warning
+		}
+     	/*LOW mode*/
+     	if(RxData[0] == 'a')
+     	{
+    	 	 ARR=3;
+     	 	 basespeedr = 139;
+     	 	 basespeedl = 139;
+     	 	 maxspeedl=139;
+     	 	 maxspeedr=139;
+     	 	 Sharp_bend_speed_right=-169;
+     	 	 Sharp_bend_speed_left=169;
+     	 	 Bend_speed_right=-76;
+     	 	 Bend_speed_left=125;
+     	 	 Kd=190;
+     	}
+     	/*LOW+ mode*/
+     	if(RxData[0] == 'd')
+     	{
+    	 	 ARR=3;
+     	 	 basespeedr = 149;
+     	 	 basespeedl = 149;
+     	 	 maxspeedl=149;
+     	 	 maxspeedr=149;
+     	 	 Sharp_bend_speed_right=-169;
+     	 	 Sharp_bend_speed_left=169;
+     	 	 Bend_speed_right=-76;
+     	 	 Bend_speed_left=125;
+     	 	 Kd=220;
+     	}
+     	/*Medium mode*/
+     	if(RxData[0] == 'b')
+     	{
+    	 	 ARR=3;
+     	 	 basespeedr = 159;
+     	 	 basespeedl = 159;
+     	 	 maxspeedl=159;
+     	 	 maxspeedr=159;
+     	 	 Sharp_bend_speed_right=-169;
+     	 	 Sharp_bend_speed_left=169;
+     	 	 Bend_speed_right=-76;
+     	 	 Bend_speed_left=125;
+     	 	 Kd=220;
+     	}
+     	/*Medium+ mode*/
+     	if(RxData[0] == 'e')
+     	{
+    	 	 ARR=3;
+     	 	 basespeedr = 169;
+     	 	 basespeedl = 169;
+     	 	 maxspeedl=169;
+     	 	 maxspeedr=169;
+     	 	 Sharp_bend_speed_right=-169;
+     	 	 Sharp_bend_speed_left=169;
+     	 	 Bend_speed_right=-76;
+     	 	 Bend_speed_left=125;
+     	 	 Kd=250;
+     	}
+     	/*HIGH mode*/
+     	if(RxData[0] == 'c')
+     	{
+    	 	ARR=3;
+     	 	basespeedr = 174;
+     	 	basespeedl = 174;
+     	 	maxspeedl=174;
+     	 	maxspeedr=174;
+     	 	Sharp_bend_speed_right=-169;
+     	 	Sharp_bend_speed_left=169;
+     	 	Bend_speed_right=-76;
+     	 	Bend_speed_left=125;
+     	 	Kd=250;
+     	}
+     	/*HIGH+ mode*/
+     	if(RxData[0] == 'f')
+     	{
+    	 	ARR=3;
+    	 	basespeedr = 180;
+    	 	basespeedl = 180;
+    	 	maxspeedl=180;
+    	 	maxspeedr=180;
+    	 	Sharp_bend_speed_right=-169;
+     		Sharp_bend_speed_left=169;
+     		Bend_speed_right=-76;
+     		Bend_speed_left=125;
+     	 	Kd=250;
+     	}
+     	/*Special mode*/
+     	if(RxData[0] == 'h')
+     	{
+    	 	ARR=3;
+    	 	basespeedr = 190;
+    	 	basespeedl = 190;
+    	 	maxspeedl = 190;
+    	 	maxspeedr = 190;
+    	 	Sharp_bend_speed_right = -169;
+    	 	Sharp_bend_speed_left = 169;
+    	 	Bend_speed_right = -76;
+    	 	Bend_speed_left = 125;
+    	 	Kd = 250;
+     	}
+
+     	Battery_ADC_measurement();
+    	SN_UART_Send(&huart3,"rxData: %d \r \n ",RxData);
+    	SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",speedlevel,battery_procentage_raw,raw_battery);
+    	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
+	}
 }
 /* USER CODE END 4 */
 

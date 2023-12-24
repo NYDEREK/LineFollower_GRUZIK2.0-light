@@ -2055,3 +2055,618 @@ Finished building: default.size.stdout
  
 Finished building: GRUZIK2.0.list
  
+20:02:28 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  37616	    536	   2144	  40296	   9d68	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:15:21 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  36992	    536	   2144	  39672	   9af8	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:28:49 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:482:33: error: too few arguments to function 'SN_Find_first'
+  482 |     SN_Value_In_Message(RxData, SN_Find_first("p:"), SN_Find_first("end") , char_value);
+      |                                 ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:28:
+D:\SN-USER\HAL-SN-Functions\SN-functions.h:20:5: note: declared here
+   20 | int SN_Find_first(const char*message, const char*token);
+      |     ^~~~~~~~~~~~~
+../Core/Src/main.c:482:54: error: too few arguments to function 'SN_Find_first'
+  482 |     SN_Value_In_Message(RxData, SN_Find_first("p:"), SN_Find_first("end") , char_value);
+      |                                                      ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:28:
+D:\SN-USER\HAL-SN-Functions\SN-functions.h:20:5: note: declared here
+   20 | int SN_Find_first(const char*message, const char*token);
+      |     ^~~~~~~~~~~~~
+../Core/Src/main.c:483:5: error: pointer value used where a floating-point was expected
+  483 |     Value = (float)char_value;
+      |     ^~~~~
+../Core/Src/main.c:488:33: error: too few arguments to function 'SN_Find_first'
+  488 |     SN_Value_In_Message(RxData, SN_Find_first("d:"), SN_Find_first("end") , char_value);
+      |                                 ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:28:
+D:\SN-USER\HAL-SN-Functions\SN-functions.h:20:5: note: declared here
+   20 | int SN_Find_first(const char*message, const char*token);
+      |     ^~~~~~~~~~~~~
+../Core/Src/main.c:488:54: error: too few arguments to function 'SN_Find_first'
+  488 |     SN_Value_In_Message(RxData, SN_Find_first("d:"), SN_Find_first("end") , char_value);
+      |                                                      ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:28:
+D:\SN-USER\HAL-SN-Functions\SN-functions.h:20:5: note: declared here
+   20 | int SN_Find_first(const char*message, const char*token);
+      |     ^~~~~~~~~~~~~
+../Core/Src/main.c:489:5: error: pointer value used where a floating-point was expected
+  489 |     Value = (float)char_value;
+      |     ^~~~~
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:29:50 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:483:13: error: incompatible types when assigning to type 'float' from type 'float *'
+  483 |     Value = (float*)char_value;
+      |             ^
+../Core/Src/main.c:489:13: error: incompatible types when assigning to type 'float' from type 'float *'
+  489 |     Value = (float*)char_value;
+      |             ^
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:30:08 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:483:5: error: pointer value used where a floating-point was expected
+  483 |     Value = (float)char_value;
+      |     ^~~~~
+../Core/Src/main.c:489:5: error: pointer value used where a floating-point was expected
+  489 |     Value = (float)char_value;
+      |     ^~~~~
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:32:42 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  43596	    540	   2140	  46276	   b4c4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:33:17 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  43588	    540	   2140	  46268	   b4bc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:42:03 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:495:20: warning: variable 'ct' set but not used [-Wunused-but-set-variable]
+  495 |    int m1, m2, st, ct;
+      |                    ^~
+../Core/Src/main.c:495:16: warning: variable 'st' set but not used [-Wunused-but-set-variable]
+  495 |    int m1, m2, st, ct;
+      |                ^~
+../Core/Src/main.c:495:12: warning: variable 'm2' set but not used [-Wunused-but-set-variable]
+  495 |    int m1, m2, st, ct;
+      |            ^~
+../Core/Src/main.c:495:8: warning: variable 'm1' set but not used [-Wunused-but-set-variable]
+  495 |    int m1, m2, st, ct;
+      |        ^~
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44100	    540	   2140	  46780	   b6bc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:44:50 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:495:20: warning: variable 'ct' set but not used [-Wunused-but-set-variable]
+  495 |    int m1, m2, st, ct;
+      |                    ^~
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44124	    540	   2140	  46804	   b6d4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:45:10 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44132	    540	   2140	  46812	   b6dc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+21:08:20 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44180	    540	   2124	  46844	   b6fc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+22:00:22 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44180	    540	   2124	  46844	   b6fc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+22:10:18 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44180	    540	   2124	  46844	   b6fc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:05:01 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44188	    540	   2124	  46852	   b704	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:06:36 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44188	    540	   2124	  46852	   b704	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:07:07 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44188	    540	   2124	  46852	   b704	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+23:19:51 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:20:26 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+23:26:29 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44388	    540	   2124	  47052	   b7cc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:28:33 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44388	    540	   2124	  47052	   b7cc	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:32:50 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:38:22 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+23:40:49 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+19:25:54 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+19:27:02 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+19:38:48 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+19:39:11 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+19:54:54 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+19:55:24 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+20:14:32 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:15:34 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+20:16:03 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+20:16:47 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+20:26:29 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+20:26:53 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+21:34:02 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+21:35:30 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+21:35:36 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+21:41:15 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+21:41:48 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+21:41:53 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+21:43:31 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:468:4: error: cannot convert to a pointer type
+  468 |    SN_UART_Send(&huart1, "%d" , (char*)battery_procentage_raw);
+      |    ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:43:41 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44476	    540	   2124	  47140	   b824	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+21:43:51 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-size   GRUZIK2.0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44476	    540	   2124	  47140	   b824	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+21:44:44 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44484	    540	   2124	  47148	   b82c	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+21:46:10 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44476	    540	   2124	  47140	   b824	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+21:47:23 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+22:05:40 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44420	    540	   2124	  47084	   b7ec	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
+22:08:16 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GRUZIK2.0.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GRUZIK2.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GRUZIK2.0.elf
+ 
+arm-none-eabi-size   GRUZIK2.0.elf 
+arm-none-eabi-objdump -h -S  GRUZIK2.0.elf  > "GRUZIK2.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  44412	    540	   2124	  47076	   b7e4	GRUZIK2.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: GRUZIK2.0.list
+ 
