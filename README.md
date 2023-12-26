@@ -9,7 +9,7 @@
 ![image](https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/0cd45245-ee79-4929-86ba-0e2f9b55157a)
 
 <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/fe5838ad-ae66-4651-823d-7fa049178016" width="200"/> <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/e688352e-b9cf-4387-a83c-95ce9aeba8c7" width="200"/> 
-## 🎱Parts🎱
+# 🎱Parts🎱
 * uC - STM32F103C8T6
 * drivers - TB6612FNG
 * sensor - 8x KTIR0711S
