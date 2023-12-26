@@ -49,7 +49,8 @@
 	/*PIDR regulator*/
 	int sensor_read = 0x00000000;
 	int position;
-	float Kp = 0.07;
+	//float Kp = 0.02;
+	float Kp = 0.02;
 	float Ki = 0;
 	float Kd = 350 ;
 	float Kr = 0;
@@ -461,15 +462,19 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart->Instance==USART1)
 	{
-		if(RxData[0]==78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
+		if(RxData[0] == 78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
 		{
+			/*Stop GRUZIK2.0 and turn off the LED*/
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			/*Send battery percentage*/
 			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
 		}
-		if (RxData[0]==89) // Ascii value of 'Y' is 89 (Y for YES)
+		if (RxData[0] == 89) // Ascii value of 'Y' is 89 (Y for YES)
 		{
+			/*Do Battery measurement before start*/
 			Battery_ADC_measurement();
+			/*Start GRUZIK2.0 and turn on the LED*/
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 		}
@@ -513,104 +518,142 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'a')
      	{
     	 	 ARR=3;
-     	 	 basespeedr = 139;
-     	 	 basespeedl = 139;
-     	 	 maxspeedl=139;
-     	 	 maxspeedr=139;
-     	 	 Sharp_bend_speed_right=-169;
-     	 	 Sharp_bend_speed_left=169;
+     	 	 basespeedr = 150;
+     	 	 basespeedl = 150;
+     	 	 maxspeedl=130;
+     	 	 maxspeedr=130;
+     	 	 Sharp_bend_speed_right=-115;
+     	 	 Sharp_bend_speed_left=120;
      	 	 Bend_speed_right=-76;
      	 	 Bend_speed_left=125;
-     	 	 Kd=190;
+     	 	 Kp = 0.02;
+     	 	 Kd = 65;
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')
      	{
     	 	 ARR=3;
-     	 	 basespeedr = 149;
-     	 	 basespeedl = 149;
-     	 	 maxspeedl=149;
-     	 	 maxspeedr=149;
-     	 	 Sharp_bend_speed_right=-169;
-     	 	 Sharp_bend_speed_left=169;
+     	 	 basespeedr = 165;
+     	 	 basespeedl = 165;
+     	 	 maxspeedl=130;
+     	 	 maxspeedr=130;
+     	 	 Sharp_bend_speed_right=-120;
+     	 	 Sharp_bend_speed_left=125;
      	 	 Bend_speed_right=-76;
      	 	 Bend_speed_left=125;
-     	 	 Kd=220;
+     	 	 Kp = 0.04;
+     	 	 Kd = 75;
      	}
      	/*Medium mode*/
      	if(RxData[0] == 'b')
      	{
     	 	 ARR=3;
-     	 	 basespeedr = 159;
-     	 	 basespeedl = 159;
-     	 	 maxspeedl=159;
-     	 	 maxspeedr=159;
-     	 	 Sharp_bend_speed_right=-169;
-     	 	 Sharp_bend_speed_left=169;
-     	 	 Bend_speed_right=-76;
-     	 	 Bend_speed_left=125;
-     	 	 Kd=220;
+     	 	 basespeedr = 175;
+     	 	 basespeedl = 175;
+     	 	 maxspeedl = 135;
+     	 	 maxspeedr = 135;
+     	 	 Sharp_bend_speed_right = -120;
+     	 	 Sharp_bend_speed_left = 125;
+     	 	 Bend_speed_right = -76;
+     	 	 Bend_speed_left = 125;
+     	 	 Kp = 0.03;
+     	 	 Kd = 70;
      	}
      	/*Medium+ mode*/
      	if(RxData[0] == 'e')
      	{
     	 	 ARR=3;
-     	 	 basespeedr = 169;
-     	 	 basespeedl = 169;
-     	 	 maxspeedl=169;
-     	 	 maxspeedr=169;
-     	 	 Sharp_bend_speed_right=-169;
-     	 	 Sharp_bend_speed_left=169;
-     	 	 Bend_speed_right=-76;
-     	 	 Bend_speed_left=125;
-     	 	 Kd=250;
+     	 	 basespeedr = 190;
+     	 	 basespeedl = 190;
+     	 	 maxspeedl = 145;
+     	 	 maxspeedr = 145;
+     	 	 Sharp_bend_speed_right = -100;
+     	 	 Sharp_bend_speed_left = 100;
+     	 	 Bend_speed_right = -76;
+     	 	 Bend_speed_left = 125;
+     	 	 Kp = 0.03;
+     	 	 Kd = 70;
      	}
      	/*HIGH mode*/
      	if(RxData[0] == 'c')
      	{
     	 	ARR=3;
-     	 	basespeedr = 174;
-     	 	basespeedl = 174;
-     	 	maxspeedl=174;
-     	 	maxspeedr=174;
-     	 	Sharp_bend_speed_right=-169;
-     	 	Sharp_bend_speed_left=169;
-     	 	Bend_speed_right=-76;
-     	 	Bend_speed_left=125;
-     	 	Kd=250;
+     	 	basespeedr = 225;
+     	 	basespeedl = 225;
+     	 	maxspeedl = 150;
+     	 	maxspeedr = 150;
+     	 	Sharp_bend_speed_right = -73;
+     	 	Sharp_bend_speed_left = 78;
+     	 	Bend_speed_right = -76;
+     	 	Bend_speed_left = 125;
+     	 	Kp = 0.04;
+     	 	Kd = 75;
      	}
      	/*HIGH+ mode*/
      	if(RxData[0] == 'f')
      	{
     	 	ARR=3;
-    	 	basespeedr = 180;
-    	 	basespeedl = 180;
-    	 	maxspeedl=180;
-    	 	maxspeedr=180;
-    	 	Sharp_bend_speed_right=-169;
-     		Sharp_bend_speed_left=169;
+    	 	basespeedr = 250;
+    	 	basespeedl = 250;
+    	 	maxspeedl=160;
+    	 	maxspeedr=160;
+    	 	Sharp_bend_speed_right = -65;
+     		Sharp_bend_speed_left = 70;
      		Bend_speed_right=-76;
      		Bend_speed_left=125;
-     	 	Kd=250;
+     		Kp = 0.04;
+     	 	Kd=75;
      	}
+     	/*TRUBO mode*/
+     	if(RxData[0] == 'i')
+     	{
+    	 	ARR=3;
+    	 	basespeedr = 270;
+    	 	basespeedl = 270;
+    	 	maxspeedl = 150;
+    	 	maxspeedr = 150;
+    	 	Sharp_bend_speed_right = -65;
+    	 	Sharp_bend_speed_left = 70;
+    	 	Bend_speed_right = -76;
+    	 	Bend_speed_left = 130;
+    	 	Kp = 0.045;
+    	 	Kd = 75;
+     	}
+     	/*TRUBO+ mode*/
+     	if(RxData[0] == 'j')
+     	{
+     	    ARR=3;
+     	    basespeedr = 295;
+     	    basespeedl = 295;
+     	    maxspeedl = 165;
+     	    maxspeedr = 165;
+     	    Sharp_bend_speed_right = -70;
+     	    Sharp_bend_speed_left = 73;
+     	    Bend_speed_right = -76;
+     	    Bend_speed_left = 130;
+     	    Kp = 0.05;
+     	    Kd = 80;
+     	  }
      	/*Special mode*/
      	if(RxData[0] == 'h')
      	{
-    	 	ARR=3;
-    	 	basespeedr = 190;
-    	 	basespeedl = 190;
-    	 	maxspeedl = 190;
-    	 	maxspeedr = 190;
-    	 	Sharp_bend_speed_right = -169;
-    	 	Sharp_bend_speed_left = 169;
-    	 	Bend_speed_right = -76;
-    	 	Bend_speed_left = 125;
-    	 	Kd = 250;
-     	}
-
+     	    ARR=3;
+     	    basespeedr = 315;
+     	    basespeedl = 315;
+     	    maxspeedl = 168;//170
+     	    maxspeedr = 168;
+     	    Sharp_bend_speed_right = -70;//70;
+     	    Sharp_bend_speed_left = 73;//73
+     	    Bend_speed_right = -76;
+     	    Bend_speed_left = 128;
+     	    Kp = 0.067;//0.07
+     	    Kd = 95;//95
+     	 }
+     	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
     	SN_UART_Send(&huart3,"rxData: %d \r \n ",RxData);
     	SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",speedlevel,battery_procentage_raw,raw_battery);
+    	/*Begin receiving*/
     	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
 	}
 }
