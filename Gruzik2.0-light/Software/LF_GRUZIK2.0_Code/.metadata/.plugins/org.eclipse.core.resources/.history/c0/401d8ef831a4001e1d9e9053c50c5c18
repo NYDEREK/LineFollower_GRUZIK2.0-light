@@ -653,31 +653,31 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 if(RxData[0] == 'k')
      	 {
      	     ARR=3;
-     	     basespeedr = 365;
-     	     basespeedl = 365;
-     	     maxspeedl = 155;//170
-     	     maxspeedr = 155;
-     	     Sharp_bend_speed_right = -67;//70;
-     	     Sharp_bend_speed_left = 72;//73
-     	     Bend_speed_right = -140;
-     	     Bend_speed_left = 190;
-     	     Kp = 0.027;//0.027
-     	     Kd = 70;//75
+     	     basespeedr = 320;
+     	     basespeedl = 320;
+     	     maxspeedl = 163;//170
+     	     maxspeedr = 163;
+     	     Sharp_bend_speed_right = -70;//70;
+     	     Sharp_bend_speed_left = 73;//73
+     	     Bend_speed_right = -76;
+     	     Bend_speed_left = 128;
+     	     Kp = 0.067;//0.07
+     	     Kd = 95;//95
      	  }
-     	  /*SPECIAL mode*/
-     	  if(RxData[0] == 'l')
+     	  /*ULTRA mode*/
+     	  if(RxData[0] == 'k')
      	  {
      	     ARR=3;
-     	     basespeedr = 395;
-     	     basespeedl = 395;
-     	     maxspeedl = 155;//170
-     	     maxspeedr = 155;
-     	     Sharp_bend_speed_right = -67;//70;
+     	     basespeedr = 325;
+     	     basespeedl = 325;
+     	     maxspeedl = 165;//170
+     	     maxspeedr = 165;
+     	     Sharp_bend_speed_right = -70;//70;
      	     Sharp_bend_speed_left = 73;//73
-     	     Bend_speed_right = -140;
-     	     Bend_speed_left = 190;
-     	     Kp = 0.027;//0.07
-     	     Kd = 70;//95
+     	     Bend_speed_right = -76;
+     	     Bend_speed_left = 128;
+     	     Kp = 0.067;//0.07
+     	     Kd = 95;//95
      	     	 }
      	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
