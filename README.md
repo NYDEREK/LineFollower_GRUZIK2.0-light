@@ -17,7 +17,7 @@
 * wheels - kyosho mini z
 * motors - Pololu 2211
 * bluetooth - HC-05
-# Bluetooth app
+# 📱Bluetooth app📱
 
 It's simple Bluetooth app created with MIT app inventor 
 
