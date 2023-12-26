@@ -17,5 +17,17 @@
 * wheels - kyosho mini z
 * motors - Pololu 2211
 * bluetooth - HC-05
+# Bluetooth app
+
+It's simple Bluetooth app created with MIT app inventor 
+
+<img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/d48b399c-bc57-4186-9c6c-22c4eda7b910" width="300"/>
+
+* Shows Battery precentage
+* Start's and Stop's the robot
+* Easy speed choosing (modes)
+* Sending messages through Terminal
+* Choosing modess in time 
+  
   
 
