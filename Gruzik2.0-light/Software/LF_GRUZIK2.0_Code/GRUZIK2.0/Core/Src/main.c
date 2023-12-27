@@ -46,6 +46,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+	#define true 1;
+	#define false 0;
 	/*PIDR regulator*/
 	int sensor_read = 0x00000000;
 	int position;
@@ -379,6 +381,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART3_UART_Init();
   MX_ADC1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
    HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28); //Oczekiwanie na dane z HC-05 i włączenie timerów
    HAL_TIM_Base_Start(&htim1);
@@ -481,7 +484,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		/*Terminal communication*/
 		if(RxData[0] == 'T')
 		{
-			char char_value[10];
+			/*char char_value[10];
 			if(RxData[2] == 'p')
 			{
 				SN_Value_In_Message(RxData, SN_Find_first(RxData, "p:"), SN_Find_first(RxData, "end") , char_value);
@@ -491,28 +494,44 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			{
 				SN_Value_In_Message(RxData, SN_Find_first(RxData, "d:"), SN_Find_first(RxData, "end") , char_value);
 				Kd= atof(char_value);
-			}
+			}*/
+			HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
 		}
 		/*Time mode*/
 		if(RxData[0] == 'g')
 		{
-			char char_value[10];
+			_Bool IS_DATA_OK = true;
+			char char_value[2];
 			/*RxData = "m1: ? m2: ? st: ? ct: ?*/
 			int m1, m2, st, ct;
+
 			/*mode 1*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m1:") + 3, SN_Find_first(RxData, "m2:") , char_value);
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m1:") + 3, SN_Find_first(RxData, "m2:"), char_value);
 			m1 = atoi(char_value);
+
 			/*mode 2*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m2:") + 3, SN_Find_first(RxData, "st:") , char_value);
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m2:") + 3, SN_Find_first(RxData, "st:"), char_value);
 			m2 = atoi(char_value);
+
 			/*Start time*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "st:") + 3, SN_Find_first(RxData, "ct:") , char_value);
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "st:") + 3, SN_Find_first(RxData, "ct:"), char_value);
 			st = atoi(char_value);
+
 			/*mode 1*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "ct:") + 3, SN_Find_first(RxData, "end") , char_value);
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "ct:") + 3, SN_Find_first(RxData, "E"), char_value);
 			ct = atoi(char_value);
-			/*rest in future*/
-			ct = (m1 * m2 * st) + ct; //<-- to don't get any warning
+
+			/*Show data by UART-USB*/
+			SN_UART_Send(&huart3, "m1:%d  m2:%d st:%d ct:%d \r \n ", m1, m2, st, ct);
+
+			/*Check if data read correctly*/
+			if((m1 > 13) || (m2 > 13))
+				IS_DATA_OK = false;
+			if((st > 40000) || (ct > 40000))
+				IS_DATA_OK = false;
+			if(IS_DATA_OK)
+				HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+			SN_UART_Send(&huart3,"IS_DATA_OK = %d \r \n ",IS_DATA_OK);
 		}
      	/*LOW mode*/
      	if(RxData[0] == 'a')
@@ -650,38 +669,74 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	    Kd = 95;//95
      	 }
      	 /*ULTRA+ mode*/
-     	 if(RxData[0] == 'k')
+     	 if(RxData[0] == 'l')
      	 {
-     	     ARR=3;
-     	     basespeedr = 365;
-     	     basespeedl = 365;
+     	     ARR=4;
+     	     basespeedr = 102;
+     	     basespeedl = 102;
      	     maxspeedl = 155;//170
      	     maxspeedr = 155;
-     	     Sharp_bend_speed_right = -67;//70;
-     	     Sharp_bend_speed_left = 72;//73
-     	     Bend_speed_right = -140;
-     	     Bend_speed_left = 190;
-     	     Kp = 0.027;//0.027
-     	     Kd = 70;//75
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
+     	     Bend_speed_right = -50;
+     	     Bend_speed_left = 100;
+     	     Kp = 0.02;//0.027
+     	     Kd = 350;//75
      	  }
-     	  /*SPECIAL mode*/
-     	  if(RxData[0] == 'l')
+     	  /*EXTREME mode*/
+     	  if(RxData[0] == 'm')
      	  {
-     	     ARR=3;
-     	     basespeedr = 395;
-     	     basespeedl = 395;
+     	     ARR=4;
+     	     basespeedr = 102;
+     	     basespeedl = 102;
      	     maxspeedl = 155;//170
      	     maxspeedr = 155;
-     	     Sharp_bend_speed_right = -67;//70;
-     	     Sharp_bend_speed_left = 73;//73
-     	     Bend_speed_right = -140;
-     	     Bend_speed_left = 190;
-     	     Kp = 0.027;//0.07
-     	     Kd = 70;//95
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
+     	     Bend_speed_right = -50;
+     	     Bend_speed_left = 100;
+     	     Kp = 0.02;//0.027
+     	     Kd = 350;//75
+     	  }
+     	  /*EXTREME+ mode*/
+     	  if(RxData[0] == 'n')
+     	  {
+     	     ARR=4;
+     	     basespeedr = 102;
+     	     basespeedl = 102;
+     	     maxspeedl = 155;//170
+     	     maxspeedr = 155;
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
+     	     Bend_speed_right = -50;
+     	     Bend_speed_left = 100;
+     	     Kp = 0.02;//0.027
+     	     Kd = 350;//75
+     	     	     	  }
+     	  /*SPECIAL mode*/
+     	  if(RxData[0] == 'h')
+     	  {
+     	     ARR=4;
+     	     basespeedr = 107;
+     	     basespeedl = 107;
+     	     maxspeedl = 159;//170
+     	     maxspeedr = 159;
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
+     	     Bend_speed_right = -50;
+     	     Bend_speed_left = 100;
+     	     Kp = 0.02;//0.07
+     	     Kd = 350;//95
      	     	 }
      	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
-    	SN_UART_Send(&huart3,"rxData: %d \r \n ",RxData);
+
+     	/*Print received data to UART-USB*/
+     	SN_UART_Send(&huart3,"rxData: { ",(uint8_t*)RxData);
+     	for(int i = 0; i <= 27 ;i++)
+     		SN_UART_Send(&huart3,"%c ",RxData[i]);
+     	SN_UART_Send(&huart3,"} \r \n ");
+
     	SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",speedlevel,battery_procentage_raw,raw_battery);
     	/*Begin receiving*/
     	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
