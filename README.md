@@ -22,7 +22,9 @@ Simple light construction(74g) let's robot to achive high speed on the track.
 
 `PCB's` ware designed in KiCAD 7.0 and manufactured by JLCPCB. Rims were 3D printed with PETG for Kysosho "mini z" tires. 
 
-Light `dualsky 150mAh battery` gives enough current(max 30C) without adding to much weight (10g). Pololu 2211 motor (10:1) with max current 1.6A per one require the use of two separate TB6612FNG motor drivers with connected channels (max 2A per Dirver) .
+Light `dualsky 150mAh battery` gives enough current(max 30C) without adding to much weight (10g). 
+
+`Pololu 2211 motor (10:1)` with max current 1.6A per one require the use of two separate TB6612FNG motor drivers with connected channels (max 2A per Dirver) .
 
 
 `HC-05` bluetooth module gives communication range up to 10m. 
