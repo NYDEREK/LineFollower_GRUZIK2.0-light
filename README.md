@@ -29,15 +29,10 @@
 * bluetooth - HC-05
 ## 📱Bluetooth app📱
 
-**It's simple Bluetooth app created with MIT app inventor**
+> **It's simple Bluetooth app created with MIT app inventor.App Starts and Stops robot, allows you to send data in the `terminal`, It allows you to slow down or accelerate on any section of the route using `Time mode`, The `Modes` pad is responsible for quickly adapting the speed and accuracy of the robot to the route using modes, The application also displays the battery charge status**
 
-<img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/d48b399c-bc57-4186-9c6c-22c4eda7b910" width="300"/>
+<img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/d48b399c-bc57-4186-9c6c-22c4eda7b910" width="200"/>
 
-* Shows Battery precentage
-* Start's and Stop's the robot
-* Easy speed choosing (modes)
-* Sending messages through Terminal
-* Choosing modess in time 
   
   
 
