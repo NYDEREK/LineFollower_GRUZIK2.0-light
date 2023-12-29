@@ -526,12 +526,14 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		/*Stop robot*/
 		if(RxData[0] == 'N')
 		{
+
 			/*Stop GRUZIK2.0 and turn off the LED*/
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
 			/*Send battery percentage*/
 			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
+
 		}
 		/*Start robot*/
 		if (RxData[0] == 'Y')
@@ -621,6 +623,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Bend_speed_left=125;
      	 	 Kp = 0.02;
      	 	 Kd = 65;
+     	 	//HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')
@@ -786,6 +789,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	     Bend_speed_left = 100;
      	     Kp = 0.02;//0.027
      	     Kd = 350;//75
+     	    HAL_TIM_PeriodElapsedCallback(&htim1);
      	  }
      	  /*SPECIAL mode*/
      	  if(RxData[0] == 'h')
@@ -819,14 +823,15 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 }
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
+	HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+	SN_UART_Send(&huart3,"Entered time Callback 1!  \r \n ");
     if (htim->Instance == TIM1)
     {
-    	/*Time mode*/
     	SN_UART_Send(&huart3,"Entered time Callback !  \r \n ");
-
-    	/*Change mode to mode 2 for Change time*/
+    	/*Time mode*/
     	if(Is_time_mode && Is_Mode_changed)
     	{
+    		/*Change mode to mode 2 for Change time*/
     	    /*Modify RxData*/
     	    for(int i = 1; i <= 27 ;i++)
     	    	RxData[i] = 0;
@@ -837,9 +842,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
     	}
-    	/*Change mode to mode 2 for Change time*/
     	if(Is_time_mode && !Is_Mode_changed)
     	{
+    		/*Change mode to mode 2 for Change time*/
     		/*Modify RxData*/
     		for(int i = 1; i <= 27 ;i++)
     			RxData[i] = 0;
@@ -854,6 +859,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
     	}
+
     }
 }
 /* USER CODE END 4 */

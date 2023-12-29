@@ -6617,3 +6617,1054 @@
 2023-12-28 17:27:43,101 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
 2023-12-28 17:27:43,179 [INFO] WebAppUi:462 - Profiles folder deleted
 2023-12-28 17:27:43,773 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2023-12-29 15:16:41,589 [INFO] Activator:179 - 
+
+
+2023-12-29 15:16:41,591 [INFO] Activator:180 - !SESSION log4j initialized
+2023-12-29 15:16:55,055 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:16:55,057 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:16:55,058 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:17:17,415 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-12-29 15:17:17,415 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-12-29 15:17:17,417 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2023-12-29 15:32:07,838 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:32:07,839 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:32:07,840 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:33:21,242 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:33:21,243 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:33:21,246 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:34:57,049 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:34:57,049 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:34:57,049 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:40:39,258 [INFO] McuFinderGlobals:52 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-12-29 15:40:39,553 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-12-29 15:40:39,579 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2023-12-29 15:40:39,580 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2023-12-29 15:40:39,582 [WARN] ApiDb:258 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2023-12-29 15:40:39,608 [INFO] ApiDb:249 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-29 15:40:39,611 [INFO] DbMcusAds:124 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-29 15:40:39,619 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-12-29 15:40:39,784 [INFO] RulesReader:61 - Compatibility file has been processed (283 Rules)
+2023-12-29 15:40:39,917 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2023-12-29 15:40:39,917 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2023-12-29 15:40:39,918 [INFO] ApiDb:260 - Set plugin images path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2023-12-29 15:40:39,919 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:39,919 [INFO] ApiDb:249 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-29 15:40:39,919 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:39,920 [INFO] DbMcusAds:124 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-29 15:40:39,921 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:39,922 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:39,922 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-12-29 15:40:40,060 [INFO] MainPanel:252 - HeapMemory: 557842432
+2023-12-29 15:40:40,228 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2023-12-29 15:40:40,228 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2023-12-29 15:40:40,229 [INFO] ApiDb:260 - Set plugin images path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2023-12-29 15:40:40,229 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:40,230 [INFO] ApiDb:249 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-29 15:40:40,230 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:40,230 [INFO] DbMcusAds:124 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-29 15:40:40,230 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:40,231 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2023-12-29 15:40:40,231 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-12-29 15:40:40,261 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-12-29 15:40:40,264 [INFO] PluginManage:193 - Search for loadable plugins [exclusion list=, ]
+2023-12-29 15:40:40,267 [INFO] PluginManage:307 - Check plugin analytics
+2023-12-29 15:40:40,523 [INFO] AnalyticsPlugin:262 - Accepted Software Licenses: 
+2023-12-29 15:40:40,525 [INFO] AnalyticsPlugin:264 - Accepted CMSIS Pack Licenses: 
+2023-12-29 15:40:40,526 [INFO] AnalyticsPlugin:266 - Accepted Firmware Licenses: FW.G4.1.5.0
+2023-12-29 15:40:40,534 [INFO] PluginManage:356 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-12-29 15:40:40,535 [INFO] PluginManage:307 - Check plugin cadmodel
+2023-12-29 15:40:40,560 [INFO] CADModel:104 - Init CAD model plugin
+2023-12-29 15:40:40,561 [INFO] PluginManage:356 - Loaded plugin cadmodel (category:power,tabindex:5)
+2023-12-29 15:40:40,561 [INFO] PluginManage:307 - Check plugin clock
+2023-12-29 15:40:40,589 [INFO] PluginManage:356 - Loaded plugin clock (category:base,tabindex:2)
+2023-12-29 15:40:40,590 [INFO] PluginManage:307 - Check plugin ddr
+2023-12-29 15:40:40,595 [INFO] PluginManage:356 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-12-29 15:40:40,595 [INFO] PluginManage:307 - Check plugin filemanager
+2023-12-29 15:40:40,798 [INFO] PluginManage:356 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-12-29 15:40:40,799 [INFO] PluginManage:307 - Check plugin ipmanager
+2023-12-29 15:40:40,812 [INFO] PluginManage:356 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-12-29 15:40:40,812 [INFO] PluginManage:307 - Check plugin lpbam
+2023-12-29 15:40:40,843 [INFO] PluginManage:356 - Loaded plugin lpbam (category:base,tabindex:0)
+2023-12-29 15:40:40,844 [INFO] PluginManage:307 - Check plugin pinoutandconfiguration
+2023-12-29 15:40:40,872 [INFO] PluginManage:356 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-12-29 15:40:40,873 [INFO] PluginManage:307 - Check plugin pinoutconfig
+2023-12-29 15:40:40,950 [INFO] PluginManage:356 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-12-29 15:40:40,951 [INFO] PluginManage:307 - Check plugin power
+2023-12-29 15:40:40,980 [INFO] PluginManage:356 - Loaded plugin power (category:power,tabindex:4)
+2023-12-29 15:40:40,981 [INFO] PluginManage:307 - Check plugin projectmanager
+2023-12-29 15:40:41,011 [INFO] PluginManage:356 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-12-29 15:40:41,012 [INFO] PluginManage:307 - Check plugin thirdparty
+2023-12-29 15:40:41,382 [WARN] IntegrityCheckThread:82 - waiting for thirdparty lock release [integrity check]
+2023-12-29 15:40:41,383 [INFO] PluginManage:356 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-12-29 15:40:41,383 [INFO] IntegrityCheckThread:84 - entering critical section [integrity check]
+2023-12-29 15:40:41,383 [INFO] PluginManage:307 - Check plugin tools
+2023-12-29 15:40:41,386 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2023-12-29 15:40:41,436 [INFO] PluginManage:356 - Loaded plugin tools (category:base,tabindex:7)
+2023-12-29 15:40:41,437 [INFO] PluginManage:307 - Check plugin tutovideos
+2023-12-29 15:40:41,744 [INFO] PluginManage:356 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-12-29 15:40:41,744 [INFO] PluginManage:307 - Check plugin updater
+2023-12-29 15:40:41,766 [INFO] PluginManage:356 - Loaded plugin updater (category:base,tabindex:12)
+2023-12-29 15:40:41,767 [INFO] PluginManage:280 - PluginManage : Loaded plugins [15]
+2023-12-29 15:40:42,186 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-12-29 15:40:42,306 [INFO] CADModel:164 - CPN selected for project level
+2023-12-29 15:40:42,307 [INFO] CADModel:113 - Register for checkConnection events
+2023-12-29 15:40:42,348 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,349 [INFO] PluginManager:219 - loadIPPluginJar : add adc
+2023-12-29 15:40:42,398 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,398 [INFO] PluginManager:219 - loadIPPluginJar : add aes
+2023-12-29 15:40:42,447 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,447 [INFO] PluginManager:219 - loadIPPluginJar : add can
+2023-12-29 15:40:42,473 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,474 [INFO] PluginManager:219 - loadIPPluginJar : add comp
+2023-12-29 15:40:42,511 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,512 [INFO] PluginManager:219 - loadIPPluginJar : add cryp
+2023-12-29 15:40:42,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,548 [INFO] PluginManager:219 - loadIPPluginJar : add dfsdm
+2023-12-29 15:40:42,565 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,566 [INFO] PluginManager:219 - loadIPPluginJar : add dma
+2023-12-29 15:40:42,615 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,615 [INFO] PluginManager:219 - loadIPPluginJar : add dma3
+2023-12-29 15:40:42,638 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,638 [INFO] PluginManager:219 - loadIPPluginJar : add fatfs
+2023-12-29 15:40:42,694 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,694 [INFO] PluginManager:219 - loadIPPluginJar : add fmc
+2023-12-29 15:40:42,712 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,713 [INFO] PluginManager:219 - loadIPPluginJar : add freertos
+2023-12-29 15:40:42,736 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,736 [INFO] PluginManager:219 - loadIPPluginJar : add genericplugin
+2023-12-29 15:40:42,843 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:42,843 [INFO] PluginManager:219 - loadIPPluginJar : add gfxmmu
+2023-12-29 15:40:43,050 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,050 [INFO] PluginManager:219 - loadIPPluginJar : add gic
+2023-12-29 15:40:43,067 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,067 [INFO] PluginManager:219 - loadIPPluginJar : add gpio
+2023-12-29 15:40:43,164 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,165 [INFO] PluginManager:219 - loadIPPluginJar : add gtzc
+2023-12-29 15:40:43,206 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,206 [INFO] PluginManager:219 - loadIPPluginJar : add hash
+2023-12-29 15:40:43,267 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,268 [INFO] PluginManager:219 - loadIPPluginJar : add i2c
+2023-12-29 15:40:43,316 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,317 [INFO] PluginManager:219 - loadIPPluginJar : add i2s
+2023-12-29 15:40:43,447 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,447 [INFO] PluginManager:219 - loadIPPluginJar : add ipddr
+2023-12-29 15:40:43,558 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,559 [INFO] PluginManager:219 - loadIPPluginJar : add linkedlist
+2023-12-29 15:40:43,597 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,597 [INFO] PluginManager:219 - loadIPPluginJar : add lorawan
+2023-12-29 15:40:43,643 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,644 [INFO] PluginManager:219 - loadIPPluginJar : add ltdc
+2023-12-29 15:40:43,662 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,663 [INFO] PluginManager:219 - loadIPPluginJar : add mdma
+2023-12-29 15:40:43,677 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,677 [INFO] PluginManager:219 - loadIPPluginJar : add nvic
+2023-12-29 15:40:43,728 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,728 [INFO] PluginManager:219 - loadIPPluginJar : add opamp
+2023-12-29 15:40:43,811 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,812 [INFO] PluginManager:219 - loadIPPluginJar : add openamp
+2023-12-29 15:40:43,865 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,866 [INFO] PluginManager:219 - loadIPPluginJar : add pdm2pcm
+2023-12-29 15:40:43,883 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,887 [INFO] PluginManager:219 - loadIPPluginJar : add plateformsettings
+2023-12-29 15:40:43,914 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,914 [INFO] PluginManager:219 - loadIPPluginJar : add quadspi
+2023-12-29 15:40:43,930 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,930 [INFO] PluginManager:219 - loadIPPluginJar : add resmgrutility
+2023-12-29 15:40:43,984 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:43,984 [INFO] PluginManager:219 - loadIPPluginJar : add sai
+2023-12-29 15:40:44,026 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,027 [INFO] PluginManager:219 - loadIPPluginJar : add spi
+2023-12-29 15:40:44,087 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,087 [INFO] PluginManager:219 - loadIPPluginJar : add stm32_wpan
+2023-12-29 15:40:44,120 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,124 [INFO] PluginManager:219 - loadIPPluginJar : add tim
+2023-12-29 15:40:44,192 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,192 [INFO] PluginManager:219 - loadIPPluginJar : add touchsensing
+2023-12-29 15:40:44,220 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,220 [INFO] PluginManager:219 - loadIPPluginJar : add tracer_emb
+2023-12-29 15:40:44,246 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,246 [INFO] PluginManager:219 - loadIPPluginJar : add ts
+2023-12-29 15:40:44,269 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,270 [INFO] PluginManager:219 - loadIPPluginJar : add tsc
+2023-12-29 15:40:44,292 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,293 [INFO] PluginManager:219 - loadIPPluginJar : add ucpd
+2023-12-29 15:40:44,339 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,340 [INFO] PluginManager:219 - loadIPPluginJar : add usart
+2023-12-29 15:40:44,386 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:40:44,386 [INFO] PluginManager:219 - loadIPPluginJar : add usbx
+2023-12-29 15:40:44,402 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2023-12-29 15:40:44,547 [INFO] CADModel:164 - CPN selected for project level
+2023-12-29 15:40:44,547 [INFO] CADModel:113 - Register for checkConnection events
+2023-12-29 15:40:44,548 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:44,548 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2023-12-29 15:40:44,813 [INFO] CADModel:164 - CPN selected for project level
+2023-12-29 15:40:44,814 [INFO] CADModel:113 - Register for checkConnection events
+2023-12-29 15:40:44,814 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:44,815 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2023-12-29 15:40:44,821 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,149 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,172 [INFO] DbMcusAds:52 - JSON generation date=Wed Nov 29 11:52:27 CET 2023 (1701255147349)
+2023-12-29 15:40:45,173 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,237 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2023-12-29 15:40:45,419 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,423 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,423 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,424 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2023-12-29 15:40:45,426 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-12-29 15:40:45,540 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2023-12-29 15:40:45,553 [INFO] Updater:1056 - Updater Version found : 6.7.0
+2023-12-29 15:40:45,578 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-12-29 15:40:46,569 [INFO] MainUpdater:2800 - connection check result : 10
+2023-12-29 15:40:46,570 [INFO] MainUpdater:282 - Updater Check For Update Now.
+2023-12-29 15:40:46,570 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-12-29 15:40:46,813 [INFO] CheckServerUpdateThread:119 - End of CheckServer Thread
+2023-12-29 15:40:46,820 [INFO] MainUpdater:2800 - connection check result : 10
+2023-12-29 15:40:46,835 [INFO] MainUpdater:2800 - connection check result : 10
+2023-12-29 15:40:47,002 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-12-29 15:40:47,002 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-12-29 15:40:47,003 [WARN] ThirdParty:845 - waiting for thirdparty lock release [close project]
+2023-12-29 15:40:47,862 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.2.0
+2023-12-29 15:40:47,887 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2023-12-29 15:40:47,903 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.23.0
+2023-12-29 15:40:48,036 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.2.0
+2023-12-29 15:40:48,556 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2023-12-29 15:40:48,588 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.1.0
+2023-12-29 15:40:48,621 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.19.1
+2023-12-29 15:40:48,640 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.4.3.2
+2023-12-29 15:40:48,662 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.1
+2023-12-29 15:40:48,682 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.3
+2023-12-29 15:40:48,702 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.4
+2023-12-29 15:40:48,720 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.2
+2023-12-29 15:40:48,740 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.2.2
+2023-12-29 15:40:48,794 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.1.0
+2023-12-29 15:40:48,836 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2023-12-29 15:40:48,897 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.0.0
+2023-12-29 15:40:48,942 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.22.0
+2023-12-29 15:40:48,967 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.22.1
+2023-12-29 15:40:49,141 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.3.0
+2023-12-29 15:40:49,587 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.2.0
+2023-12-29 15:40:49,623 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
+2023-12-29 15:40:49,677 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-12-29 15:40:49,678 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-12-29 15:40:49,680 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-12-29 15:40:49,683 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-12-29 15:40:49,687 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-12-29 15:40:49,696 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.2.0.0
+2023-12-29 15:40:49,736 [WARN] PackLoader:242 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2023-12-29 15:40:49,761 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2023-12-29 15:40:49,809 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.2.2.0
+2023-12-29 15:40:49,858 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.2.0
+2023-12-29 15:40:49,901 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.0.0
+2023-12-29 15:40:49,994 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.2.1.0
+2023-12-29 15:40:50,034 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.1
+2023-12-29 15:40:50,059 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.0
+2023-12-29 15:40:50,087 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.3
+2023-12-29 15:40:50,307 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.4.0
+2023-12-29 15:40:50,648 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.3.0
+2023-12-29 15:40:50,674 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2023-12-29 15:40:50,720 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2023-12-29 15:40:50,742 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2023-12-29 15:40:50,838 [WARN] PackLoader:242 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.2.0
+2023-12-29 15:40:50,911 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.2.1.0
+2023-12-29 15:40:50,938 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.3.0.0
+2023-12-29 15:40:50,979 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.3.0
+2023-12-29 15:40:51,002 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2023-12-29 15:40:51,025 [WARN] PackLoader:242 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.1.2
+2023-12-29 15:40:51,043 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.20.0
+2023-12-29 15:40:51,115 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.5.0
+2023-12-29 15:40:51,454 [WARN] PackLoader:242 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2023-12-29 15:40:51,527 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.0.0
+2023-12-29 15:40:51,541 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.6.0.0
+2023-12-29 15:40:51,578 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2023-12-29 15:40:51,596 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.2.0
+2023-12-29 15:40:51,646 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.2.0.0
+2023-12-29 15:40:51,749 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.6.0
+2023-12-29 15:40:52,088 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.2.0
+2023-12-29 15:40:52,119 [WARN] PackLoader:242 - Cannot read IP mode file for ITTIA_DB.I-CUBE-ITTIADB.8.8.0
+2023-12-29 15:40:52,178 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.2.0.0
+2023-12-29 15:40:52,210 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.5
+2023-12-29 15:40:52,236 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.4
+2023-12-29 15:40:52,307 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,308 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,314 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.1.0
+2023-12-29 15:40:52,316 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,317 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,317 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,317 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,317 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:52,354 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.3.1.0
+2023-12-29 15:40:52,418 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.0.0
+2023-12-29 15:40:52,456 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.1
+2023-12-29 15:40:52,482 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.0
+2023-12-29 15:40:52,522 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.0.0
+2023-12-29 15:40:52,580 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.1.0
+2023-12-29 15:40:52,609 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.1.0
+2023-12-29 15:40:52,671 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.0.0
+2023-12-29 15:40:52,750 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-12-29 15:40:52,751 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.2.0.0
+2023-12-29 15:40:52,754 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-12-29 15:40:52,755 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-12-29 15:40:52,756 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-12-29 15:40:52,791 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2023-12-29 15:40:52,879 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.0.0
+2023-12-29 15:40:52,911 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.1.0
+2023-12-29 15:40:52,944 [WARN] PackLoader:242 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2023-12-29 15:40:52,966 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.0
+2023-12-29 15:40:53,019 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,020 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,026 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.2.0.0
+2023-12-29 15:40:53,026 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,026 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,026 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,026 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,026 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-12-29 15:40:53,061 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.0.0
+2023-12-29 15:40:53,088 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.0.1
+2023-12-29 15:40:53,119 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.0.0
+2023-12-29 15:40:53,181 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.1.1.0
+2023-12-29 15:40:53,213 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.1
+2023-12-29 15:40:53,273 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2023-12-29 15:40:53,391 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.3.1
+2023-12-29 15:40:53,464 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.2.0.0
+2023-12-29 15:40:53,527 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.3.0
+2023-12-29 15:40:53,565 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.1.1.1
+2023-12-29 15:40:53,596 [WARN] PackLoader:242 - Cannot read IP mode file for Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.5.1
+2023-12-29 15:40:53,632 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.1.1.0
+2023-12-29 15:40:53,649 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.3.0
+2023-12-29 15:40:53,682 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.3.1
+2023-12-29 15:40:53,714 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.1.0.0
+2023-12-29 15:40:53,801 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.1.0.0
+2023-12-29 15:40:53,819 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.0.0
+2023-12-29 15:40:53,898 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.10.0.0
+2023-12-29 15:40:54,141 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.1.0
+2023-12-29 15:40:54,182 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.0.0
+2023-12-29 15:40:54,215 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.1.0.0
+2023-12-29 15:40:54,239 [WARN] PackLoader:242 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2023-12-29 15:40:54,257 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.1
+2023-12-29 15:40:54,290 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.1.1.0
+2023-12-29 15:40:54,329 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.1.0.0
+2023-12-29 15:40:54,371 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.3.1.1
+2023-12-29 15:40:54,391 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.5.2.0
+2023-12-29 15:40:54,408 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.0
+2023-12-29 15:40:54,441 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.4.0
+2023-12-29 15:40:54,523 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.2.0
+2023-12-29 15:40:54,523 [INFO] ThirdParty:947 - Integrity check success = true
+2023-12-29 15:40:54,523 [INFO] IntegrityCheckThread:98 - exiting critical section [integrity check]
+2023-12-29 15:40:54,523 [INFO] IntegrityCheckThread:101 - End integrity checks thread
+2023-12-29 15:40:54,529 [INFO] ThirdParty:847 - entering critical section [close project]
+2023-12-29 15:40:54,531 [INFO] ThirdParty:857 - exiting critical section [close project]
+2023-12-29 15:40:54,542 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-12-29 15:40:54,551 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 575847656 Bytes (743440384)
+2023-12-29 15:40:54,554 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-12-29 15:40:54,554 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-12-29 15:40:54,554 [INFO] OpenFileManager:307 - Change cursor
+2023-12-29 15:40:54,680 [INFO] Mcu:1925 - Initializing MCU STM32F103C(8-B)Tx STM32F103C8Tx STM32F103C8T6
+2023-12-29 15:40:56,705 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2023-12-29 15:40:57,802 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-12-29 15:40:57,802 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-12-29 15:40:57,802 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-12-29 15:40:57,802 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-12-29 15:40:57,803 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-12-29 15:40:57,821 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,821 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,822 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,823 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,824 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,825 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,825 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,825 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,825 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:57,825 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-12-29 15:40:58,864 [INFO] ThirdPartyModel:294 - Start build external matchings
+2023-12-29 15:41:02,091 [INFO] ThirdPartyModel:310 - End build external matchings
+2023-12-29 15:41:02,216 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2023-12-29 15:41:02,218 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2023-12-29 15:41:02,218 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (72000000)
+2023-12-29 15:41:02,571 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 569584536 Bytes (743440384)
+2023-12-29 15:41:02,803 [INFO] ApiDb:580 - Connected to CubeFinder SQLite database (C:\Users\Szymon\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2023-12-29 15:41:02,933 [INFO] ApiDb:667 - CubeFinder database Data Model version=2.1
+2023-12-29 15:41:02,934 [INFO] ApiDb:668 - CubeFinder database Configuration version=3.0.39
+2023-12-29 15:41:02,934 [INFO] ApiDb:669 - CubeFinder database generation date=2023-12-08 (1702028721)
+2023-12-29 15:41:02,934 [INFO] ApiDb:670 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.1, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V4.3.1, FP-SNS-MOTENV1_V4.3.2, FP-SNS-MOTENVWB1_V1.3.1, FP-SNS-SMARTAG2_V1.2.0, STM32Cube_FW_C0_V1.1.0, STM32Cube_FW_F4_V1.28.0, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.1.1, STM32Cube_FW_H5_V1.2.0RC2, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.3.0RC4, STM32Cube_FW_U5_V1.4.0, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.1.0RC1, STM32Cube_FW_WBA_V1.2.0, STM32Cube_FW_WBA_V1.2.0RC2, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WB_V1.18.0, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7_V3.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V3.0.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-EEPRMA1_V4.2.0, X-CUBE-FREERTOS_V1.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V10.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.6.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.1, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.4.0]
+2023-12-29 15:41:06,892 [INFO] ApiDb:239 - Found 143 in-development CPN: [B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, STEVAL-PROTEUS1, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L476VGY6PTR, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q, STM32WB1MMCH6, STM32WL5MOCH6TR]
+2023-12-29 15:41:06,895 [INFO] DbMcus:215 - Found 3853 MCUs, 3853 are supported
+2023-12-29 15:41:06,902 [INFO] ApiDb:422 - Load user favorites file C:\Users\Szymon/.stm32cubeide/favorites.mcus.txt: 2 item(s)
+2023-12-29 15:41:06,902 [INFO] ApiDb:426 - User favorites MCUs=[STM32F103C8T6, STM32F411CEU6]
+2023-12-29 15:41:06,903 [INFO] DbMcus:221 - Set 2 / 2 favorites MCUs
+2023-12-29 15:41:07,502 [WARN] ThirdParty:807 - waiting for thirdparty lock release [change project]
+2023-12-29 15:41:07,502 [INFO] ThirdParty:809 - entering critical section [change project]
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.2.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.2.0
+2023-12-29 15:41:07,502 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.2.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.1.0
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.1
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.1
+2023-12-29 15:41:07,503 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.4
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.5
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.2
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2023-12-29 15:41:07,504 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.1.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.0.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-12-29 15:41:07,505 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.2.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.1
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.1
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.0
+2023-12-29 15:41:07,506 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.3
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.4.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.3.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.1.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.1
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.1.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.0
+2023-12-29 15:41:07,507 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.0.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.3.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.3.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.3.1
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-12-29 15:41:07,508 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.0.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.5.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 1.1.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.4.0
+2023-12-29 15:41:07,509 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.2.0
+2023-12-29 15:41:07,510 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.0.0
+2023-12-29 15:41:07,510 [INFO] ThirdParty:815 - exiting critical section [change project]
+2023-12-29 15:41:07,939 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-12-29 15:41:07,941 [INFO] PinOutPanel:1477 - setPackage(STM32F103C8Tx,LQFP48)
+2023-12-29 15:41:09,705 [INFO] UtilMem:74 - Before build in PCC Used Memory: 638866664 Bytes (743440384)
+2023-12-29 15:41:12,325 [INFO] UtilMem:74 - After build in PCC Used Memory: 645489496 Bytes (743440384)
+2023-12-29 15:41:12,450 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,453 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,454 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,456 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,456 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,456 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,456 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,456 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,458 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,462 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,463 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:12,463 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-12-29 15:41:13,044 [INFO] CADModel:164 - CPN selected for project levelSTM32F103C8T6
+2023-12-29 15:41:13,044 [INFO] CADModel:113 - Register for checkConnection events
+2023-12-29 15:41:13,120 [INFO] OpenFileManager:327 - Restore cursor
+2023-12-29 15:44:04,211 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 15:45:07,502 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 647237200 Bytes (743440384)
+2023-12-29 15:45:10,348 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 605449384 Bytes (743440384)
+2023-12-29 15:45:15,311 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 649135280 Bytes (743440384)
+2023-12-29 15:45:17,369 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 15:45:17,369 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 15:45:17,369 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 15:45:17,369 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:45:17,369 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:45:17,369 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:45:17,370 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:45:17,370 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 15:45:17,371 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 15:45:17,371 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 15:45:17,371 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 15:45:17,373 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 15:45:18,345 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 15:45:19,102 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 15:45:19,516 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 15:45:19,898 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 15:45:19,931 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 15:45:20,190 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 15:45:21,342 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 15:45:21,950 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 15:45:21,977 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 15:45:22,273 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 15:45:22,338 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 15:45:23,297 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 15:45:23,340 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 15:45:23,634 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 15:45:23,666 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 15:45:23,927 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 15:45:23,940 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 15:45:24,075 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 15:45:24,164 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 15:45:24,390 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 15:45:24,433 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 15:45:24,580 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 15:45:24,635 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 15:45:24,852 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 15:45:24,874 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 15:45:25,035 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 15:45:25,089 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 15:45:25,339 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 15:45:25,459 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 15:45:25,787 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 15:45:25,830 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 15:45:26,461 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 15:45:27,695 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 250mS.
+2023-12-29 15:45:27,811 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 15:45:28,559 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 15:45:28,592 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2023-12-29 15:45:28,614 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2023-12-29 15:45:28,635 [INFO] ApiDbMcu:505 - Load IP Config File for USB_DEVICE
+2023-12-29 15:45:35,168 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 7354mS.
+2023-12-29 15:45:35,171 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 15:45:35,176 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 15:45:39,876 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:45:39,877 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:45:39,877 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:47:28,400 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:47:28,401 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:47:28,402 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:49:40,886 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 719106744 Bytes (999292928)
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 15:49:41,283 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 15:49:41,283 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 15:49:41,630 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 15:49:41,786 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 15:49:41,918 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 15:49:42,543 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 15:49:42,585 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 15:49:42,764 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 15:49:43,444 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 15:49:43,869 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 15:49:43,880 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 15:49:44,025 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 15:49:44,054 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 15:49:44,291 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 15:49:44,299 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 15:49:44,391 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 15:49:44,420 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 15:49:44,576 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 15:49:44,584 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 15:49:44,656 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 15:49:44,684 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 15:49:44,826 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 15:49:44,834 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 15:49:44,898 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 15:49:44,919 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 15:49:45,022 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 15:49:45,027 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 15:49:45,096 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 15:49:45,130 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 15:49:45,313 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 15:49:45,366 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 15:49:45,461 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 15:49:45,475 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 15:49:45,628 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 15:49:46,369 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 194mS.
+2023-12-29 15:49:46,374 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 15:49:47,010 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 15:49:49,732 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3358mS.
+2023-12-29 15:49:49,733 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 15:49:49,736 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 15:51:24,780 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:51:24,781 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:51:24,781 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:51:25,049 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:51:25,050 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 15:51:25,051 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:03:08,962 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:03:18,369 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:03:40,818 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 790249464 Bytes (1013972992)
+2023-12-29 16:03:42,889 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 844489608 Bytes (1013972992)
+2023-12-29 16:03:43,342 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 688351744 Bytes (1013972992)
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:03:44,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:03:44,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 16:03:44,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 16:03:44,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 16:03:44,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 16:03:44,099 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 16:03:44,609 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 16:03:45,580 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 16:03:45,715 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 16:03:45,992 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 16:03:46,008 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 16:03:46,367 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 16:03:47,206 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 16:03:47,895 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 16:03:47,910 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 16:03:48,092 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 16:03:48,131 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 16:03:48,502 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 16:03:48,522 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 16:03:48,640 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 16:03:48,675 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 16:03:48,883 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 16:03:48,894 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 16:03:49,024 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 16:03:49,060 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 16:03:49,449 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 16:03:49,467 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 16:03:49,670 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 16:03:49,726 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 16:03:49,891 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 16:03:49,897 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 16:03:50,011 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 16:03:50,047 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 16:03:50,325 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 16:03:50,400 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 16:03:50,629 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 16:03:50,653 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 16:03:50,927 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 16:03:52,925 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 519mS.
+2023-12-29 16:03:52,938 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 16:03:54,050 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 16:03:58,580 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 5642mS.
+2023-12-29 16:03:58,581 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 16:03:58,589 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:04:05,345 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:04:05,346 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:04:05,347 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:04:35,215 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:04:35,216 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:04:35,216 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:28:23,062 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,654x249,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:28:29,668 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:28:30,197 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:28:30,675 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:28:31,419 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:33:53,246 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 685711088 Bytes (1033895936)
+2023-12-29 16:33:54,928 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 713789880 Bytes (1033895936)
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:33:55,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:33:55,285 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 16:33:55,285 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 16:33:55,285 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 16:33:55,285 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 16:33:55,286 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 16:33:55,569 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 16:33:55,683 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 16:33:55,749 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 16:33:55,877 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 16:33:55,885 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 16:33:55,968 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 16:33:56,465 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 16:33:56,754 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 16:33:56,764 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 16:33:56,897 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 16:33:56,925 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 16:33:57,148 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 16:33:57,170 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 16:33:57,262 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 16:33:57,288 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 16:33:57,410 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 16:33:57,417 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 16:33:57,497 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 16:33:57,536 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 16:33:57,861 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 16:33:57,875 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 16:33:57,974 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 16:33:58,012 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 16:33:58,125 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 16:33:58,131 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 16:33:58,190 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 16:33:58,216 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 16:33:58,316 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 16:33:58,376 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 16:33:58,498 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 16:33:58,524 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 16:33:58,666 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 16:33:59,639 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 203mS.
+2023-12-29 16:33:59,644 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 16:34:00,079 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 16:34:03,525 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3881mS.
+2023-12-29 16:34:03,526 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:34:03,530 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:34:24,510 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:34:24,511 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:34:24,511 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:34:27,984 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:34:27,984 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:34:27,985 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:38:54,934 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:40:23,673 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 677293176 Bytes (1053818880)
+2023-12-29 16:40:25,941 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 732252064 Bytes (1053818880)
+2023-12-29 16:40:26,202 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 783632288 Bytes (1053818880)
+2023-12-29 16:40:26,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 16:40:26,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:40:26,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:40:26,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:40:26,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:40:26,468 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:40:26,468 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:40:26,468 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 16:40:26,468 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 16:40:26,468 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 16:40:26,468 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 16:40:26,470 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 16:40:26,829 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 16:40:27,009 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 16:40:27,067 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 16:40:27,231 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 16:40:27,239 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 16:40:27,344 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 16:40:27,932 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 16:40:28,195 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 16:40:28,209 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 16:40:28,364 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 16:40:28,402 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 16:40:28,838 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 16:40:28,868 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 16:40:29,034 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 16:40:29,069 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 16:40:29,256 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 16:40:29,263 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 16:40:29,337 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 16:40:29,361 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 16:40:29,597 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 16:40:29,603 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 16:40:29,677 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 16:40:29,707 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 16:40:29,822 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 16:40:29,828 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 16:40:29,889 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 16:40:29,917 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 16:40:30,016 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 16:40:30,056 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 16:40:30,150 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 16:40:30,164 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 16:40:30,267 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 16:40:31,044 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 193mS.
+2023-12-29 16:40:31,049 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 16:40:31,509 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 16:40:34,187 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3138mS.
+2023-12-29 16:40:34,188 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:40:34,191 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:40:36,917 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:40:36,918 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:40:36,918 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:51:05,242 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:51:27,126 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 771553792 Bytes (1064304640)
+2023-12-29 16:51:36,798 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 850723328 Bytes (1064304640)
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:51:37,202 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:51:37,203 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 16:51:37,203 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 16:51:37,203 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 16:51:37,203 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 16:51:37,204 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 16:51:37,462 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 16:51:37,593 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 16:51:37,640 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 16:51:37,764 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 16:51:37,769 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 16:51:37,849 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 16:51:38,364 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 16:51:38,644 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 16:51:38,655 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 16:51:38,852 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 16:51:38,895 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 16:51:39,550 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 16:51:39,571 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 16:51:39,658 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 16:51:39,682 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 16:51:39,801 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 16:51:39,808 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 16:51:39,874 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 16:51:39,903 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 16:51:40,091 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 16:51:40,099 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 16:51:40,191 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 16:51:40,211 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 16:51:40,301 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 16:51:40,305 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 16:51:40,369 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 16:51:40,389 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 16:51:40,513 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 16:51:40,582 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 16:51:40,707 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 16:51:40,721 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 16:51:40,851 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 16:51:41,609 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 199mS.
+2023-12-29 16:51:41,615 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 16:51:42,211 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 16:51:45,039 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3424mS.
+2023-12-29 16:51:45,040 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 16:51:45,045 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 16:53:11,828 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:53:17,472 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-29 16:53:21,234 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 743469408 Bytes (1068498944)
+2023-12-29 16:53:23,065 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 771059816 Bytes (1068498944)
+2023-12-29 16:53:23,410 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:23,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 16:53:23,412 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 16:53:23,412 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 16:53:23,412 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 16:53:23,413 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 16:53:23,637 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 16:53:23,769 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 16:53:23,816 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 16:53:23,919 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 16:53:23,925 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 16:53:24,012 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 16:53:24,468 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 16:53:24,607 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 16:53:24,614 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 16:53:24,695 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 16:53:24,719 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 16:53:24,935 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 16:53:24,950 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 16:53:25,019 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 16:53:25,043 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 16:53:25,183 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 16:53:25,191 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 16:53:25,276 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 16:53:25,321 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 16:53:25,489 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 16:53:25,496 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 16:53:25,570 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 16:53:25,595 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 16:53:25,710 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 16:53:25,716 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 16:53:25,787 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 16:53:25,818 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 16:53:25,926 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 16:53:25,968 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 16:53:26,057 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 16:53:26,071 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 16:53:26,200 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 16:53:27,046 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 201mS.
+2023-12-29 16:53:27,051 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 16:53:27,575 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 16:53:30,309 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3258mS.
+2023-12-29 16:53:30,310 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 16:53:30,316 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:53:38,238 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:53:38,238 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:53:38,238 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:53:40,237 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 945003344 Bytes (1070596096)
+2023-12-29 16:53:40,785 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-29 16:53:40,785 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:53:40,785 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-29 16:53:40,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-29 16:53:40,787 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-12-29 16:53:41,130 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2023-12-29 16:53:41,379 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2023-12-29 16:53:41,454 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2023-12-29 16:53:41,572 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2023-12-29 16:53:41,580 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2023-12-29 16:53:41,714 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2023-12-29 16:53:42,369 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2023-12-29 16:53:42,684 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2023-12-29 16:53:42,697 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2023-12-29 16:53:42,862 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2023-12-29 16:53:42,975 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2023-12-29 16:53:43,548 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2023-12-29 16:53:43,555 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2023-12-29 16:53:43,668 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2023-12-29 16:53:43,697 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2023-12-29 16:53:43,843 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2023-12-29 16:53:43,853 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2023-12-29 16:53:43,944 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2023-12-29 16:53:43,972 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2023-12-29 16:53:44,094 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2023-12-29 16:53:44,102 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2023-12-29 16:53:44,215 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2023-12-29 16:53:44,245 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-29 16:53:44,375 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2023-12-29 16:53:44,380 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2023-12-29 16:53:44,454 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2023-12-29 16:53:44,484 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-29 16:53:44,615 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-29 16:53:44,666 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2023-12-29 16:53:45,592 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2023-12-29 16:53:45,634 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2023-12-29 16:53:45,900 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2023-12-29 16:53:46,991 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 338mS.
+2023-12-29 16:53:46,997 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-12-29 16:53:47,486 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2023-12-29 16:53:50,006 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3009mS.
+2023-12-29 16:53:50,007 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-12-29 16:53:50,011 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-12-29 16:56:04,622 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:56:04,623 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:56:04,623 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:56:49,425 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:56:49,426 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:56:49,426 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:57:09,467 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:57:09,468 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 16:57:09,468 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:01:43,681 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:01:43,681 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:01:43,682 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:01:56,756 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:01:56,757 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:01:56,757 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:04:41,469 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:04:41,469 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:04:41,470 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:04:41,601 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:04:41,602 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:04:41,603 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:08:52,260 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:08:52,260 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:08:52,261 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:09,649 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:09,649 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:09,650 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:48,682 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:48,683 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:48,683 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-12-29 17:09:49,287 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2023-12-29 17:09:55,806 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2023-12-29 17:09:55,880 [INFO] WebAppUi:462 - Profiles folder deleted
+2023-12-29 17:09:57,333 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 

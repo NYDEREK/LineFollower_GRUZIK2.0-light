@@ -462,10 +462,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  PID_control();
-
-	  /*If battery is low stop robot*/
 	  if(battery_procentage_raw < 75)
 	  {
+		  /*If battery is low stop robot*/
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 	  }
   }
@@ -504,14 +503,14 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV16;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -523,18 +522,17 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart->Instance==USART1)
 	{
-		/*Stop robot*/
-		if(RxData[0] == 'N')
+		if(RxData[0] == 78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
 		{
+
 			/*Stop GRUZIK2.0 and turn off the LED*/
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-
+			//HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 			/*Send battery percentage*/
 			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
+
 		}
-		/*Start robot*/
-		if (RxData[0] == 'Y')
+		if (RxData[0] == 89) // Ascii value of 'Y' is 89 (Y for YES)
 		{
 			/*Time mode*/
 			if(Is_time_mode)
@@ -546,12 +544,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 				HAL_UART_RxCpltCallback(&huart1);
 
 				/*Start waiting for mode change*/
-				__HAL_TIM_SET_COUNTER(&htim1,65535 - Start_time);
+				__HAL_TIM_SET_COUNTER(&htim1,3000);
 			}
-
 			/*Do Battery measurement before start*/
 			Battery_ADC_measurement();
-
 			/*Start GRUZIK2.0 and turn on the LED*/
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
@@ -621,6 +617,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Bend_speed_left=125;
      	 	 Kp = 0.02;
      	 	 Kd = 65;
+     	 	//HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')
@@ -822,37 +819,26 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     if (htim->Instance == TIM1)
     {
     	/*Time mode*/
-    	SN_UART_Send(&huart3,"Entered time Callback !  \r \n ");
-
-    	/*Change mode to mode 2 for Change time*/
-    	if(Is_time_mode && Is_Mode_changed)
-    	{
-    	    /*Modify RxData*/
-    	    for(int i = 1; i <= 27 ;i++)
-    	    	RxData[i] = 0;
-    	    RxData[0] = Mode_Change(mode_1);
-
-    	    /*Change mode*/
-    	    HAL_UART_RxCpltCallback(&huart1);
-    	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
-    	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
-    	}
-    	/*Change mode to mode 2 for Change time*/
     	if(Is_time_mode && !Is_Mode_changed)
     	{
-    		/*Modify RxData*/
+    		/*Change mode to mode 2 for Change time*/
     		for(int i = 1; i <= 27 ;i++)
     			RxData[i] = 0;
     		RxData[0] = Mode_Change(mode_2);
-
-    		/*Change mode*/
     		HAL_UART_RxCpltCallback(&huart1);
-
-    		/*Set timer time*/
-    		__HAL_TIM_SET_COUNTER(&htim1,65535 - Change_time);
+    		__HAL_TIM_SET_COUNTER(&htim1,Change_time);
     		Is_Mode_changed = true;
     		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
-    		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
+
+    	}
+    	if(Is_time_mode && Is_Mode_changed)
+    	{
+    		/*Change mode to mode 2 for Change time*/
+    		for(int i = 1; i <= 27 ;i++)
+    			RxData[i] = 0;
+    		RxData[0] = Mode_Change(mode_1);
+    		HAL_UART_RxCpltCallback(&huart1);
+    		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     	}
     }
 }
