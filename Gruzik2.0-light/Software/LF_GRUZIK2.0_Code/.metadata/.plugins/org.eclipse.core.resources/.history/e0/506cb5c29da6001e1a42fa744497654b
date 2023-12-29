@@ -857,7 +857,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     		__HAL_TIM_SET_COUNTER(&htim1, Change_time);
     		Is_Mode_changed = true;
 
-
     		/*Signal change*/
     		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");

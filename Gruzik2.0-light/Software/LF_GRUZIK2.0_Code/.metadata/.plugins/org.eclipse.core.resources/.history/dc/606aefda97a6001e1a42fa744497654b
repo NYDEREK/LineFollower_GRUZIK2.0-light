@@ -46,10 +46,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-	/*Defines*/
 	#define true 1;
 	#define false 0;
-
 	/*PIDR regulator*/
 	int Sensors_read = 0x00000000;
 	int Position;
@@ -64,10 +62,10 @@
 	int Last_end = 0;	// 0 -> Left, 1 -> Right
 	int Last_idle = 0;
 	float Speed_level = 1;
-	int Base_speed_R = 92;
-	int Base_speed_L = 92;
 	int Max_speed_R = 140;
-	int Max_speed_L = 140;
+	int maxspeedl = 140;
+	int basespeedr = 92;
+	int basespeedl = 92;
 	int ARR = 4;
 	int actives = 0;
 
@@ -390,11 +388,11 @@ void PID_control() {
 
   int motorspeed = P*Kp + I*Ki + D*Kd;
 
-  int motorspeedl = Base_speed_L + motorspeed - R*Kr;
-  int motorspeedr = Base_speed_R - motorspeed - R*Kr;
+  int motorspeedl = basespeedl + motorspeed - R*Kr;
+  int motorspeedr = basespeedr - motorspeed - R*Kr;
 
-  if (motorspeedl > Max_speed_L)
-    motorspeedl = Max_speed_L;
+  if (motorspeedl > maxspeedl)
+    motorspeedl = maxspeedl;
   if (motorspeedr > Max_speed_R)
     motorspeedr = Max_speed_R;
 
@@ -440,10 +438,7 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  /*Start receiving data from Bluetooth*/
-   HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
-
-   /*Start and compare timers*/
+   HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28); //Oczekiwanie na dane z HC-05 i włączenie timerów
    HAL_TIM_Base_Start_IT(&htim1);
    HAL_TIM_Base_Start(&htim2);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
@@ -615,10 +610,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'a')
      	{
     	 	 ARR=3;
-     	 	 Base_speed_R = 150;
-     	 	 Base_speed_L = 150;
-     	 	 Max_speed_L = 130;
-     	 	 Max_speed_R = 130;
+     	 	 basespeedr = 150;
+     	 	 basespeedl = 150;
+     	 	 maxspeedl=130;
+     	 	 Max_speed_R=130;
      	 	 Sharp_bend_speed_right=-115;
      	 	 Sharp_bend_speed_left=120;
      	 	 Bend_speed_right=-76;
@@ -630,10 +625,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'd')
      	{
     	 	 ARR=3;
-     	 	 Base_speed_R = 165;
-     	 	 Base_speed_L = 165;
-     	 	 Max_speed_L = 130;
-     	 	 Max_speed_R = 130;
+     	 	 basespeedr = 165;
+     	 	 basespeedl = 165;
+     	 	 maxspeedl=130;
+     	 	 Max_speed_R=130;
      	 	 Sharp_bend_speed_right=-120;
      	 	 Sharp_bend_speed_left=125;
      	 	 Bend_speed_right=-76;
@@ -645,9 +640,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'b')
      	{
     	 	 ARR=3;
-     	 	 Base_speed_R = 175;
-     	 	 Base_speed_L = 175;
-     	 	 Max_speed_L = 135;
+     	 	 basespeedr = 175;
+     	 	 basespeedl = 175;
+     	 	 maxspeedl = 135;
      	 	 Max_speed_R = 135;
      	 	 Sharp_bend_speed_right = -120;
      	 	 Sharp_bend_speed_left = 125;
@@ -660,9 +655,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'e')
      	{
     	 	 ARR=3;
-     	 	 Base_speed_R = 190;
-     	 	 Base_speed_L = 190;
-     	 	 Max_speed_L = 145;
+     	 	 basespeedr = 190;
+     	 	 basespeedl = 190;
+     	 	 maxspeedl = 145;
      	 	 Max_speed_R = 145;
      	 	 Sharp_bend_speed_right = -100;
      	 	 Sharp_bend_speed_left = 100;
@@ -675,9 +670,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'c')
      	{
     	 	ARR=3;
-     	 	Base_speed_R = 225;
-     	 	Base_speed_L = 225;
-     	 	Max_speed_L = 150;
+     	 	basespeedr = 225;
+     	 	basespeedl = 225;
+     	 	maxspeedl = 150;
      	 	Max_speed_R = 150;
      	 	Sharp_bend_speed_right = -73;
      	 	Sharp_bend_speed_left = 78;
@@ -690,10 +685,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'f')
      	{
     	 	ARR=3;
-    	 	Base_speed_R = 250;
-    	 	Base_speed_L = 250;
-    	 	Max_speed_L = 160;
-    	 	Max_speed_R = 160;
+    	 	basespeedr = 250;
+    	 	basespeedl = 250;
+    	 	maxspeedl=160;
+    	 	Max_speed_R=160;
     	 	Sharp_bend_speed_right = -65;
      		Sharp_bend_speed_left = 70;
      		Bend_speed_right=-76;
@@ -705,9 +700,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'i')
      	{
     	 	ARR=3;
-    	 	Base_speed_R = 270;
-    	 	Base_speed_L = 270;
-    	 	Max_speed_L = 150;
+    	 	basespeedr = 270;
+    	 	basespeedl = 270;
+    	 	maxspeedl = 150;
     	 	Max_speed_R = 150;
     	 	Sharp_bend_speed_right = -65;
     	 	Sharp_bend_speed_left = 70;
@@ -720,9 +715,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'j')
      	{
      	    ARR=3;
-     	    Base_speed_R = 295;
-     	    Base_speed_L = 295;
-     	    Max_speed_L = 165;
+     	    basespeedr = 295;
+     	    basespeedl = 295;
+     	    maxspeedl = 165;
      	    Max_speed_R = 165;
      	    Sharp_bend_speed_right = -70;
      	    Sharp_bend_speed_left = 73;
@@ -735,76 +730,77 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	if(RxData[0] == 'k')
      	{
      	    ARR=3;
-     	    Base_speed_R = 315;
-     	    Base_speed_L = 315;
-     	    Max_speed_L = 168;
+     	    basespeedr = 315;
+     	    basespeedl = 315;
+     	    maxspeedl = 168;//170
      	    Max_speed_R = 168;
-     	    Sharp_bend_speed_right = -70;
-     	    Sharp_bend_speed_left = 73;
+     	    Sharp_bend_speed_right = -70;//70;
+     	    Sharp_bend_speed_left = 73;//73
      	    Bend_speed_right = -76;
      	    Bend_speed_left = 128;
-     	    Kp = 0.067;
-     	    Kd = 95;
+     	    Kp = 0.067;//0.07
+     	    Kd = 95;//95
      	 }
      	 /*ULTRA+ mode*/
      	 if(RxData[0] == 'l')
      	 {
      	     ARR=4;
-     	     Base_speed_R = 102;
-     	     Base_speed_L = 102;
-     	     Max_speed_L = 155;
+     	     basespeedr = 102;
+     	     basespeedl = 102;
+     	     maxspeedl = 155;//170
      	     Max_speed_R = 155;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
      	     Bend_speed_right = -50;
      	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
+     	     Kp = 0.02;//0.027
+     	     Kd = 350;//75
      	  }
      	  /*EXTREME mode*/
      	  if(RxData[0] == 'm')
      	  {
      	     ARR=4;
-     	     Base_speed_R = 102;
-     	     Base_speed_L = 102;
-     	     Max_speed_L = 155;
+     	     basespeedr = 102;
+     	     basespeedl = 102;
+     	     maxspeedl = 155;//170
      	     Max_speed_R = 155;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
      	     Bend_speed_right = -50;
      	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
+     	     Kp = 0.02;//0.027
+     	     Kd = 350;//75
      	  }
      	  /*EXTREME+ mode*/
      	  if(RxData[0] == 'n')
      	  {
      	     ARR=4;
-     	     Base_speed_R = 102;
-     	     Base_speed_L = 102;
-     	     Max_speed_L = 155;
+     	     basespeedr = 102;
+     	     basespeedl = 102;
+     	     maxspeedl = 155;//170
      	     Max_speed_R = 155;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
      	     Bend_speed_right = -50;
      	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
+     	     Kp = 0.02;//0.027
+     	     Kd = 350;//75
      	  }
      	  /*SPECIAL mode*/
      	  if(RxData[0] == 'h')
      	  {
      	     ARR=4;
-     	     Base_speed_R = 107;
-     	     Base_speed_L = 107;
-     	     Max_speed_L = 159;
+     	     basespeedr = 107;
+     	     basespeedl = 107;
+     	     maxspeedl = 159;//170
      	     Max_speed_R = 159;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
+     	     Sharp_bend_speed_right = -90;//70;
+     	     Sharp_bend_speed_left = 185;//73
      	     Bend_speed_right = -50;
      	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
+     	     Kp = 0.02;//0.07
+     	     Kd = 350;//95
+     	    //HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
      	  }
      	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
@@ -815,7 +811,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      		SN_UART_Send(&huart3,"%c ",RxData[i]);
      	SN_UART_Send(&huart3,"} \r \n ");
 
-    	SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",Speed_level, battery_procentage_raw, raw_battery);
+    	SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",Speed_level,battery_procentage_raw,raw_battery);
     	/*Begin receiving*/
     	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
 	}
@@ -827,7 +823,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     	/*Time mode*/
     	SN_UART_Send(&huart3,"Entered time Callback !  \r \n ");
 
-    	/*Change mode to mode 1 after Start time*/
+    	/*Change mode to mode 2 for Change time*/
     	if(Is_time_mode && Is_Mode_changed)
     	{
     	    /*Modify RxData*/
@@ -837,8 +833,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
     	    /*Change mode*/
     	    HAL_UART_RxCpltCallback(&huart1);
-
-    	    /*Signal change*/
     	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
     	}
@@ -856,9 +850,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     		/*Set timer time*/
     		__HAL_TIM_SET_COUNTER(&htim1, Change_time);
     		Is_Mode_changed = true;
-
-
-    		/*Signal change*/
     		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
     	}
