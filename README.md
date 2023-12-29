@@ -61,3 +61,4 @@
 ## Credits
 
 > <i>**I implemented the PD controller in my project, drawing inspiration from Bilal Kabas' repository available at - https://github.com/sametoguten/STM32-Line-Follower-with-PID**<i>
+[MIT License](LICENSE)
