@@ -56,4 +56,8 @@
 <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/f31179b3-dcbc-4551-86c7-9655d86f9fea" width="195"/><img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/6e4534ce-c543-4864-8fb3-f4f834b6377c" width="630"/>
 
 ## 💥What's next💥
-> **
+> <i>**In the future, I aspire for my robot to autonomously identify sharp edges along its path and enhance its efficiency by seamlessly adjusting modes both before and after encountering them.**<i>
+
+## Credits
+
+> <i>**I implemented the PD controller in my project, drawing inspiration from Bilal Kabas' repository available at - https://github.com/sametoguten/STM32-Line-Follower-with-PID**<i>
