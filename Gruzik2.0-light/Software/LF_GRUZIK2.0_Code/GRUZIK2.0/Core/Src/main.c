@@ -522,6 +522,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart->Instance==USART1)
 	{
+		/*Stop robot*/
 		if(RxData[0] == 78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
 		{
 
@@ -532,6 +533,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
 
 		}
+		/*Start robot*/
 		if (RxData[0] == 89) // Ascii value of 'Y' is 89 (Y for YES)
 		{
 			/*Time mode*/
@@ -833,7 +835,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     	}
     	if(Is_time_mode && Is_Mode_changed)
     	{
-    		/*Change mode to mode 2 for Change time*/
+    		/*Change mode to mode 1*/
     		for(int i = 1; i <= 27 ;i++)
     			RxData[i] = 0;
     		RxData[0] = Mode_Change(mode_1);
