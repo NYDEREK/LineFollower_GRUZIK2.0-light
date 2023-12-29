@@ -86,6 +86,15 @@
 	int battery_level;
 	float battery_procentage;
 	float battery_procentage_raw;
+
+	/*Time mode*/
+	_Bool Is_time_mode = false;
+	_Bool IS_DATA_OK = true;
+	_Bool Is_Mode_changed;
+	char char_value[2];
+	/*RxData = "m1: ? m2: ? st: ? ct: ?*/
+	int mode_1, mode_2, Start_time, Change_time;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -96,6 +105,53 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+char Mode_Change(int number)
+{
+	char ret;
+	switch(number)
+	{
+	case 1:
+		ret =  'a';
+		break;
+	case 2:
+		ret = 'd';
+		break;
+	case 3:
+		ret ='b';
+		break;
+	case 4:
+		ret ='e';
+		break;
+	case 5:
+		ret = 'c';
+		break;
+	case 6:
+		ret = 'f';
+		break;
+	case 7:
+		ret ='i';
+		break;
+	case 8:
+		ret = 'j';
+		break;
+	case 9:
+		ret = 'k';
+		break;
+	case 10:
+		ret ='l';
+		break;
+	case 11:
+		ret = 'm';
+		break;
+	case 12:
+		ret = 'n';
+		break;
+	case 13:
+		ret ='h';
+		break;
+	}
+	return ret;
+}
 void Battery_ADC_measurement(void)
 {
 	/*Start ADC*/
@@ -126,8 +182,8 @@ void Battery_ADC_measurement(void)
 }
 void delay_us (uint16_t us)
 {
-	__HAL_TIM_SET_COUNTER(&htim1,0);  // set the counter value a 0
-	while (__HAL_TIM_GET_COUNTER(&htim1) < us);  // wait for the counter to reach the us input in the parameter
+	__HAL_TIM_SET_COUNTER(&htim2,0);  // set the counter value a 0
+	while (__HAL_TIM_GET_COUNTER(&htim2) < us);  // wait for the counter to reach the us input in the parameter
 }
 
 void Set_Pin_Output (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
@@ -385,6 +441,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
    HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28); //Oczekiwanie na dane z HC-05 i włączenie timerów
    HAL_TIM_Base_Start(&htim1);
+   HAL_TIM_Base_Start(&htim2);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
@@ -446,14 +503,14 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV16;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -467,14 +524,28 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	{
 		if(RxData[0] == 78) // Ascii value of 'N' is 78 (N for NO)              START I STOP
 		{
+
 			/*Stop GRUZIK2.0 and turn off the LED*/
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			//HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 			/*Send battery percentage*/
 			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
+
 		}
 		if (RxData[0] == 89) // Ascii value of 'Y' is 89 (Y for YES)
 		{
+			/*Time mode*/
+			if(Is_time_mode)
+			{
+				/*Change mode to mode 2 for Start_time*/
+				for(int i = 1; i <= 27 ;i++)
+					RxData[i] = 0;
+				RxData[0] = Mode_Change(mode_1);
+				HAL_UART_RxCpltCallback(&huart1);
+
+				/*Start waiting for mode change*/
+				__HAL_TIM_SET_COUNTER(&htim1,3000);
+			}
 			/*Do Battery measurement before start*/
 			Battery_ADC_measurement();
 			/*Start GRUZIK2.0 and turn on the LED*/
@@ -500,37 +571,36 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		/*Time mode*/
 		if(RxData[0] == 'g')
 		{
-			_Bool IS_DATA_OK = true;
-			char char_value[2];
-			/*RxData = "m1: ? m2: ? st: ? ct: ?*/
-			int m1, m2, st, ct;
+			/*mode 2*/
+			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m2:") + 3, SN_Find_first(RxData, "st:"), char_value);
+			mode_2 = atoi(char_value);
 
 			/*mode 1*/
 			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m1:") + 3, SN_Find_first(RxData, "m2:"), char_value);
-			m1 = atoi(char_value);
-
-			/*mode 2*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m2:") + 3, SN_Find_first(RxData, "st:"), char_value);
-			m2 = atoi(char_value);
+			int mode_3 = atoi(char_value);
 
 			/*Start time*/
 			SN_Value_In_Message(RxData, SN_Find_first(RxData, "st:") + 3, SN_Find_first(RxData, "ct:"), char_value);
-			st = atoi(char_value);
+			Start_time = atoi(char_value);
 
 			/*mode 1*/
 			SN_Value_In_Message(RxData, SN_Find_first(RxData, "ct:") + 3, SN_Find_first(RxData, "E"), char_value);
-			ct = atoi(char_value);
+			Change_time = atoi(char_value);
 
 			/*Show data by UART-USB*/
-			SN_UART_Send(&huart3, "m1:%d  m2:%d st:%d ct:%d \r \n ", m1, m2, st, ct);
+			SN_UART_Send(&huart3, "m1:%d  m2:%d st:%d ct:%d \r \n ", mode_3, mode_2, Start_time, Change_time);
 
 			/*Check if data read correctly*/
-			if((m1 > 13) || (m2 > 13))
+			mode_1 = mode_3;
+			if((mode_1 > 13) || (mode_2 > 13))
 				IS_DATA_OK = false;
-			if((st > 40000) || (ct > 40000))
+			if((Start_time > 40000) || (Change_time > 40000))
 				IS_DATA_OK = false;
 			if(IS_DATA_OK)
+			{
 				HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+				Is_time_mode = 1;
+			}
 			SN_UART_Send(&huart3,"IS_DATA_OK = %d \r \n ",IS_DATA_OK);
 		}
      	/*LOW mode*/
@@ -547,6 +617,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Bend_speed_left=125;
      	 	 Kp = 0.02;
      	 	 Kd = 65;
+     	 	//HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')
@@ -652,7 +723,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	    Bend_speed_left = 130;
      	    Kp = 0.05;
      	    Kd = 80;
-     	  }
+     	}
      	/*ULTRA mode*/
      	if(RxData[0] == 'k')
      	{
@@ -712,7 +783,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	     Bend_speed_left = 100;
      	     Kp = 0.02;//0.027
      	     Kd = 350;//75
-     	     	     	  }
+     	  }
      	  /*SPECIAL mode*/
      	  if(RxData[0] == 'h')
      	  {
@@ -727,7 +798,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	     Bend_speed_left = 100;
      	     Kp = 0.02;//0.07
      	     Kd = 350;//95
-     	     	 }
+     	    //HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+     	  }
      	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
 
@@ -741,6 +813,34 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     	/*Begin receiving*/
     	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
 	}
+}
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM1)
+    {
+    	/*Time mode*/
+    	if(Is_time_mode && !Is_Mode_changed)
+    	{
+    		/*Change mode to mode 2 for Change time*/
+    		for(int i = 1; i <= 27 ;i++)
+    			RxData[i] = 0;
+    		RxData[0] = Mode_Change(mode_2);
+    		HAL_UART_RxCpltCallback(&huart1);
+    		__HAL_TIM_SET_COUNTER(&htim1,Change_time);
+    		Is_Mode_changed = true;
+    		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+
+    	}
+    	if(Is_time_mode && Is_Mode_changed)
+    	{
+    		/*Change mode to mode 2 for Change time*/
+    		for(int i = 1; i <= 27 ;i++)
+    			RxData[i] = 0;
+    		RxData[0] = Mode_Change(mode_1);
+    		HAL_UART_RxCpltCallback(&huart1);
+    		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+    	}
+    }
 }
 /* USER CODE END 4 */
 
