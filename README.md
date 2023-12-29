@@ -40,15 +40,14 @@
   <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/99308187-04be-49ce-bf4d-46ec42ed3cef" width="200"/>
 </div>
 
-## ⏱Time mode⏱
-> **Time mode is function that provides you to slow down or accelerate on any section of the route by choosing:**
-> 
->  `mode_1` **- mode for entire route**
-> 
-> `mode_2` **- mode for time section on route**
-> 
+## ⏱Time Mode⏱
+> **Time Mode is a feature that allows you to slow down or speed up any section of your route by selecting:**
+>
+> `mode_1` **- mode for the entire route**
+>
+> `mode_2` **- time section mode on the route**
+>
 > `Start_time` **- time from start to mode change**
-> 
-> `Change_time` **- Duration of mode_2**
-
+>
+> `Change_time` **- Mode_2 duration**
 <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/f31179b3-dcbc-4551-86c7-9655d86f9fea" width="195"/><img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/6e4534ce-c543-4864-8fb3-f4f834b6377c" width="630"/>
