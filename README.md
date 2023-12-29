@@ -4,6 +4,8 @@
 
 ![Microcontroller](https://img.shields.io/badge/uC-STM32F103C8T6-lime) ![Platform](https://img.shields.io/badge/Platform-STM32cubeIDE-darkcyan) ![Repo Size](https://img.shields.io/github/repo-size/NYDEREK/LineFollower_GRUZIK2.0-light) ![Top Language](https://img.shields.io/github/languages/top/NYDEREK/LineFollower_GRUZIK2.0-light)
 
+<i>Loved the project? Please consider giving a Star ⭐️</i>
+
 </div>
 
 > **GRUZIK2.0 is a lightweight construction (74g) designed for the "Line Follower Light" competition. The robot features Bluetooth communication with a smartphone app and uses a digital sensor instead of analog.**
