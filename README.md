@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Microcontroller](https://img.shields.io/badge/uC-STM32F103C8T6-lime) ![Platform](https://img.shields.io/badge/Platform-STM32cubeIDE-darkcyan) ![Repo Size](https://img.shields.io/github/repo-size/NYDEREK/LineFollower_GRUZIK2.0-light) ![Top Language](https://img.shields.io/github/languages/top/NYDEREK/LineFollower_GRUZIK2.0-light)
+![Microcontroller](https://img.shields.io/badge/uC-STM32F103C8T6-white) ![Platform](https://img.shields.io/badge/Platform-STM32cubeIDE-darkcyan) ![Repo Size](https://img.shields.io/github/repo-size/NYDEREK/LineFollower_GRUZIK2.0-light) ![Top Language](https://img.shields.io/github/languages/top/NYDEREK/LineFollower_GRUZIK2.0-light)
 
 <i>Loved the project? Please consider giving a Star ⭐️</i>
 
