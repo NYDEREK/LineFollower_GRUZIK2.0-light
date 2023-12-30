@@ -14,4 +14,4 @@
 ../Core/Src/main.c:483:6:SystemClock_Config	88	static
 ../Core/Src/main.c:526:6:HAL_UART_RxCpltCallback	56	static
 ../Core/Src/main.c:823:6:HAL_TIM_PeriodElapsedCallback	24	static
-../Core/Src/main.c:872:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:873:6:Error_Handler	4	static,ignoring_inline_asm

@@ -765,10 +765,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	  if(RxData[0] == 'm')
      	  {
      	     ARR=4;
-     	     Base_speed_R = 102;
-     	     Base_speed_L = 102;
-     	     Max_speed_L = 155;
-     	     Max_speed_R = 155;
+     	     Base_speed_R = 107;
+     	     Base_speed_L = 107;
+     	     Max_speed_L = 159;
+     	     Max_speed_R = 159;
      	     Sharp_bend_speed_right = -90;
      	     Sharp_bend_speed_left = 185;
      	     Bend_speed_right = -50;
@@ -780,10 +780,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	  if(RxData[0] == 'n')
      	  {
      	     ARR=4;
-     	     Base_speed_R = 102;
-     	     Base_speed_L = 102;
-     	     Max_speed_L = 155;
-     	     Max_speed_R = 155;
+     	     Base_speed_R = 116;
+     	     Base_speed_L = 116;
+     	     Max_speed_L = 167;
+     	     Max_speed_R = 167;
      	     Sharp_bend_speed_right = -90;
      	     Sharp_bend_speed_left = 185;
      	     Bend_speed_right = -50;
@@ -795,10 +795,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	  if(RxData[0] == 'h')
      	  {
      	     ARR=4;
-     	     Base_speed_R = 107;
-     	     Base_speed_L = 107;
-     	     Max_speed_L = 159;
-     	     Max_speed_R = 159;
+     	     Base_speed_R = 123;
+     	     Base_speed_L = 123;
+     	     Max_speed_L = 172;
+     	     Max_speed_R = 172;
      	     Sharp_bend_speed_right = -90;
      	     Sharp_bend_speed_left = 185;
      	     Bend_speed_right = -50;
