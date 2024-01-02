@@ -245,6 +245,7 @@ void sharp_turn () {
 
 	if (Last_idle < 25)
 	{
+
 		/*Debounce*/
 		currentMillis = __HAL_TIM_GET_COUNTER(&htim3);
 		if((currentMillis - previousMillis) > 300)

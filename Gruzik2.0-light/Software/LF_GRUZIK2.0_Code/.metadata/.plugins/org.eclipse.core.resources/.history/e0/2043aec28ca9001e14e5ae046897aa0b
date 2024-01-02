@@ -93,12 +93,6 @@
 	_Bool IS_DATA_OK = true;
 	_Bool Is_Mode_changed;
 	char char_value[2];
-
-	int Sharp_bends_count;
-	uint32_t Bend_Time[20];
-	uint32_t time;
-	uint32_t previousMillis = 0;
-	uint32_t currentMillis = 0;
 	/*RxData = "m1: ? m2: ? st: ? ct: ?*/
 	int mode_1, mode_2, Start_time, Change_time;
 
@@ -245,17 +239,6 @@ void sharp_turn () {
 
 	if (Last_idle < 25)
 	{
-		/*Debounce*/
-		currentMillis = __HAL_TIM_GET_COUNTER(&htim3);
-		if((currentMillis - previousMillis) > 300)
-		{
-			/*Get current in loop time*/
-			 Bend_Time[Sharp_bends_count] =  __HAL_TIM_GET_COUNTER(&htim3);
-
-			/*Debounce*/
-			previousMillis = currentMillis;
-			Sharp_bends_count++;
-		}
 		if (Last_end == 1)
 			motor_control(Sharp_bend_speed_right, Sharp_bend_speed_left);
 		else
@@ -463,7 +446,6 @@ int main(void)
    /*Start and compare timers*/
    HAL_TIM_Base_Start_IT(&htim1);
    HAL_TIM_Base_Start(&htim2);
-   HAL_TIM_Base_Start(&htim3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
@@ -525,7 +507,7 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV16;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV16;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
@@ -553,19 +535,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
 			/*Send battery percentage*/
-			SN_UART_Send(&huart1, "%.1f \r \n Bends:%d \r \n " ,battery_procentage_raw,Sharp_bends_count);
-
-			/*Send Bend times*/
-			for(int i = 0; i <= Sharp_bends_count; i ++)
-			{
-				SN_UART_Send(&huart1, "%d - %d \r \n", i + 1, Bend_Time[i]);
-			}
+			SN_UART_Send(&huart1, "%.1f" ,battery_procentage_raw);
 		}
 		/*Start robot*/
 		if (RxData[0] == 'Y')
 		{
-			/*Start loop timer*/
-			__HAL_TIM_SET_COUNTER(&htim3,0);
 			/*Time mode*/
 			if(Is_time_mode)
 			{
