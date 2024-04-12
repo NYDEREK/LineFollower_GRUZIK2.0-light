@@ -54,8 +54,8 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD_GPIO_Port, LD_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, SENSOR1_Pin|SENSOR2_Pin|SENSOR3_Pin|SENSOR4_Pin
-                          |SENSOR5_Pin|SENSOR6_Pin|SENSOR7_Pin|SENSOR8_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SENSOR8_Pin|SENSOR7_Pin|SENSOR6_Pin|SENSOR5_Pin
+                          |SENSOR4_Pin|SENSOR3_Pin|SENSOR2_Pin|SENSOR1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LEDON_Pin|BIN1L_Pin|BIN1R_Pin|AIN2L_Pin
@@ -70,8 +70,8 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin
                            PAPin PAPin PAPin PAPin */
-  GPIO_InitStruct.Pin = SENSOR1_Pin|SENSOR2_Pin|SENSOR3_Pin|SENSOR4_Pin
-                          |SENSOR5_Pin|SENSOR6_Pin|SENSOR7_Pin|SENSOR8_Pin;
+  GPIO_InitStruct.Pin = SENSOR8_Pin|SENSOR7_Pin|SENSOR6_Pin|SENSOR5_Pin
+                          |SENSOR4_Pin|SENSOR3_Pin|SENSOR2_Pin|SENSOR1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;

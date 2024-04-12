@@ -891,6 +891,10 @@
     (uuid a8852338-632f-458f-806f-8b7ab55a708e)
   )
 
+  (text "Uwaga R13,R14 to 47 Ohm a R15 47 Kilo ! Ohm" (at 84.074 127.508 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1d48139a-cb37-4805-8fcd-d2499bcfae55)
+  )
   (text "Sensor connector" (at 16.51 17.78 0)
     (effects (font (size 2.0066 2.0066) (thickness 0.4013) bold) (justify left bottom))
     (uuid 4433ce0f-2783-4603-9e46-8c4936ff2136)
