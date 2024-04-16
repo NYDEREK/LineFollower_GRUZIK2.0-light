@@ -650,7 +650,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Bend_speed_right=-76;
      	 	 Bend_speed_left=125;
      	 	 Kp = 0.02;//0.02
-     	 	 Kd = 65;
+     	 	 Kd = 45;
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')

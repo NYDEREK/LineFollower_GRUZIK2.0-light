@@ -10022,3 +10022,67 @@
 2024-04-12 19:49:54,403 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2024-04-12 19:49:54,404 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2024-04-12 19:49:54,404 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:39:53,753 [INFO] Activator:179 - 
+
+
+2024-04-16 17:39:53,759 [INFO] Activator:180 - !SESSION log4j initialized
+2024-04-16 17:40:10,173 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:40:10,174 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:40:10,175 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:40:35,866 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-04-16 17:40:35,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-04-16 17:40:35,869 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-04-16 17:42:22,272 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:42:22,273 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:42:22,276 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:54:53,145 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:54:53,146 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:54:53,146 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:54:53,665 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:54:53,666 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:54:53,667 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:59:58,100 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:59:58,101 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:59:58,101 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:59:58,382 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:59:58,382 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 17:59:58,382 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:02:16,745 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:02:16,747 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:02:16,748 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:02:17,127 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:02:17,128 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:02:17,130 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:06:34,515 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:06:34,516 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:06:34,516 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:06:34,756 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:06:34,757 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:06:34,758 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:19:11,187 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:19:11,188 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:19:11,189 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:19:11,415 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:19:11,415 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:19:11,416 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:22:50,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:22:50,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:22:50,699 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:22:50,906 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:22:50,907 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:22:50,907 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:26:59,204 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:26:59,205 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:26:59,206 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:26:59,398 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:26:59,399 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:26:59,399 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:35:26,527 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:35:26,528 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:35:26,529 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:35:26,750 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:35:26,751 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:35:26,751 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:54:19,179 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:54:19,183 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-04-16 18:54:19,183 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com

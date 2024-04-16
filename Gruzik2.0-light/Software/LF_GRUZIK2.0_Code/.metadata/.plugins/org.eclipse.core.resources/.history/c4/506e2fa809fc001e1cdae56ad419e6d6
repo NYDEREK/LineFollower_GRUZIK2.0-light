@@ -649,8 +649,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Sharp_bend_speed_left=120;
      	 	 Bend_speed_right=-76;
      	 	 Bend_speed_left=125;
-     	 	 Kp = 0.02;//0.02
-     	 	 Kd = 65;
+     	 	 Kp = 0.01;//0.02
+     	 	 Kd = 45;
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')
@@ -664,7 +664,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Sharp_bend_speed_left=125;
      	 	 Bend_speed_right=-76;
      	 	 Bend_speed_left=125;
-     	 	 Kp = 0.04;//0.4
+     	 	 Kp = 0.01;//0.3
      	 	 Kd = 75;
      	}
      	/*Medium mode*/
@@ -679,7 +679,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Sharp_bend_speed_left = 125;
      	 	 Bend_speed_right = -76;
      	 	 Bend_speed_left = 125;
-     	 	 Kp = 0.03;//0.03
+     	 	 Kp = 0.01;//0.03
      	 	 Kd = 70;
      	}
      	/*Medium+ mode*/
@@ -694,7 +694,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Sharp_bend_speed_left = 100;
      	 	 Bend_speed_right = -76;
      	 	 Bend_speed_left = 125;
-     	 	 Kp = 0.03;//0.03
+     	 	 Kp = 0.01;//0.03
      	 	 Kd = 70;
      	}
      	/*HIGH mode*/
