@@ -94,11 +94,6 @@
 	_Bool Is_Mode_changed;
 	char char_value[2];
 
-	int Sharp_bends_count;
-	uint32_t Bend_Time[20];
-	uint32_t time;
-	uint32_t previousMillis = 0;
-	uint32_t currentMillis = 0;
 	/*RxData = "m1: ? m2: ? st: ? ct: ?*/
 	int mode_1, mode_2, Start_time, Change_time;
 
@@ -155,6 +150,12 @@ char Mode_Change(int number)
 		break;
 	case 13:
 		ret ='h';
+		break;
+	case 14:
+		ret ='o';
+		break;
+	case 15:
+		ret ='u';
 		break;
 	}
 	return ret;
@@ -245,17 +246,6 @@ void sharp_turn () {
 
 	if (Last_idle < 25)
 	{
-		/*Debounce*/
-		currentMillis = __HAL_TIM_GET_COUNTER(&htim3);
-		if((currentMillis - previousMillis) > 300)
-		{
-			/*Get current in loop time*/
-			 Bend_Time[Sharp_bends_count] =  __HAL_TIM_GET_COUNTER(&htim3);
-
-			/*Debounce*/
-			previousMillis = currentMillis;
-			Sharp_bends_count++;
-		}
 		if (Last_end == 1)
 			motor_control(Sharp_bend_speed_right, Sharp_bend_speed_left);
 		else
@@ -311,43 +301,43 @@ int QTR8_read ()
 
 	if (HAL_GPIO_ReadPin(SENSOR1_GPIO_Port, SENSOR1_Pin)) {
 		Sensors_read |= 0x00000001;
-		pos += 1000;
+		pos += 1000;//1000
     active++;
 		Last_end = 1;
 	}
 	if (HAL_GPIO_ReadPin(SENSOR2_GPIO_Port, SENSOR2_Pin)) {
 		Sensors_read |= 0x00000010;
-		pos += 2000;
+		pos += 2000;//2000
     active++;
   }
 	if (HAL_GPIO_ReadPin(SENSOR3_GPIO_Port, SENSOR3_Pin)) {
 		Sensors_read |= 0x00000100;
-		pos += 3000;
+		pos += 3000;//3000
     active++;
   }
 	if (HAL_GPIO_ReadPin(SENSOR4_GPIO_Port, SENSOR4_Pin)) {
 		Sensors_read |= 0x00001000;
-		pos += 4000;
+		pos += 4000;//4000
     active++;
   }
 	if (HAL_GPIO_ReadPin(SENSOR5_GPIO_Port, SENSOR5_Pin)) {
 		Sensors_read |= 0x00010000;
-		pos += 5000;
+		pos += 5000;//5000
     active++;
   }
 	if (HAL_GPIO_ReadPin(SENSOR6_GPIO_Port, SENSOR6_Pin)) {
 		Sensors_read |= 0x00100000;
-		pos += 6000;
+		pos += 6000;//6000
     active++;
   }
 	if (HAL_GPIO_ReadPin(SENSOR7_GPIO_Port, SENSOR7_Pin)) {
 		Sensors_read |= 0x01000000;
-		pos += 7000;
+		pos += 7000;//7000
     active++;
   }
 	if (HAL_GPIO_ReadPin(SENSOR8_GPIO_Port, SENSOR8_Pin)) {
 		Sensors_read |= 0x10000000;
-		pos += 8000;
+		pos += 8000;//8000
     active++;
 		Last_end = 0;
   }
@@ -463,7 +453,7 @@ int main(void)
    /*Start and compare timers*/
    HAL_TIM_Base_Start_IT(&htim1);
    HAL_TIM_Base_Start(&htim2);
-   HAL_TIM_Base_Start(&htim3);
+  //HAL_TIM_Base_Start(&htim3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
@@ -553,19 +543,13 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
 			/*Send battery percentage*/
-			SN_UART_Send(&huart1, "%.1f \r \n Bends:%d \r \n " ,battery_procentage_raw,Sharp_bends_count);
+			SN_UART_Send(&huart1, "%.1f \r \n" ,battery_procentage_raw);
 
-			/*Send Bend times*/
-			for(int i = 0; i <= Sharp_bends_count; i ++)
-			{
-				SN_UART_Send(&huart1, "%d - %d \r \n", i + 1, Bend_Time[i]);
-			}
 		}
 		/*Start robot*/
 		if (RxData[0] == 'Y')
 		{
-			/*Start loop timer*/
-			__HAL_TIM_SET_COUNTER(&htim3,0);
+
 			/*Time mode*/
 			if(Is_time_mode)
 			{
@@ -626,7 +610,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 			/*Check if data read correctly*/
 			mode_1 = mode_3;
-			if((mode_1 > 13) || (mode_2 > 13))
+			if((mode_1 > 15) || (mode_2 > 15))
 				IS_DATA_OK = false;
 			if((Start_time > 40000) || (Change_time > 40000))
 				IS_DATA_OK = false;
@@ -636,6 +620,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 				Is_time_mode = 1;
 			}
 			SN_UART_Send(&huart3,"IS_DATA_OK = %d \r \n ",IS_DATA_OK);
+			SN_UART_Send(&huart3,"IS_DATA_OK = %d \r \n ",IS_DATA_OK);
+
 		}
      	/*LOW mode*/
      	if(RxData[0] == 'a')
@@ -649,8 +635,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	 	 Sharp_bend_speed_left=120;
      	 	 Bend_speed_right=-76;
      	 	 Bend_speed_left=125;
-     	 	 Kp = 0.02;//0.02
-     	 	 Kd = 65;
+     	 	 Kp = 0.02;//0.02 //0.009
+     	 	 Kd = 165;
      	}
      	/*LOW+ mode*/
      	if(RxData[0] == 'd')
@@ -810,7 +796,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	     Base_speed_L = 116;
      	     Max_speed_L = 167;
      	     Max_speed_R = 167;
-     	     Sharp_bend_speed_right = -90;
+     	     Sharp_bend_speed_right = -96;
      	     Sharp_bend_speed_left = 185;
      	     Bend_speed_right = -50;
      	     Bend_speed_left = 100;
@@ -832,6 +818,36 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	     Kp = 0.02;
      	     Kd = 350;
      	  }
+     	  /*RA-1-final-slower*/
+     	  if(RxData[0] == 'o')
+     	  {
+     	     ARR=4;
+     	     Base_speed_R = 143;
+     	     Base_speed_L = 143;
+     	     Max_speed_L = 182;
+     	     Max_speed_R = 182;
+     	     Sharp_bend_speed_right = -76;
+     	     Sharp_bend_speed_left = 90;
+     	     Bend_speed_right = -50;
+     	     Bend_speed_left = 100;
+     	     Kp = 0.02;
+     	     Kd = 350;
+     	   }
+     	   /*RA-2-eliminations-faster*/
+     	   if(RxData[0] == 'u')
+     	   {
+     	      ARR=4;
+     	      Base_speed_R = 153;
+     	      Base_speed_L = 153;
+     	      Max_speed_L = 187;
+     	      Max_speed_R = 187;
+     	      Sharp_bend_speed_right = -76;
+     	      Sharp_bend_speed_left = 90;
+     	      Bend_speed_right = -50;
+     	      Bend_speed_left = 100;
+     	      Kp = 0.02;
+     	      Kd = 350;
+     	   }
      	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
 
@@ -867,6 +883,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     	    /*Signal change*/
     	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
+    	    SN_UART_Send(&huart1,"Changed Back to mode_1  \r \n ");
     	}
     	/*Change mode to mode 2 for Change time*/
     	if(Is_time_mode && !Is_Mode_changed)
@@ -887,6 +904,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     		/*Signal change*/
     		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
     		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
+    		SN_UART_Send(&huart1,"Changed to mode_2  \r \n ");
     	}
     }
 }
