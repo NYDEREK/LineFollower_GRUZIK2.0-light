@@ -38,6 +38,11 @@
 - motors - Pololu 2211
 - Bluetooth - HC-05
 
+<div align="center">
+  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/09fbbeaa-abc1-43ac-baea-b56389da5343" width="500"/>
+  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/a5f2fef5-a88e-447f-a070-cfea2200bb3b" width="500"/>
+</div>
+
 ## 📱Bluetooth App 📱
 
 > **It's a simple Bluetooth app created with MIT App Inventor. The app starts and stops the robot, allows you to send data in the terminal, slow down or accelerate on any section of the route using Time mode. The Modes pad is responsible for quickly adapting the speed and accuracy of the robot to the route using modes, and the application also displays the battery charge status.**
