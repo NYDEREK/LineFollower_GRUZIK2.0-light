@@ -39,8 +39,8 @@
 - Bluetooth - HC-05
 
 <div align="center">
-  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/09fbbeaa-abc1-43ac-baea-b56389da5343" width="500"/>
-  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/a5f2fef5-a88e-447f-a070-cfea2200bb3b" width="500"/>
+  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/09fbbeaa-abc1-43ac-baea-b56389da5343" width="400"/>
+  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/a5f2fef5-a88e-447f-a070-cfea2200bb3b" width="400"/>
 </div>
 
 ## 📱Bluetooth App 📱
