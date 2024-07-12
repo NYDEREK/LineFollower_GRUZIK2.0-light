@@ -8943,7 +8943,7 @@
     (property "ki_keywords" "connector")
     (path "/a3698dcc-0f3b-4b20-abd6-55d6c69151ac")
     (attr smd)
-    (fp_text reference "GRUZIK2.0" (at 0.14 -1.74) (layer "B.SilkS" knockout)
+    (fp_text reference "GRUZIK2.1" (at 0.14 -1.74) (layer "B.SilkS" knockout)
         (effects (font (size 1 1) (thickness 0.25) bold) (justify mirror))
       (tstamp 1270a960-d003-4548-abf1-8423900a8e44)
     )
