@@ -16,4 +16,8 @@
 	</section>
 	<section name="RenameInformationPopup">
 	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item key="size.width" value="465"/>
+		<item key="size.height" value="180"/>
+	</section>
 </section>

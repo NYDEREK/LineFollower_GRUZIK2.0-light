@@ -27,6 +27,8 @@
 /* USER CODE BEGIN Includes */
 #include "D:\SN-USER\HAL-SN-Functions\SN-functions.h"
 #include "stdlib.h"
+#include "stdio.h"
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -294,6 +296,20 @@ int QTR8_read ()
 
 	// Threshold
 	 delay_us(4500);
+	 	 	 //!!! FOR SENSOR TESTING ONLY !!!//
+
+//	 uint8_t sensory[8];
+//	 sensory[0] = HAL_GPIO_ReadPin(SENSOR1_GPIO_Port, SENSOR1_Pin);
+//	 sensory[1] = HAL_GPIO_ReadPin(SENSOR2_GPIO_Port, SENSOR2_Pin);
+//	 sensory[2] = HAL_GPIO_ReadPin(SENSOR3_GPIO_Port, SENSOR3_Pin);
+//	 sensory[3] = HAL_GPIO_ReadPin(SENSOR4_GPIO_Port, SENSOR4_Pin);
+//	 sensory[4] = HAL_GPIO_ReadPin(SENSOR5_GPIO_Port, SENSOR5_Pin);
+//	 sensory[5] = HAL_GPIO_ReadPin(SENSOR6_GPIO_Port, SENSOR6_Pin);
+//	 sensory[6] = HAL_GPIO_ReadPin(SENSOR7_GPIO_Port, SENSOR7_Pin);
+//	 sensory[7] = HAL_GPIO_ReadPin(SENSOR8_GPIO_Port, SENSOR8_Pin);
+//	 uint8_t Message[64];
+//	 sprintf((char*)Message,"S1: %d S2: %d S3: %d S4: %d S5: %d S6: %d S7: %d S8: %d\n\r", sensory[0],sensory[1],sensory[2],sensory[3],sensory[4],sensory[5],sensory[6],sensory[7]);
+//	 HAL_UART_Transmit(&huart3, Message, strlen((char*)Message), 100);
 
 	Sensors_read = 0x00000000;
 	int pos = 0;
@@ -848,6 +864,36 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
      	      Kp = 0.02;
      	      Kd = 350;
      	   }
+     	  /*Gruzik2.1 Robo Comp 2024r 1*/
+     	  if(RxData[0] == 'p')
+     	  {
+     		  ARR=4;
+     		  Base_speed_R = 143;
+     		  Base_speed_L = 143;
+     		  Max_speed_L = 182;
+     		  Max_speed_R = 182;
+     		  Sharp_bend_speed_right = -76;
+     		  Sharp_bend_speed_left = 90;
+     		  Bend_speed_right = -40;//40
+     		  Bend_speed_left = 110;
+     		  Kp = 0.02;
+     		  Kd = 350;
+     	       	   }
+     	  /*Gruzik2.1 Robo Comp 2024 2*/
+     	  if(RxData[0] == 'r')
+     	  {
+     		  ARR=4;
+     		  Base_speed_R = 153;
+     		  Base_speed_L = 153;
+     		  Max_speed_L = 187;
+     		  Max_speed_R = 187;
+     		  Sharp_bend_speed_right = -76;
+     		  Sharp_bend_speed_left = 90;
+     		  Bend_speed_right = -40;//40
+     		  Bend_speed_left = 110;
+     		  Kp = 0.02;
+     		  Kd = 350;
+     	       	   }
      	/*Send some data through UART3-USB terminal*/
      	Battery_ADC_measurement();
 
