@@ -13,12 +13,12 @@
 
 
 <div align="center">
-  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/d8667eea-0bfd-4122-b87a-0607b21cf01d" width="700"/>
+  <img src="https://github.com/user-attachments/assets/0fdffd6d-9023-4386-b539-104f9b9ba9c4" width="700"/>
 </div>
 
 <div align="center">
-  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/cc9ef9be-4f86-4d7e-9cb8-3dfb1e909219" width="200"/>
-  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/866b5c15-49d2-4b8d-b6d8-adb2939a8c52" width="200"/>
+  <img src="https://github.com/user-attachments/assets/7fa3e891-3858-4886-a66f-cda7b4732d12" width="200"/>
+  <img src="https://github.com/user-attachments/assets/800418eb-de7f-4ffd-9bcf-28b1dca531c5" width="200"/>
 </div>
 
 ## Hardware
