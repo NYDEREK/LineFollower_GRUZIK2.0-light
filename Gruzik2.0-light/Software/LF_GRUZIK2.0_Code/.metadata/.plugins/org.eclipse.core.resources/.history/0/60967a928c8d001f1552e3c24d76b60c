@@ -1,0 +1,144 @@
+/*
+ * SimpleParser.c
+ *
+ *  Created on: Aug 28, 2024
+ *      Author: Szymon
+ */
+
+
+#include "main.h"
+#include "usart.h"
+#include "string.h"
+#include "stdio.h"
+#include "RingBuffer.h"
+#include "stdlib.h"
+#include "SimpleParser.h"
+
+char My_Name[32] = "NUCLEO-G474RE";
+
+void Parser_TakeLine(RingBuffer_t *Buf, uint8_t *ReceivedData)
+{
+	uint8_t Tmp;
+	uint8_t i = 0;
+	do
+	{
+		RB_Read(Buf, &Tmp);
+
+		if(Tmp == ENDLINE)
+		{
+			ReceivedData[i] = 0;
+
+		}
+
+		else
+		{
+			ReceivedData[i] = Tmp;
+		}
+		i++;
+
+	} while(Tmp != ENDLINE);
+
+}
+static void Parser_ParseENV(void)
+{
+	char buffer[32];
+	uint8_t i, j;
+	float ENV_values[3];
+	for(i = 0; i < 3; i++)
+	{
+		char *ParsePointer = strtok(NULL, ",");
+
+		if(strlen(ParsePointer) > 0)
+		{
+			for(j = 0; ParsePointer[j] != 0;j++)
+			{
+				if((ParsePointer[j] < '0' || ParsePointer[j] > '9') && ParsePointer[j] != '.')
+				{
+					sprintf(buffer,"Cos to poslol ciulu jeden!\n\r");
+					HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+					sprintf(buffer,"liczby maja byc, nie litery!\n\r");
+					HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+					return;
+				}
+			}
+
+			ENV_values[i] = atof(ParsePointer);
+		}
+		else
+		{
+			sprintf(buffer,"Cos to poslol ciulu jeden!\n\r");
+			HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+			return;
+		}
+	}
+
+	sprintf(buffer,"temp = %.1f\n\r", ENV_values[0]);
+	HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+
+	sprintf(buffer,"hum = %.1f\n\r", ENV_values[1]);
+	HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+
+	sprintf(buffer,"pressure = %.1f\n\r", ENV_values[2]);
+	HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+
+}
+static void Parser_ParseNAME(void)
+{
+	char buffer[32];
+	char *ParsePointer = strtok(NULL, 0);
+	if(strlen(ParsePointer) > 0)
+	{
+		if(!strcmp("?", ParsePointer))
+		{
+			sprintf(buffer,"I'am %s \n\r", My_Name);
+			HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+		}
+		else
+		{
+			strcpy(My_Name,ParsePointer);
+			sprintf(buffer,"Now I'am %s \n\r", My_Name);
+			HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+		}
+	}
+	else
+	{
+		sprintf(buffer,"Cos to poslol ciulu jeden!\n\r");
+		HAL_UART_Transmit(&hlpuart1, (uint8_t*)buffer, strlen(buffer),100);
+	}
+
+}
+static void Parser_ParseLED(void)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+		if(ParsePointer[0] == '1')
+		{
+			//HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+			HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+		}
+		else if(ParsePointer[0] == '0')
+		{
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		}
+	}
+
+}
+void Parser_Parse(uint8_t *ReceivedData)
+{
+	char *ParsePointer = strtok((char*)ReceivedData, "=");
+
+	if(!strcmp("LED", ParsePointer))
+	{
+		Parser_ParseLED();
+	}
+	else if(!strcmp("ENV", ParsePointer))
+	{
+		Parser_ParseENV();
+	}
+	else if(!strcmp("NAME", ParsePointer))
+	{
+		Parser_ParseNAME();
+	}
+}

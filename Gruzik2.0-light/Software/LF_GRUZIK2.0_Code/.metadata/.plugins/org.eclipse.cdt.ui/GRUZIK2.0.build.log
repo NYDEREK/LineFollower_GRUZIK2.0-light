@@ -1,10 +1,10 @@
-18:05:31 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
+16:53:15 **** Incremental Build of configuration Debug for project GRUZIK2.0 ****
 make -j4 all 
 arm-none-eabi-size   GRUZIK2.0.elf 
    text	   data	    bss	    dec	    hex	filename
-  41320	    536	   2216	  44072	   ac28	GRUZIK2.0.elf
+  45100	    500	   2308	  47908	   bb24	GRUZIK2.0.elf
 Finished building: default.size.stdout
  
 
-18:05:32 Build Finished. 0 errors, 0 warnings. (took 641ms)
+16:53:16 Build Finished. 0 errors, 0 warnings. (took 901ms)
 

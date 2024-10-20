@@ -11,7 +11,7 @@
 ../Core/Src/main.c:390:5:errors_sum	24	static
 ../Core/Src/main.c:403:6:PID_control	40	static
 ../Core/Src/main.c:434:5:main	8	static
-../Core/Src/main.c:507:6:SystemClock_Config	88	static
-../Core/Src/main.c:550:6:HAL_UART_RxCpltCallback	56	static
-../Core/Src/main.c:911:6:HAL_TIM_PeriodElapsedCallback	24	static
-../Core/Src/main.c:963:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:524:6:SystemClock_Config	88	static
+../Core/Src/main.c:567:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/main.c:628:6:GRUZIK_App_Controll	16	static
+../Core/Src/main.c:763:6:Error_Handler	4	static,ignoring_inline_asm

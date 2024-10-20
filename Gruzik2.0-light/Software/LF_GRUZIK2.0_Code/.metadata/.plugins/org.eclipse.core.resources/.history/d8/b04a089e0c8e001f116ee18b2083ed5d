@@ -1,0 +1,953 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2023 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "adc.h"
+#include "tim.h"
+#include "usart.h"
+#include "gpio.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "D:\SN-USER\HAL-SN-Functions\SN-functions.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include "string.h"
+#include "Line_Follower.h"
+#include "RingBuffer.h"
+#include "SimpleParser.h"
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+
+/* USER CODE BEGIN PV */
+	/*Defines*/
+	#define true 1;
+	#define false 0;
+	#define ENDLINE '\n'
+
+	LineFollower_t GRUZIK;
+
+	RingBuffer_t RB, ReceiveBuffer;
+	uint8_t ReceivedData[32];
+	uint8_t ReceivedLines;
+
+	/*Rest of PIDR regulator*/
+	int Sensors_read = 0x00000000;
+	int Position;
+	float Ki = 0;
+	float Kr = 0;
+	int P, I, D, R;
+	int Last_error = 0;
+	int Errors[10] = {0,0,0,0,0,0,0,0,0,0};
+	int Error_sum = 0;
+	int Last_end = 0;	// 0 -> Left, 1 -> Right
+	int Last_idle = 0;
+	float Speed_level = 1;
+	int ARR = 4;
+	int actives = 0;
+
+
+
+	/*Communication*/
+    char buffer[28];
+    char RxData[28];
+
+	/*Battery*/
+	uint16_t raw_battery;
+	uint16_t max_battery = 3220;
+	int battery_level;
+	float battery_procentage;
+	float battery_procentage_raw;
+
+	/*Time mode*/
+	_Bool Is_time_mode = false;
+	_Bool IS_DATA_OK = true;
+	_Bool Is_Mode_changed;
+	char char_value[2];
+
+	/*RxData = "m1: ? m2: ? st: ? ct: ?*/
+	int mode_1, mode_2, Start_time, Change_time;
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+/* USER CODE BEGIN PFP */
+
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+char Mode_Change(int number)
+{
+	char ret;
+	switch(number)
+	{
+	case 1:
+		ret =  'a';
+		break;
+	case 2:
+		ret = 'd';
+		break;
+	case 3:
+		ret ='b';
+		break;
+	case 4:
+		ret ='e';
+		break;
+	case 5:
+		ret = 'c';
+		break;
+	case 6:
+		ret = 'f';
+		break;
+	case 7:
+		ret ='i';
+		break;
+	case 8:
+		ret = 'j';
+		break;
+	case 9:
+		ret = 'k';
+		break;
+	case 10:
+		ret ='l';
+		break;
+	case 11:
+		ret = 'm';
+		break;
+	case 12:
+		ret = 'n';
+		break;
+	case 13:
+		ret ='h';
+		break;
+	case 14:
+		ret ='o';
+		break;
+	case 15:
+		ret ='u';
+		break;
+	}
+	return ret;
+}
+void Battery_ADC_measurement(void)
+{
+	/*Start ADC*/
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
+	/*Get ADC value*/
+	HAL_ADC_Start(&hadc1);
+	HAL_ADC_PollForConversion(&hadc1,HAL_MAX_DELAY);
+	raw_battery = HAL_ADC_GetValue(&hadc1);
+	/*Stop ADC*/
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
+	//SN_UART_Send(&huart3,"Battery_raw = %hu \r\n ",raw_battery);
+
+	/*Percentages from raw 12bit measurement*/
+	if(raw_battery != 0)
+	{
+		if(raw_battery > max_battery)
+		{
+			raw_battery = max_battery;
+		}
+		battery_procentage_raw = (raw_battery * 100) / max_battery;
+	}
+	else
+	{
+		battery_procentage_raw = 0;
+	}
+	/*Motor speed*/
+	Speed_level = ((100 - battery_procentage_raw) + 100) / 100;
+}
+void delay_us (uint16_t us)
+{
+	__HAL_TIM_SET_COUNTER(&htim2,0);  // set the counter value a 0
+	while (__HAL_TIM_GET_COUNTER(&htim2) < us);  // wait for the counter to reach the us input in the parameter
+}
+
+void Set_Pin_Output (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
+{
+	GPIO_InitTypeDef GPIO_InitStruct = {0};
+	GPIO_InitStruct.Pin = GPIO_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	HAL_GPIO_Init(GPIOx, &GPIO_InitStruct);
+}
+
+void Set_Pin_Input (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
+{
+	GPIO_InitTypeDef GPIO_InitStruct = {0};
+	GPIO_InitStruct.Pin = GPIO_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStruct.Pull = GPIO_PULLUP;
+	HAL_GPIO_Init(GPIOx, &GPIO_InitStruct);
+}
+
+
+void motor_control (double pos_right, double pos_left)
+{
+	if (pos_left < 0 )
+	{
+		__HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_2, (int)((ARR*pos_left*-1)*Speed_level));
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
+	}
+	else
+	{
+		__HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_2, (int)((ARR*pos_left)*Speed_level));
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+	if (pos_right < 0 )
+	{
+		__HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_4, (int)((ARR*pos_right*-1)*Speed_level));
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
+	}
+	else
+	{
+		__HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_4, (int)((ARR*pos_right)*Speed_level));
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+	}
+}
+
+
+void sharp_turn () {
+
+	if (Last_idle < 25)
+	{
+		if (Last_end == 1)
+			motor_control(GRUZIK.Sharp_bend_speed_right, GRUZIK.Sharp_bend_speed_left);
+		else
+			motor_control(GRUZIK.Sharp_bend_speed_left, GRUZIK.Sharp_bend_speed_right);
+	}
+	else
+	{
+		if (Last_end == 1)
+			motor_control(GRUZIK.Bend_speed_right, GRUZIK.Bend_speed_left);
+		else
+			motor_control(GRUZIK.Bend_speed_left, GRUZIK.Bend_speed_right);
+	}
+}
+int QTR8_read ()
+{
+	HAL_GPIO_WritePin(LEDON_GPIO_Port, LEDON_Pin, 1);
+
+	Set_Pin_Output(SENSOR1_GPIO_Port, SENSOR1_Pin);
+	Set_Pin_Output(SENSOR2_GPIO_Port, SENSOR2_Pin);
+	Set_Pin_Output(SENSOR3_GPIO_Port, SENSOR3_Pin);
+	Set_Pin_Output(SENSOR4_GPIO_Port, SENSOR4_Pin);
+	Set_Pin_Output(SENSOR5_GPIO_Port, SENSOR5_Pin);
+	Set_Pin_Output(SENSOR6_GPIO_Port, SENSOR6_Pin);
+	Set_Pin_Output(SENSOR7_GPIO_Port, SENSOR7_Pin);
+	Set_Pin_Output(SENSOR8_GPIO_Port, SENSOR8_Pin);
+
+	HAL_GPIO_WritePin (SENSOR1_GPIO_Port, SENSOR1_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR2_GPIO_Port, SENSOR2_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR3_GPIO_Port, SENSOR3_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR4_GPIO_Port, SENSOR4_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR5_GPIO_Port, SENSOR5_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR6_GPIO_Port, SENSOR6_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR7_GPIO_Port, SENSOR7_Pin, 1);
+	HAL_GPIO_WritePin (SENSOR8_GPIO_Port, SENSOR8_Pin, 1);
+
+	delay_us(10);
+
+	Set_Pin_Input(SENSOR1_GPIO_Port, SENSOR1_Pin);
+	Set_Pin_Input(SENSOR2_GPIO_Port, SENSOR2_Pin);
+	Set_Pin_Input(SENSOR3_GPIO_Port, SENSOR3_Pin);
+	Set_Pin_Input(SENSOR4_GPIO_Port, SENSOR4_Pin);
+	Set_Pin_Input(SENSOR5_GPIO_Port, SENSOR5_Pin);
+	Set_Pin_Input(SENSOR6_GPIO_Port, SENSOR6_Pin);
+	Set_Pin_Input(SENSOR7_GPIO_Port, SENSOR7_Pin);
+	Set_Pin_Input(SENSOR8_GPIO_Port, SENSOR8_Pin);
+
+	// Threshold
+	 delay_us(4500);
+	 	 	 //!!! FOR SENSOR TESTING ONLY !!!//
+
+//	 uint8_t sensory[8];
+//	 sensory[0] = HAL_GPIO_ReadPin(SENSOR1_GPIO_Port, SENSOR1_Pin);
+//	 sensory[1] = HAL_GPIO_ReadPin(SENSOR2_GPIO_Port, SENSOR2_Pin);
+//	 sensory[2] = HAL_GPIO_ReadPin(SENSOR3_GPIO_Port, SENSOR3_Pin);
+//	 sensory[3] = HAL_GPIO_ReadPin(SENSOR4_GPIO_Port, SENSOR4_Pin);
+//	 sensory[4] = HAL_GPIO_ReadPin(SENSOR5_GPIO_Port, SENSOR5_Pin);
+//	 sensory[5] = HAL_GPIO_ReadPin(SENSOR6_GPIO_Port, SENSOR6_Pin);
+//	 sensory[6] = HAL_GPIO_ReadPin(SENSOR7_GPIO_Port, SENSOR7_Pin);
+//	 sensory[7] = HAL_GPIO_ReadPin(SENSOR8_GPIO_Port, SENSOR8_Pin);
+//	 uint8_t Message[64];
+//	 sprintf((char*)Message,"S1: %d S2: %d S3: %d S4: %d S5: %d S6: %d S7: %d S8: %d\n\r", sensory[0],sensory[1],sensory[2],sensory[3],sensory[4],sensory[5],sensory[6],sensory[7]);
+//	 HAL_UART_Transmit(&huart3, Message, strlen((char*)Message), 100);
+
+	Sensors_read = 0x00000000;
+	int pos = 0;
+  int active = 0;
+
+	if (HAL_GPIO_ReadPin(SENSOR1_GPIO_Port, SENSOR1_Pin)) {
+		Sensors_read |= 0x00000001;
+		pos += 1000;//1000
+    active++;
+		Last_end = 1;
+	}
+	if (HAL_GPIO_ReadPin(SENSOR2_GPIO_Port, SENSOR2_Pin)) {
+		Sensors_read |= 0x00000010;
+		pos += 2000;//2000
+    active++;
+  }
+	if (HAL_GPIO_ReadPin(SENSOR3_GPIO_Port, SENSOR3_Pin)) {
+		Sensors_read |= 0x00000100;
+		pos += 3000;//3000
+    active++;
+  }
+	if (HAL_GPIO_ReadPin(SENSOR4_GPIO_Port, SENSOR4_Pin)) {
+		Sensors_read |= 0x00001000;
+		pos += 4000;//4000
+    active++;
+  }
+	if (HAL_GPIO_ReadPin(SENSOR5_GPIO_Port, SENSOR5_Pin)) {
+		Sensors_read |= 0x00010000;
+		pos += 5000;//5000
+    active++;
+  }
+	if (HAL_GPIO_ReadPin(SENSOR6_GPIO_Port, SENSOR6_Pin)) {
+		Sensors_read |= 0x00100000;
+		pos += 6000;//6000
+    active++;
+  }
+	if (HAL_GPIO_ReadPin(SENSOR7_GPIO_Port, SENSOR7_Pin)) {
+		Sensors_read |= 0x01000000;
+		pos += 7000;//7000
+    active++;
+  }
+	if (HAL_GPIO_ReadPin(SENSOR8_GPIO_Port, SENSOR8_Pin)) {
+		Sensors_read |= 0x10000000;
+		pos += 8000;//8000
+    active++;
+		Last_end = 0;
+  }
+
+  HAL_GPIO_WritePin(LEDON_GPIO_Port, LEDON_Pin, 0);
+
+  actives = active;
+	Position = pos/active;
+
+	if (actives == 0)
+		Last_idle++;
+	else
+		Last_idle = 0;
+
+	return pos/active;
+}
+
+
+void forward_brake(int pos_right, int pos_left)
+{
+	if (actives == 0)
+		sharp_turn();
+	else
+	  motor_control(pos_right, pos_left);
+}
+
+void past_errors (int error)
+{
+  for (int i = 9; i > 0; i--)
+      Errors[i] = Errors[i-1];
+  Errors[0] = error;
+}
+
+int errors_sum (int index, int abs)
+{
+  int sum = 0;
+  for (int i = 0; i < index; i++)
+  {
+    if (abs == 1 && Errors[i] < 0)
+      sum += -Errors[i];
+    else
+      sum += Errors[i];
+  }
+  return sum;
+}
+
+void PID_control() {
+  uint16_t position = QTR8_read();
+  int error = 4500 - position;
+  past_errors(error);
+
+  P = error;
+  I = errors_sum(5, 0);
+  D = error - Last_error;
+  R = errors_sum(5, 1);
+  Last_error = error;
+
+  int motorspeed = P*GRUZIK.Kp + I*Ki + D*GRUZIK.Kd;
+
+  int motorspeedl = GRUZIK.Base_speed_L + motorspeed - R*Kr;
+  int motorspeedr = GRUZIK.Base_speed_R - motorspeed - R*Kr;
+
+  if (motorspeedl > GRUZIK.Max_speed_L)
+    motorspeedl = GRUZIK.Max_speed_L;
+  if (motorspeedr > GRUZIK.Max_speed_R)
+    motorspeedr = GRUZIK.Max_speed_R;
+
+  	Battery_ADC_measurement();
+	forward_brake(motorspeedr, motorspeedl);
+}
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_TIM1_Init();
+  MX_TIM3_Init();
+  MX_TIM4_Init();
+  MX_USART1_UART_Init();
+  MX_USART3_UART_Init();
+  MX_ADC1_Init();
+  MX_TIM2_Init();
+  /* USER CODE BEGIN 2 */
+  /*Initial values for PID*/
+  	GRUZIK.Kp = 0.02;
+	GRUZIK.Kd = 350;
+
+	GRUZIK.Base_speed_R = 92;
+	GRUZIK.Base_speed_L = 92;
+	GRUZIK.Max_speed_R = 140;
+	GRUZIK.Max_speed_L = 140;
+
+	/*Sharp turn speed*/
+	GRUZIK.Sharp_bend_speed_right=-90;
+	GRUZIK.Sharp_bend_speed_left=185;
+	GRUZIK.Bend_speed_right=-50;
+	GRUZIK.Bend_speed_left=100;
+
+  /*Start receiving data from Blue tooth*/
+   HAL_UART_Receive_IT(&huart1, (uint8_t*)RxData, 1);
+
+   /*Start and compare timers*/
+   HAL_TIM_Base_Start_IT(&htim1);
+   HAL_TIM_Base_Start(&htim2);
+  //HAL_TIM_Base_Start(&htim3);
+   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
+   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
+   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
+   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+	  PID_control();
+
+	  /*If battery is low stop robot*/
+	  if(battery_procentage_raw < 75)
+	  {
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+	  }
+
+	  if(ReceivedLines > 0)
+	  {
+		  Parser_TakeLine(&ReceiveBuffer, &ReceivedData);
+		  Parser_Parse(ReceivedData,&GRUZIK);
+
+		  ReceivedLines--;
+	  }
+  }
+  /* USER CODE END 3 */
+}
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV16;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV16;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if(huart->Instance == USART1)
+	{
+		if(RB_Write(&ReceiveBuffer, (uint8_t*)RxData) == RB_OK)
+		{
+			if((uint8_t*)RxData == ENDLINE)
+			{
+				ReceivedLines++;
+			}
+		}
+    	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData, 1);
+	}
+}
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM1)
+    {
+    	/*Time mode*/
+    	SN_UART_Send(&huart3,"Entered time Callback !  \r \n ");
+
+    	/*Change mode to mode 1 after Start time*/
+    	if(Is_time_mode && Is_Mode_changed)
+    	{
+    	    /*Modify RxData*/
+    	    for(int i = 1; i <= 27 ;i++)
+    	    	RxData[i] = 0;
+    	    RxData[0] = Mode_Change(mode_1);
+
+    	    /*Change mode*/
+    	    HAL_UART_RxCpltCallback(&huart1);
+
+    	    /*Signal change*/
+    	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+    	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
+    	    SN_UART_Send(&huart1,"Changed Back to mode_1  \r \n ");
+    	}
+    	/*Change mode to mode 2 for Change time*/
+    	if(Is_time_mode && !Is_Mode_changed)
+    	{
+    		/*Modify RxData*/
+    		for(int i = 1; i <= 27 ;i++)
+    			RxData[i] = 0;
+    		RxData[0] = Mode_Change(mode_2);
+
+    		/*Change mode*/
+    		HAL_UART_RxCpltCallback(&huart1);
+
+    		/*Set timer time*/
+    		__HAL_TIM_SET_COUNTER(&htim1, Change_time);
+    		Is_Mode_changed = true;
+
+
+    		/*Signal change*/
+    		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+    		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
+    		SN_UART_Send(&huart1,"Changed to mode_2  \r \n ");
+    	}
+    }
+}
+
+void GRUZIK_App_Controll(char RxData, LineFollower_t *GRUZIK)
+{
+	/*Stop robot*/
+	if(RxData == 'N')
+	{
+		/*Stop GRUZIK2.0 and turn off the LED*/
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+
+		/*Send battery percentage*/
+		SN_UART_Send(&huart1, "%.1f \r \n" ,battery_procentage_raw);
+
+	}
+	/*Start robot*/
+	if (RxData == 'Y')
+	{
+
+		/*Time mode*/
+		if(Is_time_mode)
+		{
+			/*Change mode to mode 2 for Start_time*/
+			RxData = Mode_Change(mode_1);
+			HAL_UART_RxCpltCallback(&huart1);
+
+			/*Start waiting for mode change*/
+			__HAL_TIM_SET_COUNTER(&htim1, Start_time);
+		}
+
+		/*Do Battery measurement before start*/
+		Battery_ADC_measurement();
+
+		/*Start GRUZIK2.0 and turn on the LED*/
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+	}
+ 	/*LOW mode*/
+ 	if(RxData == 'a')
+ 	{
+	 	 ARR=3;
+ 	 	 GRUZIK.Base_speed_R = 150;
+ 	 	 GRUZIK.Base_speed_L = 150;
+ 	 	 GRUZIK.Max_speed_L = 130;
+ 	 	 GRUZIK.Max_speed_R = 130;
+ 	 	 GRUZIK.Sharp_bend_speed_right=-115;
+ 	 	 GRUZIK.Sharp_bend_speed_left=120;
+ 	 	 GRUZIK.Bend_speed_right=-76;
+ 	 	 GRUZIK.Bend_speed_left=125;
+ 	 	 GRUZIK.Kp = 0.02;//0.02 //0.009
+ 	 	 GRUZIK.Kd = 165;
+ 	}
+ 	/*LOW+ mode*/
+ 	if(RxData == 'd')
+ 	{
+	 	 ARR=3;
+	 	GRUZIK.Base_speed_R = 165;
+	 	GRUZIK.Base_speed_L = 165;
+	 	GRUZIK.Max_speed_L = 130;
+	 	GRUZIK.Max_speed_R = 130;
+	 	GRUZIK.Sharp_bend_speed_right=-120;
+	 	GRUZIK.Sharp_bend_speed_left=125;
+	 	GRUZIK.Bend_speed_right=-76;
+	 	GRUZIK.Bend_speed_left=125;
+	 	GRUZIK.Kp = 0.04;//0.4
+	 	GRUZIK.Kd = 75;
+ 	}
+ 	/*Medium mode*/
+ 	if(RxData == 'b')
+ 	{
+	 	 ARR=3;
+	 	GRUZIK.Base_speed_R = 175;
+	 	GRUZIK.Base_speed_L = 175;
+	 	GRUZIK.Max_speed_L = 135;
+	 	GRUZIK.Max_speed_R = 135;
+	 	GRUZIK.Sharp_bend_speed_right = -120;
+	 	GRUZIK.Sharp_bend_speed_left = 125;
+	 	GRUZIK.Bend_speed_right = -76;
+	 	GRUZIK.Bend_speed_left = 125;
+	 	GRUZIK.Kp = 0.03;//0.03
+	 	GRUZIK.Kd = 70;
+ 	}
+ 	/*Medium+ mode*/
+ 	if(RxData == 'e')
+ 	{
+	 	 ARR=3;
+	 	GRUZIK.Base_speed_R = 190;
+	 	GRUZIK.Base_speed_L = 190;
+	 	GRUZIK.Max_speed_L = 145;
+	 	GRUZIK.Max_speed_R = 145;
+	 	GRUZIK.Sharp_bend_speed_right = -100;
+	 	GRUZIK.Sharp_bend_speed_left = 100;
+	 	GRUZIK.Bend_speed_right = -76;
+	 	GRUZIK.Bend_speed_left = 125;
+	 	GRUZIK.Kp = 0.03;//0.03
+	 	GRUZIK.Kd = 70;
+ 	}
+ 	/*HIGH mode*/
+ 	if(RxData == 'c')
+ 	{
+	 	ARR=3;
+	 	GRUZIK.Base_speed_R = 225;
+	 	GRUZIK.Base_speed_L = 225;
+	 	GRUZIK.Max_speed_L = 150;
+	 	GRUZIK.Max_speed_R = 150;
+	 	GRUZIK.Sharp_bend_speed_right = -73;
+	 	GRUZIK.Sharp_bend_speed_left = 78;
+	 	GRUZIK.Bend_speed_right = -76;
+	 	GRUZIK.Bend_speed_left = 125;
+	 	GRUZIK.Kp = 0.04;//0.04
+	 	GRUZIK.Kd = 75;
+ 	}
+ 	/*HIGH+ mode*/
+ 	if(RxData == 'f')
+ 	{
+	 	ARR=3;
+	 	GRUZIK.Base_speed_R = 250;
+	 	GRUZIK.Base_speed_L = 250;
+	 	GRUZIK.Max_speed_L = 160;
+	 	GRUZIK.Max_speed_R = 160;
+	 	GRUZIK.Sharp_bend_speed_right = -65;
+	 	GRUZIK.Sharp_bend_speed_left = 70;
+	 	GRUZIK.Bend_speed_right=-76;
+	 	GRUZIK.Bend_speed_left=125;
+	 	GRUZIK.Kp = 0.04;
+	 	GRUZIK.Kd=75;
+ 	}
+ 	/*TRUBO mode*/
+ 	if(RxData == 'i')
+ 	{
+	 	ARR=3;
+	 	GRUZIK.Base_speed_R = 270;
+	 	GRUZIK.Base_speed_L = 270;
+	 	GRUZIK.Max_speed_L = 150;
+	 	GRUZIK.Max_speed_R = 150;
+	 	GRUZIK.Sharp_bend_speed_right = -65;
+	 	GRUZIK.Sharp_bend_speed_left = 70;
+	 	GRUZIK.Bend_speed_right = -76;
+	 	GRUZIK.Bend_speed_left = 130;
+	 	GRUZIK.Kp = 0.045;
+	 	GRUZIK.Kd = 75;
+ 	}
+ 	/*TRUBO+ mode*/
+ 	if(RxData == 'j')
+ 	{
+ 	    ARR=3;
+ 	    GRUZIK.Base_speed_R = 295;
+ 	    GRUZIK.Base_speed_L = 295;
+ 	    GRUZIK.Max_speed_L = 165;
+ 	 	GRUZIK.Max_speed_R = 165;
+ 	 	GRUZIK.Sharp_bend_speed_right = -70;
+ 	 	GRUZIK.Sharp_bend_speed_left = 73;
+ 	 	GRUZIK.Bend_speed_right = -76;
+ 	 	GRUZIK.Bend_speed_left = 130;
+ 	 	GRUZIK.Kp = 0.05;
+ 	 	GRUZIK.Kd = 80;
+ 	}
+ 	/*ULTRA mode*/
+ 	if(RxData == 'k')
+ 	{
+ 	    ARR=3;
+ 	    GRUZIK.Base_speed_R = 315;
+ 	    GRUZIK.Base_speed_L = 315;
+ 	    GRUZIK.Max_speed_L = 168;
+ 	    GRUZIK.Max_speed_R = 168;
+ 	    GRUZIK.Sharp_bend_speed_right = -70;
+ 	  	GRUZIK.Sharp_bend_speed_left = 73;
+ 	 	GRUZIK.Bend_speed_right = -76;
+ 		GRUZIK.Bend_speed_left = 128;
+ 		GRUZIK.Kp = 0.067;
+ 		GRUZIK.Kd = 95;
+ 	 }
+ 	 /*ULTRA+ mode*/
+ 	 if(RxData == 'l')
+ 	 {
+ 	     ARR=4;
+ 	     GRUZIK.Base_speed_R = 102;
+ 	     GRUZIK.Base_speed_L = 102;
+ 	   	 GRUZIK.Max_speed_L = 155;
+ 	   	 GRUZIK.Max_speed_R = 155;
+ 	     GRUZIK.Sharp_bend_speed_right = -90;
+ 	     GRUZIK.Sharp_bend_speed_left = 185;
+ 	     GRUZIK.Bend_speed_right = -50;
+ 	     GRUZIK.Bend_speed_left = 100;
+ 	     GRUZIK.Kp = 0.02;
+ 		 GRUZIK.Kd = 350;
+ 	  }
+ 	  /*EXTREME mode*/
+ 	  if(RxData == 'm')
+ 	  {
+ 	     ARR=4;
+ 	     GRUZIK.Base_speed_R = 107;
+ 	     GRUZIK.Base_speed_L = 107;
+ 	     GRUZIK.Max_speed_L = 159;
+ 	     GRUZIK.Max_speed_R = 159;
+ 	 	 GRUZIK.Sharp_bend_speed_right = -90;
+ 		 GRUZIK.Sharp_bend_speed_left = 185;
+ 		 GRUZIK.Bend_speed_right = -50;
+ 		 GRUZIK.Bend_speed_left = 100;
+ 		 GRUZIK.Kp = 0.02;
+ 		 GRUZIK.Kd = 350;
+ 	  }
+ 	  /*EXTREME+ mode*/
+ 	  if(RxData == 'n')
+ 	  {
+ 	     ARR=4;
+ 	    GRUZIK.Base_speed_R = 116;
+ 	    GRUZIK.Base_speed_L = 116;
+ 	    GRUZIK.Max_speed_L = 167;
+ 	  	GRUZIK.Max_speed_R = 167;
+ 	 	GRUZIK.Sharp_bend_speed_right = -96;
+ 		GRUZIK.Sharp_bend_speed_left = 185;
+ 		GRUZIK.Bend_speed_right = -50;
+ 		GRUZIK.Bend_speed_left = 100;
+ 		GRUZIK.Kp = 0.02;
+ 		GRUZIK.Kd = 350;
+ 	  }
+ 	  /*SPECIAL mode*/
+ 	  if(RxData == 'h')
+ 	  {
+ 	     ARR=4;
+ 	    GRUZIK.Base_speed_R = 123;
+ 	    GRUZIK.Base_speed_L = 123;
+ 	    GRUZIK.Max_speed_L = 172;
+ 	    GRUZIK.Max_speed_R = 172;
+ 	 	GRUZIK.Sharp_bend_speed_right = -90;
+ 		GRUZIK.Sharp_bend_speed_left = 185;
+ 		GRUZIK.Bend_speed_right = -50;
+ 		GRUZIK.Bend_speed_left = 100;
+ 		GRUZIK.Kp = 0.02;
+ 		GRUZIK.Kd = 350;
+ 	  }
+ 	  /*RA-1-final-slower*/
+ 	  if(RxData == 'o')
+ 	  {
+ 	     ARR=4;
+ 	    GRUZIK.Base_speed_R = 143;
+ 	    GRUZIK.Base_speed_L = 143;
+ 	   	GRUZIK.Max_speed_L = 182;
+ 	  	GRUZIK.Max_speed_R = 182;
+ 	  	GRUZIK.Sharp_bend_speed_right = -76;
+ 		GRUZIK.Sharp_bend_speed_left = 90;
+ 		GRUZIK.Bend_speed_right = -50;
+ 		GRUZIK.Bend_speed_left = 100;
+ 		GRUZIK.Kp = 0.02;
+ 		GRUZIK.Kd = 350;
+ 	   }
+ 	   /*RA-2-eliminations-faster*/
+ 	   if(RxData == 'u')
+ 	   {
+ 	      ARR=4;
+ 	     GRUZIK.Base_speed_R = 153;
+ 	     GRUZIK.Base_speed_L = 153;
+ 	     GRUZIK.Max_speed_L = 187;
+ 	   	 GRUZIK.Max_speed_R = 187;
+ 	  	 GRUZIK.Sharp_bend_speed_right = -76;
+ 	 	 GRUZIK.Sharp_bend_speed_left = 90;
+ 	 	 GRUZIK.Bend_speed_right = -50;
+ 	 	 GRUZIK.Bend_speed_left = 100;
+ 	 	 GRUZIK.Kp = 0.02;
+ 	 	 GRUZIK.Kd = 350;
+ 	   }
+ 	  /*Gruzik2.1 Robo Comp 2024r 1*/
+ 	  if(RxData == 'p')
+ 	  {
+ 		  ARR=4;
+ 		 GRUZIK.Base_speed_R = 143;
+ 		 GRUZIK.Base_speed_L = 143;
+ 		 GRUZIK.Max_speed_L = 182;
+ 		 GRUZIK.Max_speed_R = 182;
+ 		 GRUZIK.Sharp_bend_speed_right = -76;
+ 		 GRUZIK.Sharp_bend_speed_left = 90;
+ 		 GRUZIK.Bend_speed_right = -40;//40
+ 		 GRUZIK.Bend_speed_left = 110;
+ 		 GRUZIK.Kp = 0.02;
+ 		 GRUZIK.Kd = 350;
+ 	       	   }
+ 	  /*Gruzik2.1 Robo Comp 2024 2*/
+ 	  if(RxData == 'r')
+ 	  {
+ 		  ARR=4;
+ 		 GRUZIK.Base_speed_R = 153;
+ 		 GRUZIK.Base_speed_L = 153;
+ 		 GRUZIK.Max_speed_L = 187;
+ 		 GRUZIK.Max_speed_R = 187;
+ 		 GRUZIK.Sharp_bend_speed_right = -76;
+ 		 GRUZIK.Sharp_bend_speed_left = 90;
+ 		 GRUZIK.Bend_speed_right = -40;//40
+ 		 GRUZIK.Bend_speed_left = 110;
+ 		 GRUZIK.Kp = 0.02;
+ 		 GRUZIK.Kd = 350;
+ 	       	   }
+ 	/*Send some data through UART3-USB terminal*/
+ 	Battery_ADC_measurement();
+}
+/* USER CODE END 4 */
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
+  __disable_irq();
+  while (1)
+  {
+  }
+  /* USER CODE END Error_Handler_Debug */
+}
+
+#ifdef  USE_FULL_ASSERT
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t *file, uint32_t line)
+{
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */

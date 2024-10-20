@@ -1,0 +1,157 @@
+/*
+ * SimpleParser.c
+ *
+ *  Created on: Aug 28, 2024
+ *      Author: Szymon
+ */
+
+
+#include "main.h"
+#include "usart.h"
+#include "string.h"
+#include "stdio.h"
+#include "RingBuffer.h"
+#include "stdlib.h"
+#include "SimpleParser.h"
+#include "Line_Follower.h"
+char My_Name[32] = "GRUZIK2.0";
+
+void Parser_TakeLine(RingBuffer_t *Buf, uint8_t *ReceivedData)
+{
+	uint8_t Tmp;
+	uint8_t i = 0;
+	do
+	{
+		RB_Read(Buf, &Tmp);
+
+		if(Tmp == ENDLINE)
+		{
+			ReceivedData[i] = 0;
+
+		}
+
+		else
+		{
+			ReceivedData[i] = Tmp;
+		}
+		i++;
+
+	} while(Tmp != ENDLINE);
+
+}
+
+static void kp_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+		LF->Kp = atof(ParsePointer);
+	}
+
+}
+static void kd_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+		LF->Kd = atof(ParsePointer);
+	}
+}
+static void Base_speed_R_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+		LF->Base_speed_R = atof(ParsePointer);
+	}
+}
+static void Base_speed_L_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+	LF->Base_speed_R = atof(ParsePointer);
+	}
+}
+static void Max_speed_R_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+	LF->Max_speed_R = atof(ParsePointer);
+	}
+}
+static void Max_speed_L_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+	LF->Max_speed_L = atof(ParsePointer);
+	}
+}
+static void Sharp_bend_speed_right_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+	LF->Sharp_bend_speed_right = atof(ParsePointer);
+	}
+}
+static void Sharp_bend_speed_right_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+	LF->Sharp_bend_speed_right = atof(ParsePointer);
+	}
+}
+
+void Parser_Parse(uint8_t *ReceivedData, LineFollower_t *LineFollower)
+{
+	char *ParsePointer = strtok((char*)ReceivedData, "=");
+
+	if(!strcmp("kp",ParsePointer))
+	{
+		kp_change(LineFollower);
+	}
+	else if(!strcmp("kd",ParsePointer))
+	{
+		kd_change(LineFollower);
+	}
+	else if(!strcmp("Base_speed_R",ParsePointer))
+	{
+		Base_speed_R_change(LineFollower);
+	}
+	else if(!strcmp("Base_speed_L",ParsePointer))
+	{
+		Base_speed_L_change(LineFollower);
+	}
+	else if(!strcmp("Max_speed_R",ParsePointer))
+	{
+		Max_speed_R_change(LineFollower);
+	}
+	else if(!strcmp("Sharp_bend_speed_right",ParsePointer))
+	{
+		Sharp_bend_speed_right_change(LineFollower);
+	}
+	else if(!strcmp("Sharp_bend_speed_left",ParsePointer))
+	{
+		Sharp_bend_speed_left_change(LineFollower);
+	}
+	else if(!strcmp("Bend_speed_right",ParsePointer))
+	{
+		Bend_speed_right_change(LineFollower);
+	}
+	else if(!strcmp("Bend_speed_left",ParsePointer))
+	{
+		Bend_speed_left_change(LineFollower);
+	}
+}

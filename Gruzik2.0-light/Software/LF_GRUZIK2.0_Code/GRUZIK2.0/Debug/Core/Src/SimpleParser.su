@@ -1,0 +1,12 @@
+../Core/Src/SimpleParser.c:19:6:Parser_TakeLine	24	static
+../Core/Src/SimpleParser.c:43:13:kp_change	24	static
+../Core/Src/SimpleParser.c:53:13:kd_change	24	static
+../Core/Src/SimpleParser.c:62:13:Base_speed_change	24	static
+../Core/Src/SimpleParser.c:73:13:Max_speed_change	24	static
+../Core/Src/SimpleParser.c:83:13:Sharp_bend_speed_right_change	24	static
+../Core/Src/SimpleParser.c:92:13:Sharp_bend_speed_left_change	24	static
+../Core/Src/SimpleParser.c:101:13:Bend_speed_right_change	24	static
+../Core/Src/SimpleParser.c:110:13:Bend_speed_left_change	24	static
+../Core/Src/SimpleParser.c:119:13:App_Controll	16	static
+../Core/Src/SimpleParser.c:395:13:Mode_change	24	static
+../Core/Src/SimpleParser.c:404:6:Parser_Parse	24	static

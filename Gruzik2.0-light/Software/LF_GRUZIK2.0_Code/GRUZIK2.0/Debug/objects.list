@@ -1,4 +1,7 @@
+"./Core/Src/Line_Follower.o"
+"./Core/Src/RingBuffer.o"
 "./Core/Src/SN-functions.o"
+"./Core/Src/SimpleParser.o"
 "./Core/Src/adc.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"

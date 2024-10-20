@@ -29,6 +29,9 @@
 #include "stdlib.h"
 #include "stdio.h"
 #include "string.h"
+#include "Line_Follower.h"
+#include "RingBuffer.h"
+#include "SimpleParser.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,13 +54,18 @@
 	/*Defines*/
 	#define true 1;
 	#define false 0;
+	#define ENDLINE '\n'
 
-	/*PIDR regulator*/
+	LineFollower_t GRUZIK;
+
+	RingBuffer_t RB, ReceiveBuffer;
+	uint8_t ReceivedData[32];
+	uint8_t ReceivedLines;
+
+	/*Rest of PIDR regulator*/
 	int Sensors_read = 0x00000000;
 	int Position;
-	float Kp = 0.02;
 	float Ki = 0;
-	float Kd = 350 ;
 	float Kr = 0;
 	int P, I, D, R;
 	int Last_error = 0;
@@ -66,22 +74,14 @@
 	int Last_end = 0;	// 0 -> Left, 1 -> Right
 	int Last_idle = 0;
 	float Speed_level = 1;
-	int Base_speed_R = 92;
-	int Base_speed_L = 92;
-	int Max_speed_R = 140;
-	int Max_speed_L = 140;
 	int ARR = 4;
 	int actives = 0;
 
-	/*Sharp turn speed*/
-	int Sharp_bend_speed_right=-90;
-	int Sharp_bend_speed_left=185;
-	int Bend_speed_right=-50;
-	int Bend_speed_left=100;
+
 
 	/*Communication*/
     char buffer[28];
-    char RxData[28];
+    uint8_t RxData;
 
 	/*Battery*/
 	uint16_t raw_battery;
@@ -249,16 +249,16 @@ void sharp_turn () {
 	if (Last_idle < 25)
 	{
 		if (Last_end == 1)
-			motor_control(Sharp_bend_speed_right, Sharp_bend_speed_left);
+			motor_control(GRUZIK.Sharp_bend_speed_right, GRUZIK.Sharp_bend_speed_left);
 		else
-			motor_control(Sharp_bend_speed_left, Sharp_bend_speed_right);
+			motor_control(GRUZIK.Sharp_bend_speed_left, GRUZIK.Sharp_bend_speed_right);
 	}
 	else
 	{
 		if (Last_end == 1)
-			motor_control(Bend_speed_right, Bend_speed_left);
+			motor_control(GRUZIK.Bend_speed_right, GRUZIK.Bend_speed_left);
 		else
-			motor_control(Bend_speed_left, Bend_speed_right);
+			motor_control(GRUZIK.Bend_speed_left, GRUZIK.Bend_speed_right);
 	}
 }
 int QTR8_read ()
@@ -411,15 +411,15 @@ void PID_control() {
   R = errors_sum(5, 1);
   Last_error = error;
 
-  int motorspeed = P*Kp + I*Ki + D*Kd;
+  int motorspeed = P*GRUZIK.Kp + I*Ki + D*GRUZIK.Kd;
 
-  int motorspeedl = Base_speed_L + motorspeed - R*Kr;
-  int motorspeedr = Base_speed_R - motorspeed - R*Kr;
+  int motorspeedl = GRUZIK.Base_speed_L + motorspeed - R*Kr;
+  int motorspeedr = GRUZIK.Base_speed_R - motorspeed - R*Kr;
 
-  if (motorspeedl > Max_speed_L)
-    motorspeedl = Max_speed_L;
-  if (motorspeedr > Max_speed_R)
-    motorspeedr = Max_speed_R;
+  if (motorspeedl > GRUZIK.Max_speed_L)
+    motorspeedl = GRUZIK.Max_speed_L;
+  if (motorspeedr > GRUZIK.Max_speed_R)
+    motorspeedr = GRUZIK.Max_speed_R;
 
   	Battery_ADC_measurement();
 	forward_brake(motorspeedr, motorspeedl);
@@ -463,23 +463,32 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  /*Start receiving data from Bluetooth*/
-   HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
+  /*Initial values for PID*/
+  	GRUZIK.Kp = 0.02;
+	GRUZIK.Kd = 350;
+
+	GRUZIK.Base_speed_R = 92;
+	GRUZIK.Base_speed_L = 92;
+	GRUZIK.Max_speed_R = 140;
+	GRUZIK.Max_speed_L = 140;
+
+	/*Sharp turn speed*/
+	GRUZIK.Sharp_bend_speed_right=-90;
+	GRUZIK.Sharp_bend_speed_left=185;
+	GRUZIK.Bend_speed_right=-50;
+	GRUZIK.Bend_speed_left=100;
+
+  /*Start receiving data from Blue tooth*/
+   HAL_UART_Receive_IT(&huart1, &RxData, 1);
 
    /*Start and compare timers*/
    HAL_TIM_Base_Start_IT(&htim1);
    HAL_TIM_Base_Start(&htim2);
   //HAL_TIM_Base_Start(&htim3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
+   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
-   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
-   //__HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_1, 100);
-   __HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_2, 100);
-   __HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_1, 0);
-   __HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_3, 100);
-   __HAL_TIM_SET_COMPARE (&htim4, TIM_CHANNEL_4, 100);
-   HAL_Delay(2000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -495,6 +504,14 @@ int main(void)
 	  if(battery_procentage_raw < 75)
 	  {
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+	  }
+
+	  if(ReceivedLines > 0)
+	  {
+		  Parser_TakeLine(&ReceiveBuffer, &ReceivedData);
+		  Parser_Parse(ReceivedData,&GRUZIK);
+
+		  ReceivedLines--;
 	  }
   }
   /* USER CODE END 3 */
@@ -549,410 +566,193 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-	if(huart->Instance==USART1)
+	if(huart->Instance == USART1)
 	{
-		/*Stop robot*/
-		if(RxData[0] == 'N')
+		if(RB_Write(&ReceiveBuffer, RxData) == RB_OK)
 		{
-			/*Stop GRUZIK2.0 and turn off the LED*/
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-
-			/*Send battery percentage*/
-			SN_UART_Send(&huart1, "%.1f \r \n" ,battery_procentage_raw);
-
-		}
-		/*Start robot*/
-		if (RxData[0] == 'Y')
-		{
-
-			/*Time mode*/
-			if(Is_time_mode)
+			if(RxData == ENDLINE)
 			{
-				/*Change mode to mode 2 for Start_time*/
-				for(int i = 1; i <= 27 ;i++)
-					RxData[i] = 0;
-				RxData[0] = Mode_Change(mode_1);
-				HAL_UART_RxCpltCallback(&huart1);
-
-				/*Start waiting for mode change*/
-				__HAL_TIM_SET_COUNTER(&htim1, Start_time);
+				ReceivedLines++;
 			}
-
-			/*Do Battery measurement before start*/
-			Battery_ADC_measurement();
-
-			/*Start GRUZIK2.0 and turn on the LED*/
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 		}
-		/*Terminal communication*/
-		if(RxData[0] == 'T')
-		{
-			/*char char_value[10];
-			if(RxData[2] == 'p')
-			{
-				SN_Value_In_Message(RxData, SN_Find_first(RxData, "p:"), SN_Find_first(RxData, "end") , char_value);
-				Kp = atof(char_value);
-			}
-			if(RxData[2] == 'p')
-			{
-				SN_Value_In_Message(RxData, SN_Find_first(RxData, "d:"), SN_Find_first(RxData, "end") , char_value);
-				Kd= atof(char_value);
-			}*/
-			HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
-		}
-		/*Time mode*/
-		if(RxData[0] == 'g')
-		{
-			/*mode 2*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m2:") + 3, SN_Find_first(RxData, "st:"), char_value);
-			mode_2 = atoi(char_value);
-
-			/*mode 1*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "m1:") + 3, SN_Find_first(RxData, "m2:"), char_value);
-			int mode_3 = atoi(char_value);
-
-			/*Start time*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "st:") + 3, SN_Find_first(RxData, "ct:"), char_value);
-			Start_time = atoi(char_value);
-
-			/*mode 1*/
-			SN_Value_In_Message(RxData, SN_Find_first(RxData, "ct:") + 3, SN_Find_first(RxData, "E"), char_value);
-			Change_time = atoi(char_value);
-
-			/*Show data by UART-USB*/
-			SN_UART_Send(&huart3, "m1:%d  m2:%d st:%d ct:%d \r \n ", mode_3, mode_2, Start_time, Change_time);
-
-			/*Check if data read correctly*/
-			mode_1 = mode_3;
-			if((mode_1 > 15) || (mode_2 > 15))
-				IS_DATA_OK = false;
-			if((Start_time > 40000) || (Change_time > 40000))
-				IS_DATA_OK = false;
-			if(IS_DATA_OK)
-			{
-				HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
-				Is_time_mode = 1;
-			}
-			SN_UART_Send(&huart3,"IS_DATA_OK = %d \r \n ",IS_DATA_OK);
-			SN_UART_Send(&huart3,"IS_DATA_OK = %d \r \n ",IS_DATA_OK);
-
-		}
-     	/*LOW mode*/
-     	if(RxData[0] == 'a')
-     	{
-    	 	 ARR=3;
-     	 	 Base_speed_R = 150;
-     	 	 Base_speed_L = 150;
-     	 	 Max_speed_L = 130;
-     	 	 Max_speed_R = 130;
-     	 	 Sharp_bend_speed_right=-115;
-     	 	 Sharp_bend_speed_left=120;
-     	 	 Bend_speed_right=-76;
-     	 	 Bend_speed_left=125;
-     	 	 Kp = 0.02;//0.02 //0.009
-     	 	 Kd = 165;
-     	}
-     	/*LOW+ mode*/
-     	if(RxData[0] == 'd')
-     	{
-    	 	 ARR=3;
-     	 	 Base_speed_R = 165;
-     	 	 Base_speed_L = 165;
-     	 	 Max_speed_L = 130;
-     	 	 Max_speed_R = 130;
-     	 	 Sharp_bend_speed_right=-120;
-     	 	 Sharp_bend_speed_left=125;
-     	 	 Bend_speed_right=-76;
-     	 	 Bend_speed_left=125;
-     	 	 Kp = 0.04;//0.4
-     	 	 Kd = 75;
-     	}
-     	/*Medium mode*/
-     	if(RxData[0] == 'b')
-     	{
-    	 	 ARR=3;
-     	 	 Base_speed_R = 175;
-     	 	 Base_speed_L = 175;
-     	 	 Max_speed_L = 135;
-     	 	 Max_speed_R = 135;
-     	 	 Sharp_bend_speed_right = -120;
-     	 	 Sharp_bend_speed_left = 125;
-     	 	 Bend_speed_right = -76;
-     	 	 Bend_speed_left = 125;
-     	 	 Kp = 0.03;//0.03
-     	 	 Kd = 70;
-     	}
-     	/*Medium+ mode*/
-     	if(RxData[0] == 'e')
-     	{
-    	 	 ARR=3;
-     	 	 Base_speed_R = 190;
-     	 	 Base_speed_L = 190;
-     	 	 Max_speed_L = 145;
-     	 	 Max_speed_R = 145;
-     	 	 Sharp_bend_speed_right = -100;
-     	 	 Sharp_bend_speed_left = 100;
-     	 	 Bend_speed_right = -76;
-     	 	 Bend_speed_left = 125;
-     	 	 Kp = 0.03;//0.03
-     	 	 Kd = 70;
-     	}
-     	/*HIGH mode*/
-     	if(RxData[0] == 'c')
-     	{
-    	 	ARR=3;
-     	 	Base_speed_R = 225;
-     	 	Base_speed_L = 225;
-     	 	Max_speed_L = 150;
-     	 	Max_speed_R = 150;
-     	 	Sharp_bend_speed_right = -73;
-     	 	Sharp_bend_speed_left = 78;
-     	 	Bend_speed_right = -76;
-     	 	Bend_speed_left = 125;
-     	 	Kp = 0.04;//0.04
-     	 	Kd = 75;
-     	}
-     	/*HIGH+ mode*/
-     	if(RxData[0] == 'f')
-     	{
-    	 	ARR=3;
-    	 	Base_speed_R = 250;
-    	 	Base_speed_L = 250;
-    	 	Max_speed_L = 160;
-    	 	Max_speed_R = 160;
-    	 	Sharp_bend_speed_right = -65;
-     		Sharp_bend_speed_left = 70;
-     		Bend_speed_right=-76;
-     		Bend_speed_left=125;
-     		Kp = 0.04;
-     	 	Kd=75;
-     	}
-     	/*TRUBO mode*/
-     	if(RxData[0] == 'i')
-     	{
-    	 	ARR=3;
-    	 	Base_speed_R = 270;
-    	 	Base_speed_L = 270;
-    	 	Max_speed_L = 150;
-    	 	Max_speed_R = 150;
-    	 	Sharp_bend_speed_right = -65;
-    	 	Sharp_bend_speed_left = 70;
-    	 	Bend_speed_right = -76;
-    	 	Bend_speed_left = 130;
-    	 	Kp = 0.045;
-    	 	Kd = 75;
-     	}
-     	/*TRUBO+ mode*/
-     	if(RxData[0] == 'j')
-     	{
-     	    ARR=3;
-     	    Base_speed_R = 295;
-     	    Base_speed_L = 295;
-     	    Max_speed_L = 165;
-     	    Max_speed_R = 165;
-     	    Sharp_bend_speed_right = -70;
-     	    Sharp_bend_speed_left = 73;
-     	    Bend_speed_right = -76;
-     	    Bend_speed_left = 130;
-     	    Kp = 0.05;
-     	    Kd = 80;
-     	}
-     	/*ULTRA mode*/
-     	if(RxData[0] == 'k')
-     	{
-     	    ARR=3;
-     	    Base_speed_R = 315;
-     	    Base_speed_L = 315;
-     	    Max_speed_L = 168;
-     	    Max_speed_R = 168;
-     	    Sharp_bend_speed_right = -70;
-     	    Sharp_bend_speed_left = 73;
-     	    Bend_speed_right = -76;
-     	    Bend_speed_left = 128;
-     	    Kp = 0.067;
-     	    Kd = 95;
-     	 }
-     	 /*ULTRA+ mode*/
-     	 if(RxData[0] == 'l')
-     	 {
-     	     ARR=4;
-     	     Base_speed_R = 102;
-     	     Base_speed_L = 102;
-     	     Max_speed_L = 155;
-     	     Max_speed_R = 155;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
-     	     Bend_speed_right = -50;
-     	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
-     	  }
-     	  /*EXTREME mode*/
-     	  if(RxData[0] == 'm')
-     	  {
-     	     ARR=4;
-     	     Base_speed_R = 107;
-     	     Base_speed_L = 107;
-     	     Max_speed_L = 159;
-     	     Max_speed_R = 159;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
-     	     Bend_speed_right = -50;
-     	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
-     	  }
-     	  /*EXTREME+ mode*/
-     	  if(RxData[0] == 'n')
-     	  {
-     	     ARR=4;
-     	     Base_speed_R = 116;
-     	     Base_speed_L = 116;
-     	     Max_speed_L = 167;
-     	     Max_speed_R = 167;
-     	     Sharp_bend_speed_right = -96;
-     	     Sharp_bend_speed_left = 185;
-     	     Bend_speed_right = -50;
-     	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
-     	  }
-     	  /*SPECIAL mode*/
-     	  if(RxData[0] == 'h')
-     	  {
-     	     ARR=4;
-     	     Base_speed_R = 123;
-     	     Base_speed_L = 123;
-     	     Max_speed_L = 172;
-     	     Max_speed_R = 172;
-     	     Sharp_bend_speed_right = -90;
-     	     Sharp_bend_speed_left = 185;
-     	     Bend_speed_right = -50;
-     	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
-     	  }
-     	  /*RA-1-final-slower*/
-     	  if(RxData[0] == 'o')
-     	  {
-     	     ARR=4;
-     	     Base_speed_R = 143;
-     	     Base_speed_L = 143;
-     	     Max_speed_L = 182;
-     	     Max_speed_R = 182;
-     	     Sharp_bend_speed_right = -76;
-     	     Sharp_bend_speed_left = 90;
-     	     Bend_speed_right = -50;
-     	     Bend_speed_left = 100;
-     	     Kp = 0.02;
-     	     Kd = 350;
-     	   }
-     	   /*RA-2-eliminations-faster*/
-     	   if(RxData[0] == 'u')
-     	   {
-     	      ARR=4;
-     	      Base_speed_R = 153;
-     	      Base_speed_L = 153;
-     	      Max_speed_L = 187;
-     	      Max_speed_R = 187;
-     	      Sharp_bend_speed_right = -76;
-     	      Sharp_bend_speed_left = 90;
-     	      Bend_speed_right = -50;
-     	      Bend_speed_left = 100;
-     	      Kp = 0.02;
-     	      Kd = 350;
-     	   }
-     	  /*Gruzik2.1 Robo Comp 2024r 1*/
-     	  if(RxData[0] == 'p')
-     	  {
-     		  ARR=4;
-     		  Base_speed_R = 143;
-     		  Base_speed_L = 143;
-     		  Max_speed_L = 182;
-     		  Max_speed_R = 182;
-     		  Sharp_bend_speed_right = -76;
-     		  Sharp_bend_speed_left = 90;
-     		  Bend_speed_right = -40;//40
-     		  Bend_speed_left = 110;
-     		  Kp = 0.02;
-     		  Kd = 350;
-     	       	   }
-     	  /*Gruzik2.1 Robo Comp 2024 2*/
-     	  if(RxData[0] == 'r')
-     	  {
-     		  ARR=4;
-     		  Base_speed_R = 153;
-     		  Base_speed_L = 153;
-     		  Max_speed_L = 187;
-     		  Max_speed_R = 187;
-     		  Sharp_bend_speed_right = -76;
-     		  Sharp_bend_speed_left = 90;
-     		  Bend_speed_right = -40;//40
-     		  Bend_speed_left = 110;
-     		  Kp = 0.02;
-     		  Kd = 350;
-     	       	   }
-     	/*Send some data through UART3-USB terminal*/
-     	Battery_ADC_measurement();
-
-     	/*Print received data to UART-USB*/
-     	SN_UART_Send(&huart3,"rxData: { ",(uint8_t*)RxData);
-     	for(int i = 0; i <= 27 ;i++)
-     		SN_UART_Send(&huart3,"%c ",RxData[i]);
-     	SN_UART_Send(&huart3,"} \r \n ");
-
-    	SN_UART_Send(&huart3,"speedlevel = %.1f \r \n battery: %.1f \r \n raw= %d \r \n ",Speed_level, battery_procentage_raw, raw_battery);
-    	/*Begin receiving*/
-    	HAL_UART_Receive_IT(&huart1,(uint8_t*)RxData,28);
+    	HAL_UART_Receive_IT(&huart1,&RxData, 1);
 	}
 }
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+//void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+//{
+//    if (htim->Instance == TIM1)
+//    {
+//    	/*Time mode*/
+//    	SN_UART_Send(&huart3,"Entered time Callback !  \r \n ");
+//
+//    	/*Change mode to mode 1 after Start time*/
+//    	if(Is_time_mode && Is_Mode_changed)
+//    	{
+//    	    /*Modify RxData*/
+//    	    for(int i = 1; i <= 27 ;i++)
+//    	    	RxData[i] = 0;
+//    	    RxData[0] = Mode_Change(mode_1);
+//
+//    	    /*Change mode*/
+//    	    HAL_UART_RxCpltCallback(&huart1);
+//
+//    	    /*Signal change*/
+//    	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+//    	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
+//    	    SN_UART_Send(&huart1,"Changed Back to mode_1  \r \n ");
+//    	}
+//    	/*Change mode to mode 2 for Change time*/
+//    	if(Is_time_mode && !Is_Mode_changed)
+//    	{
+//    		/*Modify RxData*/
+//    		for(int i = 1; i <= 27 ;i++)
+//    			RxData[i] = 0;
+//    		RxData[0] = Mode_Change(mode_2);
+//
+//    		/*Change mode*/
+//    		HAL_UART_RxCpltCallback(&huart1);
+//
+//    		/*Set timer time*/
+//    		__HAL_TIM_SET_COUNTER(&htim1, Change_time);
+//    		Is_Mode_changed = true;
+//
+//
+//    		/*Signal change*/
+//    		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
+//    		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
+//    		SN_UART_Send(&huart1,"Changed to mode_2  \r \n ");
+//    	}
+//    }
+//}
+
+void GRUZIK_App_Controll(char RxData, LineFollower_t *GRUZIK)
 {
-    if (htim->Instance == TIM1)
-    {
-    	/*Time mode*/
-    	SN_UART_Send(&huart3,"Entered time Callback !  \r \n ");
+	/*Stop robot*/
+	if(RxData == 'N')
+	{
+		/*Stop GRUZIK2.0 and turn off the LED*/
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
-    	/*Change mode to mode 1 after Start time*/
-    	if(Is_time_mode && Is_Mode_changed)
-    	{
-    	    /*Modify RxData*/
-    	    for(int i = 1; i <= 27 ;i++)
-    	    	RxData[i] = 0;
-    	    RxData[0] = Mode_Change(mode_1);
+		/*Send battery percentage*/
+		SN_UART_Send(&huart1, "%.1f \r \n" ,battery_procentage_raw);
 
-    	    /*Change mode*/
-    	    HAL_UART_RxCpltCallback(&huart1);
+	}
+	/*Start robot*/
+	if (RxData == 'Y')
+	{
 
-    	    /*Signal change*/
-    	    HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
-    	    SN_UART_Send(&huart3,"Changed Back to mode_1  \r \n ");
-    	    SN_UART_Send(&huart1,"Changed Back to mode_1  \r \n ");
-    	}
-    	/*Change mode to mode 2 for Change time*/
-    	if(Is_time_mode && !Is_Mode_changed)
-    	{
-    		/*Modify RxData*/
-    		for(int i = 1; i <= 27 ;i++)
-    			RxData[i] = 0;
-    		RxData[0] = Mode_Change(mode_2);
+		/*Time mode*/
+		if(Is_time_mode)
+		{
+			/*Change mode to mode 2 for Start_time*/
+			RxData = Mode_Change(mode_1);
+			HAL_UART_RxCpltCallback(&huart1);
 
-    		/*Change mode*/
-    		HAL_UART_RxCpltCallback(&huart1);
+			/*Start waiting for mode change*/
+			__HAL_TIM_SET_COUNTER(&htim1, Start_time);
+		}
 
-    		/*Set timer time*/
-    		__HAL_TIM_SET_COUNTER(&htim1, Change_time);
-    		Is_Mode_changed = true;
+		/*Do Battery measurement before start*/
+		Battery_ADC_measurement();
 
+		/*Start GRUZIK2.0 and turn on the LED*/
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+	}
 
-    		/*Signal change*/
-    		HAL_GPIO_TogglePin(LD_GPIO_Port, LD_Pin);
-    		SN_UART_Send(&huart3,"Changed to mode_2  \r \n ");
-    		SN_UART_Send(&huart1,"Changed to mode_2  \r \n ");
-    	}
-    }
+ 	  /*EXTREME+ mode*/
+ 	  if(RxData == 'n')
+ 	  {
+ 	     ARR=4;
+ 	    GRUZIK->Base_speed_R = 116;
+ 	    GRUZIK->Base_speed_L = 116;
+ 	    GRUZIK->Max_speed_L = 167;
+ 	  	GRUZIK->Max_speed_R = 167;
+ 	 	GRUZIK->Sharp_bend_speed_right = -96;
+ 		GRUZIK->Sharp_bend_speed_left = 185;
+ 		GRUZIK->Bend_speed_right = -50;
+ 		GRUZIK->Bend_speed_left = 100;
+ 		GRUZIK->Kp = 0.02;
+ 		GRUZIK->Kd = 350;
+ 	  }
+ 	  /*SPECIAL mode*/
+ 	  if(RxData == 'h')
+ 	  {
+ 	     ARR=4;
+ 	    GRUZIK->Base_speed_R = 123;
+ 	    GRUZIK->Base_speed_L = 123;
+ 	    GRUZIK->Max_speed_L = 172;
+ 	    GRUZIK->Max_speed_R = 172;
+ 	 	GRUZIK->Sharp_bend_speed_right = -90;
+ 		GRUZIK->Sharp_bend_speed_left = 185;
+ 		GRUZIK->Bend_speed_right = -50;
+ 		GRUZIK->Bend_speed_left = 100;
+ 		GRUZIK->Kp = 0.02;
+ 		GRUZIK->Kd = 350;
+ 	  }
+ 	  /*RA-1-final-slower*/
+ 	  if(RxData == 'o')
+ 	  {
+ 	     ARR=4;
+ 	    GRUZIK->Base_speed_R = 143;
+ 	    GRUZIK->Base_speed_L = 143;
+ 	   	GRUZIK->Max_speed_L = 182;
+ 	  	GRUZIK->Max_speed_R = 182;
+ 	  	GRUZIK->Sharp_bend_speed_right = -76;
+ 		GRUZIK->Sharp_bend_speed_left = 90;
+ 		GRUZIK->Bend_speed_right = -50;
+ 		GRUZIK->Bend_speed_left = 100;
+ 		GRUZIK->Kp = 0.02;
+ 		GRUZIK->Kd = 350;
+ 	   }
+ 	   /*RA-2-eliminations-faster*/
+ 	   if(RxData == 'u')
+ 	   {
+ 	      ARR=4;
+ 	     GRUZIK->Base_speed_R = 153;
+ 	     GRUZIK->Base_speed_L = 153;
+ 	     GRUZIK->Max_speed_L = 187;
+ 	   	 GRUZIK->Max_speed_R = 187;
+ 	  	 GRUZIK->Sharp_bend_speed_right = -76;
+ 	 	 GRUZIK->Sharp_bend_speed_left = 90;
+ 	 	 GRUZIK->Bend_speed_right = -50;
+ 	 	 GRUZIK->Bend_speed_left = 100;
+ 	 	 GRUZIK->Kp = 0.02;
+ 	 	 GRUZIK->Kd = 350;
+ 	   }
+ 	  /*Gruzik2.1 Robo Comp 2024r 1*/
+ 	  if(RxData == 'p')
+ 	  {
+ 		  ARR=4;
+ 		 GRUZIK->Base_speed_R = 143;
+ 		 GRUZIK->Base_speed_L = 143;
+ 		 GRUZIK->Max_speed_L = 182;
+ 		 GRUZIK->Max_speed_R = 182;
+ 		 GRUZIK->Sharp_bend_speed_right = -76;
+ 		 GRUZIK->Sharp_bend_speed_left = 90;
+ 		 GRUZIK->Bend_speed_right = -40;//40
+ 		 GRUZIK->Bend_speed_left = 110;
+ 		 GRUZIK->Kp = 0.02;
+ 		 GRUZIK->Kd = 350;
+ 	  }
+ 	  /*Gruzik2.1 Robo Comp 2024 2*/
+ 	  if(RxData == 'r')
+ 	  {
+ 		  ARR=4;
+ 		 GRUZIK->Base_speed_R = 153;
+ 		 GRUZIK->Base_speed_L = 153;
+ 		 GRUZIK->Max_speed_L = 187;
+ 		 GRUZIK->Max_speed_R = 187;
+ 		 GRUZIK->Sharp_bend_speed_right = -76;
+ 		 GRUZIK->Sharp_bend_speed_left = 90;
+ 		 GRUZIK->Bend_speed_right = -40;//40
+ 		 GRUZIK->Bend_speed_left = 110;
+ 		 GRUZIK->Kp = 0.02;
+ 		 GRUZIK->Kd = 350;
+ 	   }
+ 	/*Send some data through UART3-USB terminal*/
+ 	Battery_ADC_measurement();
 }
 /* USER CODE END 4 */
 

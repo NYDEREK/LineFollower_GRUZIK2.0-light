@@ -1,0 +1,3 @@
+../Core/Src/RingBuffer.c:10:11:RB_Write	24	static
+../Core/Src/RingBuffer.c:26:11:RB_Read	16	static
+../Core/Src/RingBuffer.c:39:6:RB_Flush	16	static

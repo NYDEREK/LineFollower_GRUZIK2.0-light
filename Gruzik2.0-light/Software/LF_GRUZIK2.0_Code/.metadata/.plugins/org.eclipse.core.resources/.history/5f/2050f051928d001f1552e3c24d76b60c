@@ -1,0 +1,61 @@
+/*
+ * SimpleParser.c
+ *
+ *  Created on: Aug 28, 2024
+ *      Author: Szymon
+ */
+
+
+#include "main.h"
+#include "usart.h"
+#include "string.h"
+#include "stdio.h"
+#include "RingBuffer.h"
+#include "stdlib.h"
+#include "SimpleParser.h"
+#include "Line_Follower.h"
+char My_Name[32] = "GRUZIK2.0";
+
+void Parser_TakeLine(RingBuffer_t *Buf, uint8_t *ReceivedData)
+{
+	uint8_t Tmp;
+	uint8_t i = 0;
+	do
+	{
+		RB_Read(Buf, &Tmp);
+
+		if(Tmp == ENDLINE)
+		{
+			ReceivedData[i] = 0;
+
+		}
+
+		else
+		{
+			ReceivedData[i] = Tmp;
+		}
+		i++;
+
+	} while(Tmp != ENDLINE);
+
+}
+
+static void kp_change(LineFollower_t *LF)
+{
+	char *ParsePointer = strtok(NULL, ",");
+
+	if(strlen(ParsePointer) > 0 && strlen(ParsePointer) < 32)
+	{
+		LF->Kp = atof(ParsePointer);
+	}
+
+}
+void Parser_Parse(uint8_t *ReceivedData)
+{
+	char *ParsePointer = strtok((char*)ReceivedData, "=");
+
+	if(!strcmp("kp",ParsePointer))
+	{
+		kp_change(&GRUZIK);
+	}
+}
