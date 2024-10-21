@@ -154,86 +154,86 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 	/*LOW mode*/
 	if(RxData == 'a')
 	{
-		LineFollower->Base_speed_R = 100;
-		LineFollower->Base_speed_L = 100;
-		LineFollower->Max_speed_L = 100;
-		LineFollower->Max_speed_R = 100;
-		LineFollower->Sharp_bend_speed_right =- 50;
-		LineFollower->Sharp_bend_speed_left = 50;
-		LineFollower->Bend_speed_right = -50;
-		LineFollower->Bend_speed_left = 50;
-		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.1;
+		LineFollower->Base_speed_R = 150;
+		LineFollower->Base_speed_L = 150;
+		LineFollower->Max_speed_L = 130;
+		LineFollower->Max_speed_R = 130;
+		LineFollower->Sharp_bend_speed_right=-115;
+		LineFollower->Sharp_bend_speed_left=120;
+		LineFollower->Bend_speed_right=-76;
+		LineFollower->Bend_speed_left=125;
+		LineFollower->Kp = 0.02;//0.02 //0.009
+		LineFollower->Kd = 165;
 	}
 	/*LOW+ mode*/
 	if(RxData == 'd')
 	{
-		LineFollower->Base_speed_R = 110;
-		LineFollower->Base_speed_L = 110;
-		LineFollower->Max_speed_L = 110;
-		LineFollower->Max_speed_R = 110;
-		LineFollower->Sharp_bend_speed_right = -60;
-		LineFollower->Sharp_bend_speed_left = 50;
-		LineFollower->Bend_speed_right = -60;
-		LineFollower->Bend_speed_left = 50;
-		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.1;
+		LineFollower->Base_speed_R = 165;
+		LineFollower->Base_speed_L = 165;
+		LineFollower->Max_speed_L = 130;
+		LineFollower->Max_speed_R = 130;
+		LineFollower->Sharp_bend_speed_right=-120;
+		LineFollower->Sharp_bend_speed_left=125;
+		LineFollower->Bend_speed_right=-76;
+		LineFollower->Bend_speed_left=125;
+		LineFollower->Kp = 0.04;//0.4
+		LineFollower->Kd = 75;
 	}
 	/*Medium mode*/
 	if(RxData == 'b')
 	{
-		LineFollower->Base_speed_R = 120;
-		LineFollower->Base_speed_L = 120;
-		LineFollower->Max_speed_L = 120;
-		LineFollower->Max_speed_R = 120;
-		LineFollower->Sharp_bend_speed_right = -70;
-		LineFollower->Sharp_bend_speed_left = 85;
-		LineFollower->Bend_speed_right = -50;
-		LineFollower->Bend_speed_left = 110;
-		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.25;
+		LineFollower->Base_speed_R = 175;
+		LineFollower->Base_speed_L = 175;
+		LineFollower->Max_speed_L = 135;
+		LineFollower->Max_speed_R = 135;
+		LineFollower->Sharp_bend_speed_right = -120;
+		LineFollower->Sharp_bend_speed_left = 125;
+		LineFollower->Bend_speed_right = -76;
+		LineFollower->Bend_speed_left = 125;
+		LineFollower->Kp = 0.03;//0.03
+		LineFollower->Kd = 70;
 	}
 	/*Medium+ mode*/
 	if(RxData == 'e')
 	{
-		LineFollower->Base_speed_R = 125;
-		LineFollower->Base_speed_L = 125;
-		LineFollower->Max_speed_L = 125;
-		LineFollower->Max_speed_R = 125;
-		LineFollower->Sharp_bend_speed_right = -70;
-		LineFollower->Sharp_bend_speed_left = 85;
-		LineFollower->Bend_speed_right = -50;
-		LineFollower->Bend_speed_left = 110;
-		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.25;
+		LineFollower->Base_speed_R = 190;
+		LineFollower->Base_speed_L = 190;
+		LineFollower->Max_speed_L = 145;
+		LineFollower->Max_speed_R = 145;
+		LineFollower->Sharp_bend_speed_right = -100;
+		LineFollower->Sharp_bend_speed_left = 100;
+		LineFollower->Bend_speed_right = -76;
+		LineFollower->Bend_speed_left = 125;
+		LineFollower->Kp = 0.03;//0.03
+		LineFollower->Kd = 70;
 	}
 	/*HIGH mode*/
 	if(RxData == 'c')
 	{
-		LineFollower->Base_speed_R = 130;
-		LineFollower->Base_speed_L = 130;
-		LineFollower->Max_speed_L = 130;
-		LineFollower->Max_speed_R = 130;
-		LineFollower->Sharp_bend_speed_right = -70;
-		LineFollower->Sharp_bend_speed_left = 85;
-		LineFollower->Bend_speed_right = -50;
-		LineFollower->Bend_speed_left = 110;
-		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.4;
+		LineFollower->Base_speed_R = 225;
+		LineFollower->Base_speed_L = 225;
+		LineFollower->Max_speed_L = 150;
+		LineFollower->Max_speed_R = 150;
+		LineFollower->Sharp_bend_speed_right = -73;
+		LineFollower->Sharp_bend_speed_left = 78;
+		LineFollower->Bend_speed_right = -76;
+		LineFollower->Bend_speed_left = 125;
+		LineFollower->Kp = 0.04;//0.04
+		LineFollower->Kd = 75;
 	}
 	/*HIGH+ mode*/
 	if(RxData == 'f')
 	{
-		LineFollower->Base_speed_R = 135;
-		LineFollower->Base_speed_L = 135;
-		LineFollower->Max_speed_L = 135;
-		LineFollower->Max_speed_R = 135;
-		LineFollower->Sharp_bend_speed_right = -70;
-		LineFollower->Sharp_bend_speed_left = 85;
-		LineFollower->Bend_speed_right = -50;
-		LineFollower->Bend_speed_left = 110;
-		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.4;
+		LineFollower->Base_speed_R = 250;
+		LineFollower->Base_speed_L = 250;
+		LineFollower->Max_speed_L = 160;
+		LineFollower->Max_speed_R = 160;
+		LineFollower->Sharp_bend_speed_right = -65;
+		LineFollower->Sharp_bend_speed_left = 70;
+		LineFollower->Bend_speed_right=-76;
+		LineFollower->Bend_speed_left=125;
+		LineFollower->Kp = 0.04;
+		LineFollower->Kd=75;
 	}
 	/*TRUBO mode*/
 	if(RxData == 'i')
