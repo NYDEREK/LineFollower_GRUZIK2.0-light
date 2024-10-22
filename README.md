@@ -8,7 +8,7 @@
 
 </div>
 
-> **GRUZIK2.0 is a lightweight construction (74g) designed for the "Line Follower Light" competition. The robot features Bluetooth communication with a smartphone app and uses a digital sensor instead of analog.**
+> **GRUZIK2.0 is a lightweight construction (62g) designed for the "Line Follower Light" competition. The robot features Bluetooth communication with a smartphone app and uses a digital sensor instead of analog.**
 
 
 
