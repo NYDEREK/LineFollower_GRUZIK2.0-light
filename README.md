@@ -35,7 +35,7 @@
 - sensor - 8x KTIR0711S
 - battery - 150mAh LiPo dualsky
 - wheels - Kyosho Mini Z
-- motors - Pololu 3071
+- motors - Pololu 2211
 - Bluetooth - HC-05
 
 <div align="center">
