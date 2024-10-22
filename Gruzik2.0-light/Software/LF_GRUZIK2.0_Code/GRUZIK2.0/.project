@@ -29,16 +29,4 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>Core/Inc/SN-functions.h</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/HAL-SN-Functions/SN-functions.h</locationURI>
-		</link>
-		<link>
-			<name>Core/Src/SN-functions.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/HAL-SN-Functions/SN-functions.c</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>

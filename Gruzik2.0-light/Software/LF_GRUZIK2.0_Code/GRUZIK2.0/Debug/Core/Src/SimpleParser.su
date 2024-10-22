@@ -7,6 +7,6 @@
 ../Core/Src/SimpleParser.c:92:13:Sharp_bend_speed_left_change	24	static
 ../Core/Src/SimpleParser.c:101:13:Bend_speed_right_change	24	static
 ../Core/Src/SimpleParser.c:110:13:Bend_speed_left_change	24	static
-../Core/Src/SimpleParser.c:119:13:App_Controll	16	static
-../Core/Src/SimpleParser.c:395:13:Mode_change	24	static
-../Core/Src/SimpleParser.c:404:6:Parser_Parse	24	static
+../Core/Src/SimpleParser.c:119:13:App_Controll	88	static
+../Core/Src/SimpleParser.c:416:13:Mode_change	24	static
+../Core/Src/SimpleParser.c:425:6:Parser_Parse	24	static

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;GRUZIK2.0/Core/Src/SN-functions.c&apos;" deleteContents="false" description="Delete resource &apos;GRUZIK2.0/Core/Src/SN-functions.c&apos;" element1="/GRUZIK2.0/Core/Src/SN-functions.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1729613765257"/>&#x0A;<refactoring comment="Delete resource &apos;GRUZIK2.0/Core/Inc/SN-functions.h&apos;" deleteContents="false" description="Delete resource &apos;GRUZIK2.0/Core/Inc/SN-functions.h&apos;" element1="/GRUZIK2.0/Core/Inc/SN-functions.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1729613772466"/>
+</session>

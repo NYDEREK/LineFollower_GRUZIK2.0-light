@@ -121,33 +121,54 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 	/*Stop robot*/
 	if(RxData == 'N')
 	{
+		uint8_t buffer[48];
 		/*Stop GRUZIK2.0 and turn off the LED*/
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
-		/*Send battery percentage*/
-		//SN_UART_Send(&huart1, "%.1f \r \n" ,battery_procentage_raw);
-
+		/*Send battery voltage*/
+		LineFollower->battery_voltage = (LineFollower->Adc_Value * 8.3)/3831;
+		sprintf((char*)buffer, "ADC_Value = %d \r\n Battery_Voltage = %0.2f V \r\n", LineFollower->Adc_Value, LineFollower->battery_voltage);
+		HAL_UART_Transmit(&huart1, buffer, strlen((char*)buffer), 100);
 	}
 	/*Start robot*/
 	if (RxData == 'Y')
 	{
+		/*Proportional to battery percentage boost for motors
+		 * to keep roughly same speed as with full battery*/
+		float battery_percentage;
+		uint8_t buffer[48];
+		//Calculate battery percentage based on battery voltage
+		LineFollower->battery_voltage = (LineFollower->Adc_Value * 8.3)/3831;
 
-//		/*Time mode*/
-//		if(Is_time_mode)
-//		{
-//			/*Change mode to mode 2 for Start_time*/
-//			RxData = Mode_Change(mode_1);
-//			HAL_UART_RxCpltCallback(&huart1);
-//
-//			/*Start waiting for mode change*/
-//			__HAL_TIM_SET_COUNTER(&htim1, Start_time);
-//		}
-//
-//		/*Do Battery measurement before start*/
-//		Battery_ADC_measurement();
+		//Full battery voltage in working line follower is about 8.24V
+		battery_percentage = (LineFollower->battery_voltage / 8.24) * 100;
 
-		/*Start GRUZIK2.0 and turn on the LED*/
+		/*To don't damage 2s LiPo battery Line follower can't start with battery below 7.2V*/
+		if (LineFollower->battery_voltage < 7.2)
+		{
+			sprintf((char*)buffer, "! Low Battery !\r\n");
+			HAL_UART_Transmit(&huart1, buffer, strlen((char*)buffer), 100);
+			return;
+		}
+		/*Motor speed*/
+		LineFollower->Speed_level = ((100 - battery_percentage + 100) / 100) - LineFollower->Speed_offset;
+
+		if(LineFollower->Speed_level < 1)
+		{
+			LineFollower->Speed_level = 1;
+		}
+
+		/*Send battery data*/
+		LineFollower->battery_voltage = (LineFollower->Adc_Value * 8.3)/3831;
+		sprintf((char*)buffer, "ADC_Value = %d \r\n Battery_Voltage = %0.2f V \r\n", LineFollower->Adc_Value, LineFollower->battery_voltage);
+		HAL_UART_Transmit(&huart1, buffer, strlen((char*)buffer), 100);
+
+
+		sprintf((char*)buffer, "Percentage = %0.2f \r\n Speed_level = %0.2f \r\n", battery_percentage, LineFollower->Speed_level);
+		HAL_UART_Transmit(&huart1, buffer, strlen((char*)buffer), 100);
+
+		/*Stop LineFollower and turn on the LED*/
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 	}
@@ -168,10 +189,10 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 	/*LOW+ mode*/
 	if(RxData == 'd')
 	{
-		LineFollower->Base_speed_R = 110;
-		LineFollower->Base_speed_L = 110;
-		LineFollower->Max_speed_L = 110;
-		LineFollower->Max_speed_R = 110;
+		LineFollower->Base_speed_R = 105;
+		LineFollower->Base_speed_L = 105;
+		LineFollower->Max_speed_L = 105;
+		LineFollower->Max_speed_R = 105;
 		LineFollower->Sharp_bend_speed_right = -60;
 		LineFollower->Sharp_bend_speed_left = 50;
 		LineFollower->Bend_speed_right = -60;
@@ -181,6 +202,20 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 	}
 	/*Medium mode*/
 	if(RxData == 'b')
+	{
+		LineFollower->Base_speed_R = 115;
+		LineFollower->Base_speed_L = 115;
+		LineFollower->Max_speed_L = 115;
+		LineFollower->Max_speed_R = 115;
+		LineFollower->Sharp_bend_speed_right = -70;
+		LineFollower->Sharp_bend_speed_left = 85;
+		LineFollower->Bend_speed_right = -50;
+		LineFollower->Bend_speed_left = 110;
+		LineFollower->Kp = 0.015;
+		LineFollower->Kd = 0.25;
+	}
+	/*Medium+ mode*/
+	if(RxData == 'e')
 	{
 		LineFollower->Base_speed_R = 120;
 		LineFollower->Base_speed_L = 120;
@@ -193,8 +228,8 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 		LineFollower->Kp = 0.015;
 		LineFollower->Kd = 0.25;
 	}
-	/*Medium+ mode*/
-	if(RxData == 'e')
+	/*HIGH mode*/
+	if(RxData == 'c')
 	{
 		LineFollower->Base_speed_R = 125;
 		LineFollower->Base_speed_L = 125;
@@ -205,29 +240,15 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 		LineFollower->Bend_speed_right = -50;
 		LineFollower->Bend_speed_left = 110;
 		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.25;
-	}
-	/*HIGH mode*/
-	if(RxData == 'c')
-	{
-		LineFollower->Base_speed_R = 130;
-		LineFollower->Base_speed_L = 130;
-		LineFollower->Max_speed_L = 130;
-		LineFollower->Max_speed_R = 130;
-		LineFollower->Sharp_bend_speed_right = -70;
-		LineFollower->Sharp_bend_speed_left = 85;
-		LineFollower->Bend_speed_right = -50;
-		LineFollower->Bend_speed_left = 110;
-		LineFollower->Kp = 0.015;
 		LineFollower->Kd = 0.4;
 	}
 	/*HIGH+ mode*/
 	if(RxData == 'f')
 	{
-		LineFollower->Base_speed_R = 135;
-		LineFollower->Base_speed_L = 135;
-		LineFollower->Max_speed_L = 135;
-		LineFollower->Max_speed_R = 135;
+		LineFollower->Base_speed_R = 130;
+		LineFollower->Base_speed_L = 130;
+		LineFollower->Max_speed_L = 130;
+		LineFollower->Max_speed_R = 130;
 		LineFollower->Sharp_bend_speed_right = -70;
 		LineFollower->Sharp_bend_speed_left = 85;
 		LineFollower->Bend_speed_right = -50;
