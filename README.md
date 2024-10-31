@@ -43,29 +43,14 @@
   <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/a5f2fef5-a88e-447f-a070-cfea2200bb3b" width="400"/>
 </div>
 
-## 📱Bluetooth App 📱
+## 📱Bluetooth Apps 📱
 
-> **It's a simple Bluetooth app created with MIT App Inventor. The app starts and stops the robot, allows you to send data in the terminal, slow down or accelerate on any section of the route using Time mode. The Modes pad is responsible for quickly adapting the speed and accuracy of the robot to the route using modes, and the application also displays the battery charge status.**
+> **Thease are simple Bluetooth apps created with MIT App Inventor. Spps start and stop the robot. The Modes pad is responsible for quickly adapting the speed and accuracy of the robot to the route using modes, and the application also displays the battery charge status. Second app is mainly for tweaking PID settings it allows you to change any parameter in seconds**
 
 <div align="center">
-  <img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/99308187-04be-49ce-bf4d-46ec42ed3cef" width="200"/>
+  <img src="https://github.com/user-attachments/assets/7bbf09f1-de58-4a54-b960-737331f7caec" width="200"/>
+  <img src="https://github.com/user-attachments/assets/04cf68f1-61b6-4069-b168-2889a54eaaf8" width="200"/>
 </div>
-
-## ⏱Time Mode⏱
-> **Time Mode is a feature that allows you to slow down or speed up any section of your route by selecting:**
->
-> `mode_1` **- mode for the entire route**
->
-> `mode_2` **- time section mode on the route**
->
-> `Start_time` **- time from start to mode change**
->
-> `Change_time` **- Mode_2 duration**
-
-<img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/f31179b3-dcbc-4551-86c7-9655d86f9fea" width="195"/><img src="https://github.com/NYDEREK/LineFollower_GRUZIK2.0-light/assets/112076828/6e4534ce-c543-4864-8fb3-f4f834b6377c" width="630"/>
-
-## 💥What's next💥
-> <i>**In the future, I aspire for my robot to autonomously identify sharp edges along its path and enhance its efficiency by seamlessly adjusting modes both before and after encountering them.**<i>
 
 ## Credits
 
