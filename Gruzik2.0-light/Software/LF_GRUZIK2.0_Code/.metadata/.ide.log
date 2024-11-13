@@ -17881,3 +17881,1533 @@
 2024-10-22 23:37:30,566 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
 2024-10-22 23:37:30,630 [INFO] WebAppUi:462 - Profiles folder deleted
 2024-10-22 23:37:31,505 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-10-23 20:09:02,534 [INFO] Activator:179 - 
+
+
+2024-10-23 20:09:02,537 [INFO] Activator:180 - !SESSION log4j initialized
+2024-10-23 20:09:17,635 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:09:17,637 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:09:17,639 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:09:40,860 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-10-23 20:09:40,861 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-10-23 20:09:40,864 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-10-23 20:10:41,131 [INFO] McuFinderGlobals:52 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-10-23 20:10:41,896 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2024-10-23 20:10:41,988 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2024-10-23 20:10:41,997 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2024-10-23 20:10:42,007 [WARN] ApiDb:258 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2024-10-23 20:10:42,141 [INFO] ApiDb:249 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2024-10-23 20:10:42,152 [INFO] DbMcusAds:124 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2024-10-23 20:10:42,202 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-10-23 20:10:42,569 [INFO] RulesReader:61 - Compatibility file has been processed (283 Rules)
+2024-10-23 20:10:42,916 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2024-10-23 20:10:42,916 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2024-10-23 20:10:42,917 [INFO] ApiDb:260 - Set plugin images path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2024-10-23 20:10:42,918 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:42,919 [INFO] ApiDb:249 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2024-10-23 20:10:42,920 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:42,929 [INFO] DbMcusAds:124 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2024-10-23 20:10:42,932 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:42,932 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:42,933 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-10-23 20:10:43,343 [INFO] MainPanel:252 - HeapMemory: 501219328
+2024-10-23 20:10:43,740 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2024-10-23 20:10:43,741 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2024-10-23 20:10:43,742 [INFO] ApiDb:260 - Set plugin images path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2024-10-23 20:10:43,743 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:43,743 [INFO] ApiDb:249 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2024-10-23 20:10:43,744 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:43,745 [INFO] DbMcusAds:124 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/
+2024-10-23 20:10:43,745 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:43,745 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\Szymon\.stmcufinder\plugins\mcufinder/ => C:\Users\Szymon\.stmcufinder\plugins\mcufinder
+2024-10-23 20:10:43,746 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\Szymon\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-10-23 20:10:43,798 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2024-10-23 20:10:43,819 [INFO] PluginManage:193 - Search for loadable plugins [exclusion list=, ]
+2024-10-23 20:10:43,824 [INFO] PluginManage:307 - Check plugin analytics
+2024-10-23 20:10:44,584 [INFO] AnalyticsPlugin:262 - Accepted Software Licenses: 
+2024-10-23 20:10:44,584 [INFO] AnalyticsPlugin:264 - Accepted CMSIS Pack Licenses: STMicroelectronics.X-CUBE-MEMS1.10.0.0
+2024-10-23 20:10:44,584 [INFO] AnalyticsPlugin:266 - Accepted Firmware Licenses: FW.G4.1.5.0
+2024-10-23 20:10:44,643 [INFO] PluginManage:356 - Loaded plugin analytics (category:tool,tabindex:-1)
+2024-10-23 20:10:44,644 [INFO] PluginManage:307 - Check plugin cadmodel
+2024-10-23 20:10:44,715 [INFO] CADModel:104 - Init CAD model plugin
+2024-10-23 20:10:44,715 [INFO] PluginManage:356 - Loaded plugin cadmodel (category:power,tabindex:5)
+2024-10-23 20:10:44,715 [INFO] PluginManage:307 - Check plugin clock
+2024-10-23 20:10:44,848 [INFO] PluginManage:356 - Loaded plugin clock (category:base,tabindex:2)
+2024-10-23 20:10:44,849 [INFO] PluginManage:307 - Check plugin ddr
+2024-10-23 20:10:44,864 [INFO] PluginManage:356 - Loaded plugin ddr (category:tool,tabindex:6)
+2024-10-23 20:10:44,865 [INFO] PluginManage:307 - Check plugin filemanager
+2024-10-23 20:10:46,494 [INFO] PluginManage:356 - Loaded plugin filemanager (category:base,tabindex:10)
+2024-10-23 20:10:46,495 [INFO] PluginManage:307 - Check plugin ipmanager
+2024-10-23 20:10:46,558 [INFO] PluginManage:356 - Loaded plugin ipmanager (category:base,tabindex:5)
+2024-10-23 20:10:46,559 [INFO] PluginManage:307 - Check plugin lpbam
+2024-10-23 20:10:46,629 [INFO] PluginManage:356 - Loaded plugin lpbam (category:base,tabindex:0)
+2024-10-23 20:10:46,630 [INFO] PluginManage:307 - Check plugin pinoutandconfiguration
+2024-10-23 20:10:46,710 [INFO] PluginManage:356 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2024-10-23 20:10:46,714 [INFO] PluginManage:307 - Check plugin pinoutconfig
+2024-10-23 20:10:46,902 [INFO] PluginManage:356 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2024-10-23 20:10:46,910 [INFO] PluginManage:307 - Check plugin power
+2024-10-23 20:10:47,018 [INFO] PluginManage:356 - Loaded plugin power (category:power,tabindex:4)
+2024-10-23 20:10:47,023 [INFO] PluginManage:307 - Check plugin projectmanager
+2024-10-23 20:10:47,115 [INFO] PluginManage:356 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2024-10-23 20:10:47,116 [INFO] PluginManage:307 - Check plugin thirdparty
+2024-10-23 20:10:48,214 [WARN] IntegrityCheckThread:82 - waiting for thirdparty lock release [integrity check]
+2024-10-23 20:10:48,215 [INFO] PluginManage:356 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2024-10-23 20:10:48,215 [INFO] IntegrityCheckThread:84 - entering critical section [integrity check]
+2024-10-23 20:10:48,216 [INFO] PluginManage:307 - Check plugin tools
+2024-10-23 20:10:48,248 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2024-10-23 20:10:48,314 [INFO] PluginManage:356 - Loaded plugin tools (category:base,tabindex:7)
+2024-10-23 20:10:48,314 [INFO] PluginManage:307 - Check plugin tutovideos
+2024-10-23 20:10:49,252 [INFO] PluginManage:356 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2024-10-23 20:10:49,253 [INFO] PluginManage:307 - Check plugin updater
+2024-10-23 20:10:49,357 [INFO] PluginManage:356 - Loaded plugin updater (category:base,tabindex:12)
+2024-10-23 20:10:49,360 [INFO] PluginManage:280 - PluginManage : Loaded plugins [15]
+2024-10-23 20:10:50,566 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2024-10-23 20:10:50,846 [INFO] CADModel:164 - CPN selected for project level
+2024-10-23 20:10:50,848 [INFO] CADModel:113 - Register for checkConnection events
+2024-10-23 20:10:50,925 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:50,925 [INFO] PluginManager:219 - loadIPPluginJar : add adc
+2024-10-23 20:10:51,019 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,021 [INFO] PluginManager:219 - loadIPPluginJar : add aes
+2024-10-23 20:10:51,143 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,143 [INFO] PluginManager:219 - loadIPPluginJar : add can
+2024-10-23 20:10:51,227 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,228 [INFO] PluginManager:219 - loadIPPluginJar : add comp
+2024-10-23 20:10:51,262 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2024-10-23 20:10:51,324 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,325 [INFO] PluginManager:219 - loadIPPluginJar : add cryp
+2024-10-23 20:10:51,477 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,477 [INFO] PluginManager:219 - loadIPPluginJar : add dfsdm
+2024-10-23 20:10:51,544 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,554 [INFO] PluginManager:219 - loadIPPluginJar : add dma
+2024-10-23 20:10:51,710 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,711 [INFO] PluginManager:219 - loadIPPluginJar : add dma3
+2024-10-23 20:10:51,799 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:51,801 [INFO] PluginManager:219 - loadIPPluginJar : add fatfs
+2024-10-23 20:10:52,038 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:52,039 [INFO] PluginManager:219 - loadIPPluginJar : add fmc
+2024-10-23 20:10:52,102 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:52,104 [INFO] PluginManager:219 - loadIPPluginJar : add freertos
+2024-10-23 20:10:52,193 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:52,194 [INFO] PluginManager:219 - loadIPPluginJar : add genericplugin
+2024-10-23 20:10:53,356 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:53,357 [INFO] PluginManager:219 - loadIPPluginJar : add gfxmmu
+2024-10-23 20:10:54,072 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:54,088 [INFO] PluginManager:219 - loadIPPluginJar : add gic
+2024-10-23 20:10:54,150 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:54,151 [INFO] PluginManager:219 - loadIPPluginJar : add gpio
+2024-10-23 20:10:54,303 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [3/15]
+2024-10-23 20:10:54,506 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:54,513 [INFO] PluginManager:219 - loadIPPluginJar : add gtzc
+2024-10-23 20:10:54,751 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:54,752 [INFO] PluginManager:219 - loadIPPluginJar : add hash
+2024-10-23 20:10:54,968 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:54,969 [INFO] PluginManager:219 - loadIPPluginJar : add i2c
+2024-10-23 20:10:55,172 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:55,176 [INFO] PluginManager:219 - loadIPPluginJar : add i2s
+2024-10-23 20:10:55,678 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:55,679 [INFO] PluginManager:219 - loadIPPluginJar : add ipddr
+2024-10-23 20:10:56,074 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,076 [INFO] PluginManager:219 - loadIPPluginJar : add linkedlist
+2024-10-23 20:10:56,219 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,220 [INFO] PluginManager:219 - loadIPPluginJar : add lorawan
+2024-10-23 20:10:56,368 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,369 [INFO] PluginManager:219 - loadIPPluginJar : add ltdc
+2024-10-23 20:10:56,423 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,425 [INFO] PluginManager:219 - loadIPPluginJar : add mdma
+2024-10-23 20:10:56,464 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,465 [INFO] PluginManager:219 - loadIPPluginJar : add nvic
+2024-10-23 20:10:56,615 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,616 [INFO] PluginManager:219 - loadIPPluginJar : add opamp
+2024-10-23 20:10:56,851 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:56,852 [INFO] PluginManager:219 - loadIPPluginJar : add openamp
+2024-10-23 20:10:57,026 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,026 [INFO] PluginManager:219 - loadIPPluginJar : add pdm2pcm
+2024-10-23 20:10:57,105 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,119 [INFO] PluginManager:219 - loadIPPluginJar : add plateformsettings
+2024-10-23 20:10:57,215 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,216 [INFO] PluginManager:219 - loadIPPluginJar : add quadspi
+2024-10-23 20:10:57,268 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,269 [INFO] PluginManager:219 - loadIPPluginJar : add resmgrutility
+2024-10-23 20:10:57,332 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [4/15]
+2024-10-23 20:10:57,463 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,464 [INFO] PluginManager:219 - loadIPPluginJar : add sai
+2024-10-23 20:10:57,618 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,620 [INFO] PluginManager:219 - loadIPPluginJar : add spi
+2024-10-23 20:10:57,828 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,829 [INFO] PluginManager:219 - loadIPPluginJar : add stm32_wpan
+2024-10-23 20:10:57,946 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:57,946 [INFO] PluginManager:219 - loadIPPluginJar : add tim
+2024-10-23 20:10:58,296 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:58,297 [INFO] PluginManager:219 - loadIPPluginJar : add touchsensing
+2024-10-23 20:10:58,378 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:58,379 [INFO] PluginManager:219 - loadIPPluginJar : add tracer_emb
+2024-10-23 20:10:58,496 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:58,496 [INFO] PluginManager:219 - loadIPPluginJar : add ts
+2024-10-23 20:10:58,606 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:58,607 [INFO] PluginManager:219 - loadIPPluginJar : add tsc
+2024-10-23 20:10:58,715 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:58,716 [INFO] PluginManager:219 - loadIPPluginJar : add ucpd
+2024-10-23 20:10:58,989 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:58,994 [INFO] PluginManager:219 - loadIPPluginJar : add usart
+2024-10-23 20:10:59,248 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:10:59,255 [INFO] PluginManager:219 - loadIPPluginJar : add usbx
+2024-10-23 20:10:59,730 [INFO] CADModel:164 - CPN selected for project level
+2024-10-23 20:10:59,730 [INFO] CADModel:113 - Register for checkConnection events
+2024-10-23 20:10:59,732 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:10:59,733 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2024-10-23 20:11:00,345 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [5/15]
+2024-10-23 20:11:00,529 [INFO] CADModel:164 - CPN selected for project level
+2024-10-23 20:11:00,530 [INFO] CADModel:113 - Register for checkConnection events
+2024-10-23 20:11:00,539 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:00,541 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2024-10-23 20:11:00,576 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:01,694 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:01,756 [INFO] DbMcusAds:52 - JSON generation date=Fri Sep 20 15:04:23 CEST 2024 (1726837463113)
+2024-10-23 20:11:01,758 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:01,939 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2024-10-23 20:11:02,842 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:02,869 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:02,869 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:02,869 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2024-10-23 20:11:02,874 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:03,349 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2024-10-23 20:11:03,382 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-10-23 20:11:03,389 [ERROR] IntegrityCheckThread:128 - Cannot retrieve database content from updater: error 21
+2024-10-23 20:11:03,390 [INFO] ThirdParty:947 - Integrity check success = false
+2024-10-23 20:11:03,391 [INFO] IntegrityCheckThread:98 - exiting critical section [integrity check]
+2024-10-23 20:11:03,391 [INFO] IntegrityCheckThread:101 - End integrity checks thread
+2024-10-23 20:11:03,392 [INFO] Updater:1056 - Updater Version found : 6.7.0
+2024-10-23 20:11:03,538 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2024-10-23 20:11:04,705 [INFO] MainUpdater:2800 - connection check result : 10
+2024-10-23 20:11:04,706 [INFO] MainUpdater:3494 - Updater definition file requires update
+2024-10-23 20:11:04,709 [INFO] MainUpdater:282 - Updater Check For Update Now.
+2024-10-23 20:11:04,710 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2024-10-23 20:11:05,552 [INFO] ServerAccessManage:474 - Download File updaters.zip
+2024-10-23 20:11:07,130 [INFO] FileExtend:239 - Unzip File : updaters.zip
+2024-10-23 20:11:07,131 [INFO] FileExtend:254 - Standard Zip Deflate
+2024-10-23 20:11:10,764 [INFO] ServerAccessManage:474 - Download File PacksControlFlags.xml
+2024-10-23 20:11:11,368 [INFO] ServerAccessManage:474 - Download File cubemx.pidx
+2024-10-23 20:11:12,949 [INFO] LoadServerUpdatesThread:367 - End of LoadServerUpdate Thread
+2024-10-23 20:11:14,420 [INFO] CheckServerUpdateThread:119 - End of CheckServer Thread
+2024-10-23 20:11:14,507 [INFO] MainUpdater:2800 - connection check result : 10
+2024-10-23 20:11:14,607 [INFO] MainUpdater:2800 - connection check result : 10
+2024-10-23 20:11:16,069 [INFO] MicroXplorer:451 - Change Database Path : 
+2024-10-23 20:11:16,069 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2024-10-23 20:11:16,070 [WARN] ThirdParty:845 - waiting for thirdparty lock release [close project]
+2024-10-23 20:11:16,070 [INFO] ThirdParty:847 - entering critical section [close project]
+2024-10-23 20:11:16,072 [INFO] ThirdParty:857 - exiting critical section [close project]
+2024-10-23 20:11:16,080 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2024-10-23 20:11:16,125 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 575559064 Bytes (650117120)
+2024-10-23 20:11:16,128 [INFO] MicroXplorer:451 - Change Database Path : 
+2024-10-23 20:11:16,128 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2024-10-23 20:11:16,128 [INFO] OpenFileManager:307 - Change cursor
+2024-10-23 20:11:16,503 [WARN] IntegrityCheckThread:82 - waiting for thirdparty lock release [integrity check]
+2024-10-23 20:11:16,503 [INFO] IntegrityCheckThread:84 - entering critical section [integrity check]
+2024-10-23 20:11:18,078 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.2.0
+2024-10-23 20:11:18,112 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.4.0
+2024-10-23 20:11:18,151 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2024-10-23 20:11:18,196 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-WB05N.1.1.0
+2024-10-23 20:11:18,260 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.23.0
+2024-10-23 20:11:18,514 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.2.0
+2024-10-23 20:11:19,289 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.23.2
+2024-10-23 20:11:19,472 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2024-10-23 20:11:19,517 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.1.0
+2024-10-23 20:11:19,587 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.19.1
+2024-10-23 20:11:19,619 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.4.3.2
+2024-10-23 20:11:19,655 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.1
+2024-10-23 20:11:19,708 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.3
+2024-10-23 20:11:19,927 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.11.0.0
+2024-10-23 20:11:20,511 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.4
+2024-10-23 20:11:20,546 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.2
+2024-10-23 20:11:20,586 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.2.2
+2024-10-23 20:11:20,635 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.1.0
+2024-10-23 20:11:20,721 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2024-10-23 20:11:20,759 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.0.0
+2024-10-23 20:11:20,793 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC10.1.0.0
+2024-10-23 20:11:20,825 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.22.0
+2024-10-23 20:11:20,854 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.22.1
+2024-10-23 20:11:21,060 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.3.0
+2024-10-23 20:11:21,594 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.2.0
+2024-10-23 20:11:21,696 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.3.1.0
+2024-10-23 20:11:21,739 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
+2024-10-23 20:11:21,798 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-10-23 20:11:21,799 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-10-23 20:11:21,803 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-10-23 20:11:21,807 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-10-23 20:11:21,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-10-23 20:11:21,816 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.2.0.0
+2024-10-23 20:11:21,857 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.5.0.0
+2024-10-23 20:11:21,882 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfMQTT.1.19.0
+2024-10-23 20:11:21,911 [WARN] PackLoader:242 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2024-10-23 20:11:21,938 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2024-10-23 20:11:21,965 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.2.2.0
+2024-10-23 20:11:22,043 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.2.0
+2024-10-23 20:11:22,108 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.0.0
+2024-10-23 20:11:22,141 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC9.1.0.0
+2024-10-23 20:11:22,317 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.2.1.0
+2024-10-23 20:11:22,369 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TCPP.4.1.0
+2024-10-23 20:11:22,425 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.1
+2024-10-23 20:11:22,471 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.0
+2024-10-23 20:11:22,506 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.3
+2024-10-23 20:11:22,726 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.4.0
+2024-10-23 20:11:23,358 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.3.0
+2024-10-23 20:11:23,528 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2024-10-23 20:11:23,649 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2024-10-23 20:11:23,725 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SAFEA1.1.2.2
+2024-10-23 20:11:23,770 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2024-10-23 20:11:24,052 [WARN] PackLoader:242 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.2.0
+2024-10-23 20:11:24,263 [ERROR] Engine:467 - C:\Users\Szymon\.stm32cubemx\thirdparties\pdsc\EmbeddedOffice.I-CUBE-FS-RTOS.1.0.1.pdsc: PDSC version is not supported
+2024-10-23 20:11:24,321 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.2.1.0
+2024-10-23 20:11:24,361 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.3.0.0
+2024-10-23 20:11:24,402 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.3.0
+2024-10-23 20:11:24,430 [ERROR] Engine:467 - C:\Users\Szymon\.stm32cubemx\thirdparties\pdsc\RealThread.X-CUBE-RT-Thread_Nano.4.1.1.pdsc: PDSC version is not supported
+2024-10-23 20:11:24,454 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2024-10-23 20:11:24,600 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.5.1.0
+2024-10-23 20:11:24,673 [WARN] PackLoader:242 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.1.2
+2024-10-23 20:11:24,705 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.20.0
+2024-10-23 20:11:24,829 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.5.0
+2024-10-23 20:11:25,580 [WARN] PackLoader:242 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2024-10-23 20:11:25,733 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.4.0
+2024-10-23 20:11:25,763 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.9.1.0
+2024-10-23 20:11:25,826 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.0.0
+2024-10-23 20:11:25,860 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.6.0.0
+2024-10-23 20:11:25,926 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2024-10-23 20:11:25,962 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.1.0
+2024-10-23 20:11:25,992 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.2.0
+2024-10-23 20:11:26,036 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.2.0
+2024-10-23 20:11:26,179 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.2.0.0
+2024-10-23 20:11:26,452 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.6.0
+2024-10-23 20:11:26,900 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.2.0
+2024-10-23 20:11:26,934 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.1.0
+2024-10-23 20:11:27,006 [WARN] PackLoader:242 - Cannot read IP mode file for ITTIA_DB.I-CUBE-ITTIADB.8.8.0
+2024-10-23 20:11:27,044 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.2.0.0
+2024-10-23 20:11:27,109 [ERROR] Engine:467 - C:\Users\Szymon\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.X-CUBE-DPower.1.2.0.pdsc: PDSC version is not supported
+2024-10-23 20:11:27,162 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.5
+2024-10-23 20:11:27,217 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.4
+2024-10-23 20:11:27,257 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.9.0.0
+2024-10-23 20:11:27,380 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,381 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,404 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.1.0
+2024-10-23 20:11:27,410 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,412 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,412 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,414 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,414 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:27,454 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.3.1.0
+2024-10-23 20:11:27,592 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.0.0
+2024-10-23 20:11:27,659 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.1
+2024-10-23 20:11:27,696 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.0
+2024-10-23 20:11:27,830 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfTPM.3.2.0
+2024-10-23 20:11:27,875 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.0.0
+2024-10-23 20:11:27,979 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.1.0
+2024-10-23 20:11:28,008 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.1.0
+2024-10-23 20:11:28,066 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.0.0
+2024-10-23 20:11:28,220 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-10-23 20:11:28,220 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.2.0.0
+2024-10-23 20:11:28,220 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-10-23 20:11:28,220 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-10-23 20:11:28,220 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-10-23 20:11:28,267 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2024-10-23 20:11:28,338 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.0.0
+2024-10-23 20:11:28,381 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.1.0
+2024-10-23 20:11:28,487 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.3.0
+2024-10-23 20:11:28,530 [WARN] PackLoader:242 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2024-10-23 20:11:28,550 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.0
+2024-10-23 20:11:28,580 [ERROR] Engine:467 - C:\Users\Szymon\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.X-CUBE-IPS.3.0.0.pdsc: PDSC version is not supported
+2024-10-23 20:11:28,677 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,677 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,680 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.2.0.0
+2024-10-23 20:11:28,680 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,680 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,680 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,680 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,680 [WARN] ConditionMgr:1038 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-10-23 20:11:28,770 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.0.0
+2024-10-23 20:11:28,810 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.0.1
+2024-10-23 20:11:28,879 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.7.0.0
+2024-10-23 20:11:28,928 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.0.0
+2024-10-23 20:11:28,968 [ERROR] Engine:467 - C:\Users\Szymon\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.FP-SNS-STBOX1.2.0.0.pdsc: PDSC version is not supported
+2024-10-23 20:11:29,060 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.1.1.0
+2024-10-23 20:11:29,107 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.1
+2024-10-23 20:11:29,200 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2024-10-23 20:11:29,239 [WARN] PackLoader:242 - Cannot read IP mode file for Cesanta.I-CUBE-Mongoose.7.13.0
+2024-10-23 20:11:29,406 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.3.1
+2024-10-23 20:11:29,526 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.2.0.0
+2024-10-23 20:11:29,573 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.3.0
+2024-10-23 20:11:29,700 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.1.1.1
+2024-10-23 20:11:29,762 [WARN] PackLoader:242 - Cannot read IP mode file for Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.5.1
+2024-10-23 20:11:29,795 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.1.1.0
+2024-10-23 20:11:29,819 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.3.0
+2024-10-23 20:11:29,844 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.3.1
+2024-10-23 20:11:30,019 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.1.0.0
+2024-10-23 20:11:30,190 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.1.0.0
+2024-10-23 20:11:30,250 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.0.0
+2024-10-23 20:11:30,290 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.2
+2024-10-23 20:11:30,530 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.10.0.0
+2024-10-23 20:11:32,861 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.1.0
+2024-10-23 20:11:32,885 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.24.0
+2024-10-23 20:11:32,945 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.0.0
+2024-10-23 20:11:32,988 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.1.0.0
+2024-10-23 20:11:33,026 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.24.1
+2024-10-23 20:11:33,112 [WARN] PackLoader:242 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2024-10-23 20:11:33,146 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.1
+2024-10-23 20:11:33,191 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.1.1.0
+2024-10-23 20:11:33,241 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.1.0.0
+2024-10-23 20:11:33,270 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.3.1.1
+2024-10-23 20:11:33,328 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7RS.1.0.0
+2024-10-23 20:11:33,373 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.5.2.0
+2024-10-23 20:11:33,396 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.0
+2024-10-23 20:11:33,425 [ERROR] Engine:467 - C:\Users\Szymon\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.X-CUBE-TOF1.3.4.2.pdsc: PDSC version is not supported
+2024-10-23 20:11:33,508 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.4.0
+2024-10-23 20:11:33,568 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.4.1
+2024-10-23 20:11:33,663 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.2.0
+2024-10-23 20:11:33,697 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSH.1.4.17
+2024-10-23 20:11:33,697 [INFO] ThirdParty:947 - Integrity check success = true
+2024-10-23 20:11:33,697 [INFO] IntegrityCheckThread:98 - exiting critical section [integrity check]
+2024-10-23 20:11:33,698 [INFO] IntegrityCheckThread:101 - End integrity checks thread
+2024-10-23 20:11:34,030 [INFO] Mcu:1925 - Initializing MCU STM32F103C(8-B)Tx STM32F103C8Tx STM32F103C8T6
+2024-10-23 20:11:45,444 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2024-10-23 20:11:48,348 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-10-23 20:11:48,348 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-10-23 20:11:48,349 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-10-23 20:11:48,349 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-10-23 20:11:48,349 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-10-23 20:11:48,370 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,370 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,371 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,371 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,371 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,372 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,372 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,372 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,373 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,373 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,373 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,373 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,378 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,379 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,379 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,379 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,380 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,380 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:48,381 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2024-10-23 20:11:49,790 [INFO] ThirdPartyModel:294 - Start build external matchings
+2024-10-23 20:12:09,126 [INFO] ThirdPartyModel:310 - End build external matchings
+2024-10-23 20:12:09,673 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2024-10-23 20:12:09,673 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2024-10-23 20:12:09,673 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2024-10-23 20:12:09,673 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2024-10-23 20:12:09,673 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2024-10-23 20:12:09,673 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2024-10-23 20:12:09,677 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2024-10-23 20:12:09,677 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2024-10-23 20:12:09,685 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-10-23 20:12:09,685 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2024-10-23 20:12:09,687 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (72000000)
+2024-10-23 20:12:11,844 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 720615080 Bytes (856686592)
+2024-10-23 20:12:12,267 [INFO] ApiDb:580 - Connected to CubeFinder SQLite database (C:\Users\Szymon\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2024-10-23 20:12:12,624 [INFO] ApiDb:667 - CubeFinder database Data Model version=2.1
+2024-10-23 20:12:12,624 [INFO] ApiDb:668 - CubeFinder database Configuration version=3.0.39
+2024-10-23 20:12:12,625 [INFO] ApiDb:669 - CubeFinder database generation date=2024-09-16 (1726485674)
+2024-10-23 20:12:12,625 [INFO] ApiDb:670 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V5.0.0, FP-SNS-MOTENVWB1_V1.4.0, FP-SNS-SMARTAG2_V1.2.0, FP-SNS-STBOX1_V2.0.0, STM32Cube_FW_C0_V1.2.0, STM32Cube_FW_F4_V1.28.1, STM32Cube_FW_F7_V1.17.2, STM32Cube_FW_G0_V1.6.2, STM32Cube_FW_G4_V1.6.0, STM32Cube_FW_H5_V1.3.0, STM32Cube_FW_H7RS_V1.1.0, STM32Cube_FW_H7_V1.11.2, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.1, STM32Cube_FW_U0_V1.1.0, STM32Cube_FW_U5_V1.6.0, STM32Cube_FW_WB0_V1.0.0, STM32Cube_FW_WBA_V1.4.1, STM32Cube_FW_WB_V1.20.0, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.4.0, X-CUBE-ALS_V1.0.2, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7RS_V1.0.0, X-CUBE-AZRTOS-H7_V3.2.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V2.0.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V3.1.0, X-CUBE-EEPRMA1_V5.1.0, X-CUBE-FREERTOS_V1.2.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V11.0.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.1, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.4.2]
+2024-10-23 20:12:20,259 [INFO] ApiDb:239 - Found 143 in-development CPN: [B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, STEVAL-PROTEUS1, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L476VGY6PTR, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q, STM32WB1MMCH6, STM32WL5MOCH6TR]
+2024-10-23 20:12:20,272 [INFO] DbMcus:215 - Found 4178 MCUs, 4178 are supported
+2024-10-23 20:12:20,291 [INFO] ApiDb:422 - Load user favorites file C:\Users\Szymon/.stm32cubeide/favorites.mcus.txt: 2 item(s)
+2024-10-23 20:12:20,292 [INFO] ApiDb:426 - User favorites MCUs=[STM32F103C8T6, STM32F411CEU6]
+2024-10-23 20:12:20,292 [INFO] DbMcus:221 - Set 2 / 2 favorites MCUs
+2024-10-23 20:12:22,141 [WARN] ThirdParty:807 - waiting for thirdparty lock release [change project]
+2024-10-23 20:12:22,141 [INFO] ThirdParty:809 - entering critical section [change project]
+2024-10-23 20:12:22,141 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.2.0
+2024-10-23 20:12:22,141 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-10-23 20:12:22,141 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-10-23 20:12:22,141 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-10-23 20:12:22,141 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-WB05N 1.1.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.1.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.0
+2024-10-23 20:12:22,143 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.2.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.2.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.2
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.1.0
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.1
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2024-10-23 20:12:22,144 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.1
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 11.0.0
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.4
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.5
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.2
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2024-10-23 20:12:22,145 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.1.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.0.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC10 1.0.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2024-10-23 20:12:22,146 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfTPM 3.2.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.0.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.0
+2024-10-23 20:12:22,147 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.2.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.0.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.0.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.3.0
+2024-10-23 20:12:22,148 [INFO] ThirdParty:999 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC9 1.0.0
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TCPP 4.1.0
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.0
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-10-23 20:12:22,149 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.0
+2024-10-23 20:12:22,150 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.1
+2024-10-23 20:12:22,151 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.1
+2024-10-23 20:12:22,151 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 7.0.0
+2024-10-23 20:12:22,151 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.0
+2024-10-23 20:12:22,151 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.3
+2024-10-23 20:12:22,151 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.4.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.3.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.1.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.1
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SAFEA1 1.2.2
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :Cesanta I-CUBE-Mongoose 7.13.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.1.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.0.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.3.0
+2024-10-23 20:12:22,152 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.3.0
+2024-10-23 20:12:22,158 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.3.1
+2024-10-23 20:12:22,158 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-10-23 20:12:22,159 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-10-23 20:12:22,160 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.0
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.0.0
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.1
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2024-10-23 20:12:22,161 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.5.0
+2024-10-23 20:12:22,162 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-10-23 20:12:22,162 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 1.1.0
+2024-10-23 20:12:22,162 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-10-23 20:12:22,162 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2024-10-23 20:12:22,162 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2024-10-23 20:12:22,162 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7RS 1.0.0
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.1.0
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.4.0
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.4.1
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.2.0
+2024-10-23 20:12:22,163 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.0.0
+2024-10-23 20:12:22,164 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSH 1.4.17
+2024-10-23 20:12:22,164 [INFO] ThirdParty:815 - exiting critical section [change project]
+2024-10-23 20:12:23,274 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2024-10-23 20:12:23,276 [INFO] PinOutPanel:1477 - setPackage(STM32F103C8Tx,LQFP48)
+2024-10-23 20:12:28,110 [INFO] UtilMem:74 - Before build in PCC Used Memory: 737150976 Bytes (856686592)
+2024-10-23 20:12:34,591 [INFO] UtilMem:74 - After build in PCC Used Memory: 701590912 Bytes (856686592)
+2024-10-23 20:12:34,734 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,734 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,735 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,736 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,742 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,742 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,743 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,743 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,745 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,745 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,746 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:34,747 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2024-10-23 20:12:35,443 [INFO] CADModel:164 - CPN selected for project levelSTM32F103C8T6
+2024-10-23 20:12:35,443 [INFO] CADModel:113 - Register for checkConnection events
+2024-10-23 20:12:35,526 [INFO] OpenFileManager:327 - Restore cursor
+2024-10-23 20:13:13,746 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,100 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,101 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,102 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,102 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,103 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,104 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,104 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,105 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,105 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,106 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,107 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,107 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,108 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,108 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,108 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:14,145 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:13:18,225 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,544x230,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 20:13:19,457 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 20:13:23,378 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 714936632 Bytes (856686592)
+2024-10-23 20:13:24,805 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 738866344 Bytes (856686592)
+2024-10-23 20:13:29,959 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 722505120 Bytes (856686592)
+2024-10-23 20:13:32,492 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-23 20:13:32,492 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:13:32,493 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-23 20:13:32,494 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-23 20:13:32,495 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-10-23 20:13:32,495 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-23 20:13:32,497 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2024-10-23 20:13:34,492 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2024-10-23 20:13:35,853 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2024-10-23 20:13:36,462 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2024-10-23 20:13:37,116 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2024-10-23 20:13:37,220 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2024-10-23 20:13:37,660 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2024-10-23 20:13:39,245 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2024-10-23 20:13:39,905 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2024-10-23 20:13:39,963 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2024-10-23 20:13:40,351 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2024-10-23 20:13:40,501 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c_save
+2024-10-23 20:13:40,955 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c
+2024-10-23 20:13:40,986 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h_save
+2024-10-23 20:13:41,401 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h
+2024-10-23 20:13:41,483 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2024-10-23 20:13:42,308 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2024-10-23 20:13:42,355 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2024-10-23 20:13:42,835 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2024-10-23 20:13:42,900 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2024-10-23 20:13:43,843 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2024-10-23 20:13:43,866 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2024-10-23 20:13:44,323 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2024-10-23 20:13:44,439 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2024-10-23 20:13:45,273 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2024-10-23 20:13:45,343 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2024-10-23 20:13:45,767 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2024-10-23 20:13:45,877 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-23 20:13:46,381 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2024-10-23 20:13:46,434 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2024-10-23 20:13:46,755 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2024-10-23 20:13:46,833 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-23 20:13:47,291 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-23 20:13:47,525 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2024-10-23 20:13:48,199 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2024-10-23 20:13:48,273 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2024-10-23 20:13:48,922 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2024-10-23 20:13:51,784 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 730mS.
+2024-10-23 20:13:51,833 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2024-10-23 20:13:52,985 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2024-10-23 20:13:53,040 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2024-10-23 20:13:53,082 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2024-10-23 20:13:53,131 [INFO] ApiDbMcu:505 - Load IP Config File for USB_DEVICE
+2024-10-23 20:14:04,477 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 12644mS.
+2024-10-23 20:14:04,479 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2024-10-23 20:14:04,485 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-10-23 20:14:20,995 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:14:20,997 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:14:20,998 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:16:32,858 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:16:32,859 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:16:32,860 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:17:25,317 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,318 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,319 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,320 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,320 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,320 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,321 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,321 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,322 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,322 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,323 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,323 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,324 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,324 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,324 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,372 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,373 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,374 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,374 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,375 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,375 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,376 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,376 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,377 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,377 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,378 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,378 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,379 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,379 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,380 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,380 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:25,413 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:17:53,600 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:17:53,601 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:17:53,601 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:19:05,178 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:19:05,181 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:19:05,181 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:24:22,427 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 20:24:22,471 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,474 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,475 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,475 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,475 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,476 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,476 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,476 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,478 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,479 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,480 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,480 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,480 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,480 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,480 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:22,497 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:24:28,056 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 737532768 Bytes (1041235968)
+2024-10-23 20:24:29,397 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 758753920 Bytes (1041235968)
+2024-10-23 20:24:29,741 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 805948416 Bytes (1041235968)
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-10-23 20:24:30,315 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-23 20:24:30,315 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : hdmavalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Initvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Lockvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Lockvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Statevalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Statevalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : Parentvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : Parentvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : XferCpltCallbackvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : XferCpltCallbackvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : XferErrorCallbackvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : XferErrorCallbackvalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:300 - Argument : ErrorCodevalue: null
+2024-10-23 20:24:30,331 [INFO] Argument:310 - Argument : ErrorCodevalue: null
+2024-10-23 20:24:30,668 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2024-10-23 20:24:30,936 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2024-10-23 20:24:31,172 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2024-10-23 20:24:31,407 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2024-10-23 20:24:31,407 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2024-10-23 20:24:31,554 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2024-10-23 20:24:32,776 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2024-10-23 20:24:33,270 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2024-10-23 20:24:33,302 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2024-10-23 20:24:33,536 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2024-10-23 20:24:33,719 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c_save
+2024-10-23 20:24:33,950 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c
+2024-10-23 20:24:33,950 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h_save
+2024-10-23 20:24:34,119 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h
+2024-10-23 20:24:34,148 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2024-10-23 20:24:34,381 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2024-10-23 20:24:34,401 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2024-10-23 20:24:34,514 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2024-10-23 20:24:34,543 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2024-10-23 20:24:34,699 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2024-10-23 20:24:34,708 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2024-10-23 20:24:34,815 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2024-10-23 20:24:34,833 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2024-10-23 20:24:35,263 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2024-10-23 20:24:35,288 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2024-10-23 20:24:35,386 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2024-10-23 20:24:35,417 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-23 20:24:35,620 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2024-10-23 20:24:35,638 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2024-10-23 20:24:35,743 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2024-10-23 20:24:35,766 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-23 20:24:35,941 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-23 20:24:36,001 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2024-10-23 20:24:36,164 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2024-10-23 20:24:36,190 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2024-10-23 20:24:36,407 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2024-10-23 20:24:37,759 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 358mS.
+2024-10-23 20:24:37,768 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2024-10-23 20:24:38,501 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2024-10-23 20:24:41,771 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4003mS.
+2024-10-23 20:24:41,787 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-10-23 20:24:41,829 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 42mS.
+2024-10-23 20:24:45,795 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:24:45,796 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:24:45,797 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:24:49,077 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:24:49,078 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:24:49,078 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:30:05,214 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:30:05,215 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:30:05,215 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:30:22,128 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:30:22,129 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:30:22,129 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:32:58,240 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:32:58,240 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:32:58,241 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:33:06,513 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:33:06,514 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:33:06,514 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:34:38,448 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:34:38,448 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:34:38,449 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:34:38,756 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:34:38,757 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:34:38,757 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:36:38,427 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:36:38,430 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:36:38,432 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:36:38,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:36:38,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:36:38,697 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:41:23,362 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:41:23,362 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:41:23,362 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:41:23,573 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:41:23,574 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:41:23,575 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:44:02,595 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 20:44:02,631 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,631 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,631 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,631 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,631 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,646 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,649 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,649 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:02,661 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 20:44:04,444 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 792562472 Bytes (1063256064)
+2024-10-23 20:44:06,165 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 819029576 Bytes (1063256064)
+2024-10-23 20:44:18,327 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 846031064 Bytes (1063256064)
+2024-10-23 20:44:18,807 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 20:44:18,808 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-23 20:44:18,809 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-23 20:44:18,809 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-10-23 20:44:18,809 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-23 20:44:18,810 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2024-10-23 20:44:18,817 [INFO] Argument:300 - Argument : hdmavalue: null
+2024-10-23 20:44:18,817 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 20:44:18,817 [INFO] Argument:300 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 20:44:18,817 [INFO] Argument:310 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 20:44:18,817 [INFO] Argument:300 - Argument : Initvalue: null
+2024-10-23 20:44:18,817 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 20:44:18,817 [INFO] Argument:300 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 20:44:18,817 [INFO] Argument:310 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 20:44:18,817 [INFO] Argument:300 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 20:44:18,819 [INFO] Argument:310 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 20:44:18,819 [INFO] Argument:300 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 20:44:18,819 [INFO] Argument:310 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 20:44:18,819 [INFO] Argument:300 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 20:44:18,819 [INFO] Argument:310 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 20:44:18,819 [INFO] Argument:300 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 20:44:18,819 [INFO] Argument:310 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 20:44:18,819 [INFO] Argument:300 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 20:44:18,819 [INFO] Argument:310 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 20:44:18,819 [INFO] Argument:300 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 20:44:18,820 [INFO] Argument:310 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 20:44:18,820 [INFO] Argument:300 - Argument : Lockvalue: null
+2024-10-23 20:44:18,820 [INFO] Argument:310 - Argument : Lockvalue: null
+2024-10-23 20:44:18,820 [INFO] Argument:300 - Argument : Statevalue: null
+2024-10-23 20:44:18,820 [INFO] Argument:310 - Argument : Statevalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:300 - Argument : Parentvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:310 - Argument : Parentvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:300 - Argument : XferCpltCallbackvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:310 - Argument : XferCpltCallbackvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:300 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:310 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:300 - Argument : XferErrorCallbackvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:310 - Argument : XferErrorCallbackvalue: null
+2024-10-23 20:44:18,821 [INFO] Argument:300 - Argument : ErrorCodevalue: null
+2024-10-23 20:44:18,822 [INFO] Argument:310 - Argument : ErrorCodevalue: null
+2024-10-23 20:44:19,192 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2024-10-23 20:44:19,381 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2024-10-23 20:44:19,519 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2024-10-23 20:44:19,697 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2024-10-23 20:44:19,718 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2024-10-23 20:44:19,843 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2024-10-23 20:44:20,422 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2024-10-23 20:44:20,716 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2024-10-23 20:44:20,737 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2024-10-23 20:44:20,886 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2024-10-23 20:44:20,925 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c_save
+2024-10-23 20:44:21,025 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c
+2024-10-23 20:44:21,033 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h_save
+2024-10-23 20:44:21,123 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h
+2024-10-23 20:44:21,150 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2024-10-23 20:44:21,359 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2024-10-23 20:44:21,379 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2024-10-23 20:44:21,473 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2024-10-23 20:44:21,500 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2024-10-23 20:44:21,632 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2024-10-23 20:44:21,640 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2024-10-23 20:44:21,727 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2024-10-23 20:44:21,757 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2024-10-23 20:44:21,964 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2024-10-23 20:44:21,971 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2024-10-23 20:44:22,050 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2024-10-23 20:44:22,071 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-23 20:44:22,224 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2024-10-23 20:44:22,229 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2024-10-23 20:44:22,283 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2024-10-23 20:44:22,307 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-23 20:44:22,408 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-23 20:44:22,456 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2024-10-23 20:44:22,577 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2024-10-23 20:44:22,595 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2024-10-23 20:44:22,702 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2024-10-23 20:44:23,426 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 202mS.
+2024-10-23 20:44:23,431 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2024-10-23 20:44:24,031 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2024-10-23 20:44:26,297 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2866mS.
+2024-10-23 20:44:26,298 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2024-10-23 20:44:26,301 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-10-23 20:44:28,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:44:28,697 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:44:28,698 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:44:59,390 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:44:59,390 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:44:59,391 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:47:28,047 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:47:28,047 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:47:28,050 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:47:28,231 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:47:28,232 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:47:28,232 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:50:08,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:50:08,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:50:08,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:50:08,830 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:50:08,831 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:50:08,831 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:57:49,749 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:57:49,750 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:57:49,750 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:58:16,307 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:58:16,308 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:58:16,308 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:58:16,491 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:58:16,491 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 20:58:16,492 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:02:37,379 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 21:02:37,444 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,448 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,449 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,449 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,449 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,450 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,450 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,450 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,451 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,451 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,451 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,451 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,451 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,452 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,452 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,467 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,575 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 21:02:37,622 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,637 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:02:37,653 [INFO] ADCParametersView:113 -                Rank 1 : false
+2024-10-23 21:03:13,304 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 746542080 Bytes (1073741824)
+2024-10-23 21:03:15,601 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 769084416 Bytes (1073741824)
+2024-10-23 21:03:18,243 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 836719616 Bytes (1073741824)
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:03:18,598 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:03:18,599 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:03:18,599 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-23 21:03:18,599 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-23 21:03:18,599 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-10-23 21:03:18,599 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-23 21:03:18,600 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2024-10-23 21:03:18,607 [INFO] Argument:300 - Argument : hdmavalue: null
+2024-10-23 21:03:18,608 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 21:03:18,608 [INFO] Argument:300 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 21:03:18,608 [INFO] Argument:310 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 21:03:18,608 [INFO] Argument:300 - Argument : Initvalue: null
+2024-10-23 21:03:18,608 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 21:03:18,608 [INFO] Argument:300 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 21:03:18,608 [INFO] Argument:310 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 21:03:18,608 [INFO] Argument:300 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 21:03:18,608 [INFO] Argument:310 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 21:03:18,608 [INFO] Argument:300 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 21:03:18,608 [INFO] Argument:310 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 21:03:18,609 [INFO] Argument:310 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 21:03:18,609 [INFO] Argument:310 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 21:03:18,609 [INFO] Argument:310 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 21:03:18,609 [INFO] Argument:310 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : Lockvalue: null
+2024-10-23 21:03:18,609 [INFO] Argument:310 - Argument : Lockvalue: null
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : Statevalue: null
+2024-10-23 21:03:18,609 [INFO] Argument:310 - Argument : Statevalue: null
+2024-10-23 21:03:18,609 [INFO] Argument:300 - Argument : Parentvalue: null
+2024-10-23 21:03:18,610 [INFO] Argument:310 - Argument : Parentvalue: null
+2024-10-23 21:03:18,610 [INFO] Argument:300 - Argument : XferCpltCallbackvalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:310 - Argument : XferCpltCallbackvalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:300 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:310 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:300 - Argument : XferErrorCallbackvalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:310 - Argument : XferErrorCallbackvalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:300 - Argument : ErrorCodevalue: null
+2024-10-23 21:03:18,611 [INFO] Argument:310 - Argument : ErrorCodevalue: null
+2024-10-23 21:03:18,974 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2024-10-23 21:03:19,117 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2024-10-23 21:03:19,183 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2024-10-23 21:03:19,320 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2024-10-23 21:03:19,343 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2024-10-23 21:03:19,453 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2024-10-23 21:03:19,862 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2024-10-23 21:03:20,085 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2024-10-23 21:03:20,101 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2024-10-23 21:03:20,178 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2024-10-23 21:03:20,211 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c_save
+2024-10-23 21:03:20,314 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c
+2024-10-23 21:03:20,324 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h_save
+2024-10-23 21:03:20,395 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h
+2024-10-23 21:03:20,421 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2024-10-23 21:03:20,683 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2024-10-23 21:03:20,700 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2024-10-23 21:03:20,776 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2024-10-23 21:03:20,792 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2024-10-23 21:03:20,934 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2024-10-23 21:03:20,942 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2024-10-23 21:03:21,043 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2024-10-23 21:03:21,077 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2024-10-23 21:03:21,339 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2024-10-23 21:03:21,347 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2024-10-23 21:03:21,434 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2024-10-23 21:03:21,465 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-23 21:03:21,619 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2024-10-23 21:03:21,625 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2024-10-23 21:03:21,702 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2024-10-23 21:03:21,726 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-23 21:03:21,848 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-23 21:03:21,920 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2024-10-23 21:03:22,024 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2024-10-23 21:03:22,044 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2024-10-23 21:03:22,155 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2024-10-23 21:03:23,256 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 241mS.
+2024-10-23 21:03:23,261 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2024-10-23 21:03:23,875 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2024-10-23 21:03:26,919 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3658mS.
+2024-10-23 21:03:26,920 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2024-10-23 21:03:26,923 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-10-23 21:03:30,649 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:03:30,650 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:03:30,651 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:03:30,791 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:03:30,792 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:03:30,792 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:04:00,629 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-23 21:04:02,330 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 749472832 Bytes (1073741824)
+2024-10-23 21:04:05,384 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 779876056 Bytes (1073741824)
+2024-10-23 21:04:06,499 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 819466800 Bytes (1073741824)
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-10-23 21:04:06,985 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-23 21:04:06,986 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-23 21:04:06,986 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-10-23 21:04:06,986 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-23 21:04:06,987 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2024-10-23 21:04:06,991 [INFO] Argument:300 - Argument : hdmavalue: null
+2024-10-23 21:04:06,991 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 21:04:06,991 [INFO] Argument:300 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 21:04:06,991 [INFO] Argument:310 - Argument : Instancevalue: DMA1_Channel1
+2024-10-23 21:04:06,992 [INFO] Argument:300 - Argument : Initvalue: null
+2024-10-23 21:04:06,992 [INFO] Argument:302 - 	 sub Args: 
+2024-10-23 21:04:06,992 [INFO] Argument:300 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 21:04:06,992 [INFO] Argument:310 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-23 21:04:06,992 [INFO] Argument:300 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 21:04:06,992 [INFO] Argument:310 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-23 21:04:06,992 [INFO] Argument:300 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 21:04:06,992 [INFO] Argument:310 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-23 21:04:06,993 [INFO] Argument:300 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 21:04:06,993 [INFO] Argument:310 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-10-23 21:04:06,993 [INFO] Argument:300 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 21:04:06,993 [INFO] Argument:310 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-10-23 21:04:06,993 [INFO] Argument:300 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-23 21:04:06,994 [INFO] Argument:300 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-23 21:04:06,994 [INFO] Argument:300 - Argument : Lockvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : Lockvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:300 - Argument : Statevalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : Statevalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:300 - Argument : Parentvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : Parentvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:300 - Argument : XferCpltCallbackvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : XferCpltCallbackvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:300 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 21:04:06,994 [INFO] Argument:310 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-23 21:04:06,995 [INFO] Argument:300 - Argument : XferErrorCallbackvalue: null
+2024-10-23 21:04:06,995 [INFO] Argument:310 - Argument : XferErrorCallbackvalue: null
+2024-10-23 21:04:06,995 [INFO] Argument:300 - Argument : ErrorCodevalue: null
+2024-10-23 21:04:06,995 [INFO] Argument:310 - Argument : ErrorCodevalue: null
+2024-10-23 21:04:07,245 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp_save
+2024-10-23 21:04:07,354 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\license.tmp
+2024-10-23 21:04:07,404 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c_save
+2024-10-23 21:04:07,501 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\gpio.c
+2024-10-23 21:04:07,516 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h_save
+2024-10-23 21:04:07,608 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\gpio.h
+2024-10-23 21:04:08,136 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c_save
+2024-10-23 21:04:08,333 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\adc.c
+2024-10-23 21:04:08,349 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h_save
+2024-10-23 21:04:08,447 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\adc.h
+2024-10-23 21:04:08,499 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c_save
+2024-10-23 21:04:08,711 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\dma.c
+2024-10-23 21:04:08,721 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h_save
+2024-10-23 21:04:08,818 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\dma.h
+2024-10-23 21:04:08,855 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c_save
+2024-10-23 21:04:09,119 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\tim.c
+2024-10-23 21:04:09,141 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h_save
+2024-10-23 21:04:09,382 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\tim.h
+2024-10-23 21:04:09,419 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c_save
+2024-10-23 21:04:09,607 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\usart.c
+2024-10-23 21:04:09,619 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h_save
+2024-10-23 21:04:09,752 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\usart.h
+2024-10-23 21:04:09,797 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c_save
+2024-10-23 21:04:10,027 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_it.c
+2024-10-23 21:04:10,045 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h_save
+2024-10-23 21:04:10,186 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_it.h
+2024-10-23 21:04:10,225 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-23 21:04:10,334 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\stm32f1xx_hal_msp.c
+2024-10-23 21:04:10,339 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp_save
+2024-10-23 21:04:10,394 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\MXTmpFiles\system.tmp
+2024-10-23 21:04:10,417 [INFO] CodeEngine:303 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-23 21:04:10,516 [INFO] CodeEngine:327 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-23 21:04:10,554 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h_save
+2024-10-23 21:04:10,642 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Inc\main.h
+2024-10-23 21:04:10,656 [INFO] CodeEngine:247 - oldGeneratedFile, D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c_save
+2024-10-23 21:04:10,769 [INFO] CodeEngine:271 - Generated code: D:\SN-USER\Projects\Gruzik2.0-light\Software\LF_GRUZIK2.0_Code\GRUZIK2.0\Core\Src\main.c
+2024-10-23 21:04:11,722 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 303mS.
+2024-10-23 21:04:11,731 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2024-10-23 21:04:12,559 [INFO] ConfigFileManager:1396 - The Die is : DIE410
+2024-10-23 21:04:14,878 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3147mS.
+2024-10-23 21:04:14,878 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-10-23 21:04:14,893 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-10-23 21:04:19,204 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:04:19,205 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:04:19,207 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:04:37,933 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:04:37,933 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 21:04:37,933 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:00:06,016 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:00:06,016 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:00:06,017 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:00:06,887 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2024-10-23 22:00:12,166 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2024-10-23 22:00:12,234 [INFO] WebAppUi:462 - Profiles folder deleted
+2024-10-23 22:00:13,045 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-10-23 22:01:45,450 [INFO] Activator:179 - 
+
+
+2024-10-23 22:01:45,452 [INFO] Activator:180 - !SESSION log4j initialized
+2024-10-23 22:01:58,403 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:01:58,437 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:01:58,438 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:02:20,826 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-10-23 22:02:20,826 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-10-23 22:02:20,829 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-10-23 22:26:41,472 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:26:41,475 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-23 22:26:41,476 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 19:36:11,692 [INFO] Activator:179 - 
+
+
+2024-10-27 19:36:11,695 [INFO] Activator:180 - !SESSION log4j initialized
+2024-10-27 19:36:25,512 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 19:36:25,514 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 19:36:25,515 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 19:36:48,493 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-10-27 19:36:48,494 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-10-27 19:36:48,496 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-10-27 20:05:13,869 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:05:13,869 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:05:13,870 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:35:52,129 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:35:52,130 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:35:52,130 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:36:30,521 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:36:30,522 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:36:30,522 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:46:39,436 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:46:39,437 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-27 20:46:39,438 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:15:24,991 [INFO] Activator:179 - 
+
+
+2024-10-31 19:15:24,993 [INFO] Activator:180 - !SESSION log4j initialized
+2024-10-31 19:15:35,944 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:15:35,948 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:15:35,949 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:15:58,200 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-10-31 19:15:58,201 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-10-31 19:15:58,203 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-10-31 19:44:28,554 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:44:28,555 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:44:28,555 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:44:29,147 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:44:29,148 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 19:44:29,148 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 22:27:18,286 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 22:27:18,288 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-10-31 22:27:18,289 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:05:52,248 [INFO] Activator:179 - 
+
+
+2024-11-03 16:05:52,251 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-03 16:06:07,617 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:06:07,620 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:06:07,621 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:06:31,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-03 16:06:31,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-03 16:06:31,044 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-03 16:26:39,771 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:26:39,772 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:26:39,773 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:26:42,233 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:26:42,234 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 16:26:42,235 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 21:44:44,344 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 21:44:44,348 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-03 21:44:44,349 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 21:56:38,525 [INFO] Activator:179 - 
+
+
+2024-11-05 21:56:38,527 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-05 21:56:56,694 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 21:56:56,697 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 21:56:56,699 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 21:57:20,981 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-05 21:57:20,982 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-05 21:57:20,986 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-05 22:17:05,694 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:17:05,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:17:05,696 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:17:07,911 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:17:07,912 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:17:07,913 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:22:37,191 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:22:37,216 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:22:37,218 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:22:37,926 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:22:37,932 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:22:37,933 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:57:45,665 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:57:45,666 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:57:45,667 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:57:46,165 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:57:46,166 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:57:46,167 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:58:39,980 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:58:39,981 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:58:39,982 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:59:52,099 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:59:52,099 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:59:52,100 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:59:54,916 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:59:54,917 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-05 22:59:54,917 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 00:56:12,464 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 00:56:12,467 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 00:56:12,468 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:02:33,524 [INFO] Activator:179 - 
+
+
+2024-11-06 23:02:33,529 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-06 23:02:47,068 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:02:47,071 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:02:47,071 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:03:13,292 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-06 23:03:13,293 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-06 23:03:13,296 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-06 23:11:24,140 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:11:24,140 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:11:24,141 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:11:24,951 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:11:24,952 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-06 23:11:24,952 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 00:30:18,851 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 00:30:18,852 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 00:30:18,853 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 00:30:19,200 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 00:30:19,200 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 00:30:19,201 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 01:10:19,879 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 01:10:19,879 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-07 01:10:19,879 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:18:56,159 [INFO] Activator:179 - 
+
+
+2024-11-09 12:18:56,159 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-09 12:19:05,017 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:19:05,032 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:19:05,032 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:19:28,325 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-09 12:19:28,325 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-09 12:19:28,325 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-09 12:40:37,135 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:40:37,135 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:40:37,135 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:41:45,451 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:41:45,451 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 12:41:45,451 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:11:14,553 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:11:14,553 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:11:14,553 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:12:24,616 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:12:24,616 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:12:24,616 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:52:42,885 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:52:42,885 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:52:42,885 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:52:43,120 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:52:43,120 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:52:43,120 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:53:02,341 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:53:02,341 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 13:53:02,341 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 16:22:11,224 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 16:22:11,224 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-09 16:22:11,224 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-11 19:47:10,064 [INFO] Activator:179 - 
+
+
+2024-11-11 19:47:10,067 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-11 19:47:24,066 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-11 19:47:24,068 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-11 19:47:24,069 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-11 19:47:46,783 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-11 19:47:46,784 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-11 19:47:46,785 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-11 20:18:54,028 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-11 20:18:54,029 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-11 20:18:54,029 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-12 00:05:30,013 [INFO] Activator:179 - 
+
+
+2024-11-12 00:05:30,016 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-12 00:05:41,453 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-12 00:05:41,455 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-12 00:05:41,456 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-12 00:06:03,007 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-12 00:06:03,008 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-12 00:06:03,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-12 00:10:51,293 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-12 00:10:51,294 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-12 00:10:51,295 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 16:31:40,802 [INFO] Activator:179 - 
+
+
+2024-11-13 16:31:40,805 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-13 16:31:53,593 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 16:31:53,594 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 16:31:53,596 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 16:32:16,757 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-13 16:32:16,758 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-13 16:32:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-13 18:28:47,611 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:28:47,612 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:28:47,613 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:29:21,877 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:29:21,878 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:29:21,879 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:35:39,106 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:35:39,107 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 18:35:39,108 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 20:54:24,830 [INFO] Activator:179 - 
+
+
+2024-11-13 20:54:24,832 [INFO] Activator:180 - !SESSION log4j initialized
+2024-11-13 20:54:38,252 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 20:54:38,254 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 20:54:38,255 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 20:54:59,814 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-11-13 20:54:59,815 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-11-13 20:54:59,817 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-11-13 21:50:02,561 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 21:50:02,562 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 21:50:02,572 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 21:50:03,312 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 21:50:03,313 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 21:50:03,314 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 23:10:42,904 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 23:10:42,904 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 23:10:42,905 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 23:31:28,761 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 23:31:28,762 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-13 23:31:28,764 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:26:38,764 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:26:38,766 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:26:38,766 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:26:39,332 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:26:39,333 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:26:39,334 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:27:03,584 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:27:03,585 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:27:03,586 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:34:44,054 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:34:44,055 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:34:44,056 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:37:40,183 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:37:40,183 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2024-11-14 00:37:40,184 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com

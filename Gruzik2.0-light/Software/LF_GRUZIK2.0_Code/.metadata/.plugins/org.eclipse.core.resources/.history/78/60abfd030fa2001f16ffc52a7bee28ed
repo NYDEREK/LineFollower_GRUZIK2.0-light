@@ -277,12 +277,12 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 	   LineFollower->Base_speed_L = 140;
 	   LineFollower->Max_speed_L = 140;
 	   LineFollower->Max_speed_R = 140;
-	   LineFollower->Sharp_bend_speed_right = -60;
-	   LineFollower->Sharp_bend_speed_left = 70;
-	   LineFollower->Bend_speed_right = -60;
-	   LineFollower->Bend_speed_left = 110;
+	   LineFollower->Sharp_bend_speed_right = -65;
+	   LineFollower->Sharp_bend_speed_left = 76;
+	   LineFollower->Bend_speed_right = -50;
+	   LineFollower->Bend_speed_left = 30;
 	   LineFollower->Kp = 0.015;
-	   LineFollower->Kd = 0.2;
+	   LineFollower->Kd = 0.175;
 	}
 	/*ULTRA mode*/
 	if(RxData == 'k')
@@ -291,10 +291,10 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 		LineFollower->Base_speed_L = 145;
 		LineFollower->Max_speed_L = 145;
 		LineFollower->Max_speed_R = 145;
-		LineFollower->Sharp_bend_speed_right = -60;//-70
-		LineFollower->Sharp_bend_speed_left = 70;//88
-		LineFollower->Bend_speed_right = -60;
-		LineFollower->Bend_speed_left = 110;
+		LineFollower->Sharp_bend_speed_right = -66;//-70
+		LineFollower->Sharp_bend_speed_left = 90;//88
+		LineFollower->Bend_speed_right = -50;
+		LineFollower->Bend_speed_left = 30;
 		LineFollower->Kp = 0.015;
 		LineFollower->Kd = 0.2;
 	 }
@@ -305,12 +305,12 @@ static void App_Controll(char RxData, LineFollower_t *LineFollower)
 		LineFollower->Base_speed_L = 150;
 		LineFollower->Max_speed_L = 150;
 		LineFollower->Max_speed_R = 150;
-		LineFollower->Sharp_bend_speed_right = -55;
-		LineFollower->Sharp_bend_speed_left = 75;
-		LineFollower->Bend_speed_right = -60;
-		LineFollower->Bend_speed_left = 120;
+		LineFollower->Sharp_bend_speed_right = -60;
+		LineFollower->Sharp_bend_speed_left = 60;
+		LineFollower->Bend_speed_right = -50;
+		LineFollower->Bend_speed_left = 100;
 		LineFollower->Kp = 0.015;
-		LineFollower->Kd = 0.23;
+		LineFollower->Kd = 0.25;
 	  }
 	  /*EXTREME mode*/
 	  if(RxData == 'm')

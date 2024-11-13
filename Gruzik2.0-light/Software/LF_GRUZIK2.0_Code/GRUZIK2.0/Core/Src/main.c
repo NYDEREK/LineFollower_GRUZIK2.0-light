@@ -81,6 +81,9 @@
 	uint8_t ReceivedData[32];
 	uint8_t ReceivedLines;
 
+	static uint32_t low_voltage_time;
+	static uint8_t low_voltage_flag = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
